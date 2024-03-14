@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rai's fancy website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/bcdd885ad8.js" crossorigin="anonymous"></script>
+  <script src="lib/masonry.pkgd.js"></script>
+</head>
+<body>
+  
+  <ul class="sociallinks">
+    <li class="slist">
+      <button href="#" class="slink fa fa-ellipsis-h" aria-label="All links"></button>
+    </li>
+    <li class="slist">
+      <button onclick="window.open('https://twitter.com/RaiDev_', '_blank');"
+      class="slink fa fa-twitter" aria-label="Twitter link"></button>
+    </li>
+    <li class="slist">
+      <button onclick="window.open('https://www.tumblr.com/blog/rai-dev', '_blank');"
+      class="slink fa fa-tumblr" aria-label="Tumblr link"></button>
+    </li>
+    <li class="slist">
+      <button onclick="window.open('https://discord.gg/GcH9Du4bqw', '_blank');"
+      class="slink fa-brands fa-discord" aria-label="Discord server"></button>
+    </li>
+  </ul>
+
+  <div class="container" data-masonry='{ 
+    "itemSelector": ".card", "columnWidth": 500, "gutter":24,
+    "fitWidth": true
+  }'>
+    <div class="card card--c1">
+      <img class = "sitting-rai", src="media/Rai/sitting.png" alt="Rai sitting">
+      <h2 style="text-align: right; font-size: 34px; margin-bottom: 0px;">about me</h2>
+      <h1 style="text-align: right; font-size: 86px; color: #97459e; margin: 0;">
+        Rai / Iris</h1>
+      <h4 style="text-align: right; margin: 0; color: #605863; font-size: 18px">
+        aka RaiDev_, Hormoviti</h4>
+      <h2 style="text-align: right; font-size: 34px; margin: 8px; color: #3d2e43;">
+        they/them</h2>
+      <h4 style="text-align: right; margin: 0; color: #605863; font-size: 28px;">
+        19 year old digital artist and game developer</h4>
+    </div>
+
+    <div class="card card--c2">
+      <h1 style="text-align: center; font-size: 34px; margin-bottom: 0px;">
+        Art gallery</h1>
+      <div class="gallery-grid">
+        <img src="media/Artwork/2fursonas.png" class="gallery-img" 
+        style="border-top-left-radius: 32px;">
+        <img src="media/Artwork/artaia concept.png" class="gallery-img"
+        style="border-top-right-radius: 32px;">
+        <img src="media/Artwork/iris jacket.png" class="gallery-img"
+        style="border-bottom-left-radius: 32px;">
+        <img src="media/Artwork/makoto.png" class="gallery-img"
+        style="border-bottom-right-radius: 32px;">
+      </div>
+      <div style="text-align: center;"><button class="gallery-button">
+        View gallery</button></div>
+    </div>
+
+    <div class="card card--c3">
+      <img src="media/MJ/MJlogo.png" class="MJ-logo">
+      <h4 style="font-weight: normal; font-size: 24px;";>
+        A game I'm currently working on</h4>
+        <div style="text-align: center;"><button class="MJ-button">
+          Learn more
+        </button></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Cyrenia';
+    src: url('fonts/cyrenia-regular.ttf');
+}
+
+body {
+    background-color: #252327;
+    font-family: Cyrenia;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+button {
+    border-width: 0;
+    border-radius: 32px;
+    font-size: 32px;
+    text-align: center;
+    padding: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #9948b1;
+    color: white;
+    font-family: Cyrenia;
+    transition: all 0.3s;
+}
+
+button:hover {
+    scale: 110%;
+    opacity: 90%;
+}
+
+.container {
+    box-sizing: border-box;
+    background: transparent;
+    width: 95%;
+    margin: auto;
+    top: 200px;
+    padding: 0%;
+}
+
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+.card {
+    box-sizing: border-box;
+    width: 500px;
+    min-height: 300px;
+    background-color: #b1a8b9;
+    border-radius: 32px;
+    padding: 26px;
+    padding-top: 0px;
+    padding-right: 32px;
+    margin-bottom: 24px;
+    transform-origin: center;
+}
+
+@media (max-width: 1020px) {
+    .container {
+        scale: 120%;
+        top: 400px;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        scale: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .card {
+        scale: 95%;
+    }
+    .container {
+        scale: 100%;
+        top: 400px;
+    }
+}
+
+.card--c1 {
+    height: 320px;
+}
+
+.card--c2 {
+    height: 616px;
+}
+
+.card--c3 {
+    background-color: #403b37;
+    color: white;
+    padding: 24px;
+}
+
+.sitting-rai {
+    position: absolute;
+    bottom: 180px;
+    right: 220px;
+    float: left;
+    scale: 85%;
+    z-index: 2;
+    
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+}
+
+.slist {
+    display: inline;
+    float: right;
+    margin-top: 32px;
+}
+
+.slink {
+    display: block;
+    text-align: center;
+    background-color: #b1a8b9;
+    border-radius: 34px;
+    text-decoration: none;
+    color: #3d2e43;
+    height: 64px;
+    width: 64px;
+    margin: 8px;
+    border: none;
+    padding: 0;
+}
+
+.slink::before {
+    font-size: 38px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2);
+    grid-gap: 4px;
+    margin-top: 12px;
+}
+
+.gallery-img {
+    object-fit: cover;
+    width: 220px;
+    height: 220px;
+}
+
+.gallery-button {
+    margin: 24px;
+    padding-left: 48px;
+    padding-right: 52px;
+}
+
+.MJ-logo {
+    object-fit: cover;
+    width: 70%;
+    float: left;
+}
+
+.MJ-button {
+    margin: 0px;
+    padding-left: 48px;
+    padding-right: 52px;
+    background-color: #e28f4b;
+}
