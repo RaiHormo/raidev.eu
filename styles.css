@@ -6,6 +6,7 @@
 body {
     background-color: #252327;
     font-family: Cyrenia;
+    overflow-x: hidden;
 }
 
 h4 {
@@ -34,10 +35,11 @@ button:hover {
 .container {
     box-sizing: border-box;
     background: transparent;
-    width: 95%;
     margin: auto;
     top: 200px;
     padding: 0%;
+    width: fit-content;
+    max-width: 100%;
 }
 
 .container:after {
@@ -49,7 +51,6 @@ button:hover {
 .card {
     box-sizing: border-box;
     width: 500px;
-    min-height: 300px;
     background-color: #b1a8b9;
     border-radius: 32px;
     padding: 26px;
@@ -57,6 +58,9 @@ button:hover {
     padding-right: 32px;
     margin-bottom: 24px;
     transform-origin: center;
+    height: fit-content;
+
+    object-fit: contain;
 }
 
 @media (max-width: 1020px) {
@@ -74,20 +78,33 @@ button:hover {
 
 @media (max-width: 550px) {
     .card {
-        scale: 95%;
+        scale: 100%;
+        max-width: 100%;
     }
     .container {
-        scale: 100%;
-        top: 400px;
+        top: 300px;
+        width: 110%;
     }
 }
 
-.card--c1 {
-    height: 320px;
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        scale: 100%
+    }
+    .card {
+        margin: 0;
+        scale: 90%;
+    }
 }
 
-.card--c2 {
-    height: 616px;
+@media (max-width: 450px) {
+    .container {
+    }
+    .card {
+        margin: -10px;
+        scale: 85%;
+    }
 }
 
 .card--c3 {
@@ -148,7 +165,7 @@ button:hover {
 
 .gallery-img {
     object-fit: cover;
-    width: 220px;
+    width: 100%;
     height: 220px;
 }
 
@@ -156,6 +173,7 @@ button:hover {
     margin: 24px;
     padding-left: 48px;
     padding-right: 52px;
+    margin-bottom: 0;
 }
 
 .MJ-logo {
@@ -169,4 +187,23 @@ button:hover {
     padding-left: 48px;
     padding-right: 52px;
     background-color: #e28f4b;
+}
+
+.dropdown-panel {
+    display: none;
+    z-index: 3;
+    background-color: #3d2e43;
+    padding: 18px;
+    border-radius: 32px;
+    position: absolute;
+    right: 16px;
+    top: 132px;
+}
+
+.dropdown:hover .dropdown-panel {
+    display: block;
+}
+
+.dropdown-slink {
+    width: 200px;
 }

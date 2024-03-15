@@ -7,12 +7,20 @@
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/bcdd885ad8.js" crossorigin="anonymous"></script>
   <script src="lib/masonry.pkgd.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   
   <ul class="sociallinks">
     <li class="slist">
-      <button href="#" class="slink fa fa-ellipsis-h" aria-label="All links"></button>
+      <div class="dropdown">
+        <button href="#" class="slink fa fa-ellipsis-h all-links" aria-label="All links"></button>
+        <div class="dropdown-panel">
+          <button href="#" class="slink dropdown-slink">Link 1</button>
+          <button href="#" class="slink dropdown-slink">Link 2</button>
+          <button href="#" class="slink dropdown-slink">Link 3</button>
+        </div>
+      </div>
     </li>
     <li class="slist">
       <button onclick="window.open('https://twitter.com/RaiDev_', '_blank');"
@@ -34,11 +42,11 @@
   }'>
     <div class="card card--c1">
       <img class = "sitting-rai", src="media/Rai/sitting.png" alt="Rai sitting">
-      <h2 style="text-align: right; font-size: 34px; margin-bottom: 0px;">about me</h2>
+      <h2 style="text-align: right; font-size: 34px; margin-bottom: 0px; color: #3d2e43;">about me</h2>
       <h1 style="text-align: right; font-size: 86px; color: #97459e; margin: 0;">
         Rai / Iris</h1>
       <h4 style="text-align: right; margin: 0; color: #605863; font-size: 18px">
-        aka RaiDev_, Hormoviti</h4>
+        aka RaiDev_, Hormoviti, SpyrosRai</h4>
       <h2 style="text-align: right; font-size: 34px; margin: 8px; color: #3d2e43;">
         they/them</h2>
       <h4 style="text-align: right; margin: 0; color: #605863; font-size: 28px;">
