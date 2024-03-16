@@ -46,6 +46,7 @@ button:hover {
     content: '';
     display: block;
     clear: both;
+    width: 10px;
   }
 
 .card {
@@ -122,6 +123,9 @@ button:hover {
         width: 100%;
         left: 10%;
     }
+    .dropdown-panel {
+        right: 11%;
+    }
 }
 
 .card--c3 {
@@ -148,12 +152,13 @@ button:hover {
     white-space: nowrap;
     overflow: hidden;
     display: flex;
-    z-index: 3;
     position: fixed;
     right: 24px;
     background-color: #252327;
     border-radius: 48px;
     margin-top: 12px;
+    z-index: 3;
+    width: fit-content;
 }
 
 .slist {
@@ -178,6 +183,45 @@ button:hover {
 
 .slink::before {
     font-size: 38px;
+}
+
+.dropdown-panel::before {
+    right: 24px;
+}
+
+.dropdown-panel {
+    animation: close-drop 0.1s ease forwards;
+    display: none;
+    z-index: -9999;
+    background-color: #3d2e43;
+    padding: 18px;
+    border-radius: 32px;
+    position: fixed;
+    top: 12px;
+    opacity: 0%;
+    width: inherit;
+    padding-top: 110px;
+}
+
+.dropdown:hover, .social-links:hover .dropdown-panel {
+    display: block;
+    animation: open-drop 0.1s ease forwards;
+}
+
+@keyframes open-drop {
+    to {   
+        opacity: 100%;
+    }
+}
+
+@keyframes close-drop {
+    to {   
+        opacity: 0%;
+    }
+}
+
+.dropdown-slink {
+    width: 270px;
 }
 
 .gallery-grid {
@@ -212,27 +256,4 @@ button:hover {
     padding-left: 48px;
     padding-right: 52px;
     background-color: #e28f4b;
-}
-
-.dropdown-panel {
-    display: none;
-    z-index: 3;
-    background-color: #3d2e43;
-    padding: 18px;
-    border-radius: 32px;
-    position: fixed;
-    right: 16px;
-    top: 132px;
-}
-
-.dropdown:hover .dropdown-panel {
-    display: block;
-}
-
-.all-links:hover .dropdown-panel {
-    display: block;
-}
-
-.dropdown-slink {
-    width: 200px;
 }
