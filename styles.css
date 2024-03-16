@@ -90,20 +90,37 @@ button:hover {
 @media (max-width: 500px) {
     .container {
         width: 100%;
-        scale: 100%
+        scale: 90%
     }
     .card {
-        margin: 0;
-        scale: 90%;
+        margin-left: -24px;
+        max-width: 500px;
     }
 }
 
 @media (max-width: 450px) {
-    .container {
-    }
     .card {
-        margin: -10px;
+        scale: 100%;
+        margin-left: -10vw;
+    }
+    .container {
         scale: 85%;
+    }
+}
+
+@media (max-width: 412px) {
+    .card {
+        margin-left: -12vw;
+        scale: 100%;
+    }
+    .container {
+        scale: 80%;
+        /* right: 12px; */
+        top: 200px;
+    }
+    .social-links {
+        width: 100%;
+        left: 10%;
     }
 }
 
@@ -128,13 +145,21 @@ button:hover {
     padding: 0;
     margin: 0;
     overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    z-index: 3;
     position: fixed;
+    right: 24px;
+    background-color: #252327;
+    border-radius: 48px;
+    margin-top: 12px;
 }
 
 .slist {
-    display: inline;
-    float: right;
-    margin-top: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .slink {
@@ -195,12 +220,16 @@ button:hover {
     background-color: #3d2e43;
     padding: 18px;
     border-radius: 32px;
-    position: absolute;
+    position: fixed;
     right: 16px;
     top: 132px;
 }
 
 .dropdown:hover .dropdown-panel {
+    display: block;
+}
+
+.all-links:hover .dropdown-panel {
     display: block;
 }
 
