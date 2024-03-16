@@ -42,12 +42,15 @@ button:hover {
     max-width: 100%;
 }
 
-.container:after {
+.container::after {
     content: '';
     display: block;
     clear: both;
-    width: 10px;
   }
+
+.container::before {
+    width: 10px;
+}
 
 .card {
     box-sizing: border-box;
@@ -60,7 +63,6 @@ button:hover {
     margin-bottom: 24px;
     transform-origin: center;
     height: fit-content;
-
     object-fit: contain;
 }
 
