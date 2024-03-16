@@ -40,18 +40,14 @@ button:hover {
     padding: 0%;
     max-width: 100%;
     transition: all 0.1s;
-    animation: fix-width 1s;
-    animation: appear 1s;
 }
 
 @keyframes fix-width{
     from {
         width: 10px;
-        opacity: 0%;
     }
     to {
         width: fit-content;
-        animation-delay: 1s;
     }
 }
 
@@ -66,9 +62,6 @@ button:hover {
     display: block;
     clear: both;
   }
-
-.container: {
-}
 
 .card {
     box-sizing: border-box;
