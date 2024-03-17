@@ -73,7 +73,7 @@ button:hover {
     padding-right: 32px;
     margin-bottom: 24px;
     transform-origin: center;
-    height: fit-content;
+    height: 300px;
     object-fit: contain;
 }
 
@@ -209,10 +209,10 @@ button:hover {
     padding: 18px;
     border-radius: 32px;
     position: fixed;
-    top: 12px;
+    top: 24px;
     opacity: 0%;
     width: inherit;
-    padding-top: 110px;
+    padding-top: 80px;
 }
 
 .dropdown:hover, .social-links:hover .dropdown-panel {
@@ -234,6 +234,7 @@ button:hover {
 
 .dropdown-slink {
     width: 270px;
+    font-family: Cyrenia;
 }
 
 .gallery-grid {
