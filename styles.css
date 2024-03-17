@@ -27,7 +27,27 @@ button {
     transition: all 0.3s;
 }
 
+.button {
+    border-width: 0;
+    border-radius: 32px;
+    font-size: 32px;
+    text-align: center;
+    padding: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #9948b1;
+    color: white;
+    font-family: Cyrenia;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
 button:hover {
+    scale: 110%;
+    opacity: 90%;
+}
+
+.button:hover {
     scale: 110%;
     opacity: 90%;
 }
@@ -75,70 +95,6 @@ button:hover {
     transform-origin: center;
     height: 300px;
     object-fit: contain;
-}
-
-@media (max-width: 1020px) {
-    .container {
-        scale: 120%;
-        top: 400px;
-    }
-}
-
-@media (max-width: 650px) {
-    .container {
-        scale: 100%;
-    }
-}
-
-@media (max-width: 550px) {
-    .card {
-        scale: 100%;
-        max-width: 100%;
-    }
-    .container {
-        top: 300px;
-        width: 110%;
-    }
-}
-
-@media (max-width: 500px) {
-    .container {
-        width: 100%;
-        scale: 90%
-    }
-    .card {
-        margin-left: -24px;
-        max-width: 500px;
-    }
-}
-
-@media (max-width: 450px) {
-    .card {
-        scale: 100%;
-        margin-left: -10vw;
-    }
-    .container {
-        scale: 85%;
-    }
-}
-
-@media (max-width: 412px) {
-    .card {
-        margin-left: -12vw;
-        scale: 100%;
-    }
-    .container {
-        scale: 80%;
-        /* right: 12px; */
-        top: 200px;
-    }
-    .social-links {
-        width: 100%;
-        left: 10%;
-    }
-    .dropdown-panel {
-        right: 11%;
-    }
 }
 
 .card--c3 {
@@ -207,9 +163,9 @@ button:hover {
     z-index: -9999;
     background-color: #3d2e43;
     padding: 18px;
-    border-radius: 32px;
+    border-radius: 42px;
     position: fixed;
-    top: 24px;
+    top: 18px;
     opacity: 0%;
     width: inherit;
     padding-top: 80px;
@@ -245,10 +201,16 @@ button:hover {
     margin-top: 12px;
 }
 
-.gallery-img {
+.gallery-img-frontpage {
     object-fit: cover;
     width: 100%;
     height: 220px;
+}
+
+.gallery-img {
+    object-fit: cover;
+    max-width: 100%;
+    width: 300px;
 }
 
 .gallery-button {
@@ -256,6 +218,36 @@ button:hover {
     padding-left: 48px;
     padding-right: 52px;
     margin-bottom: 0;
+}
+
+.gallery-container {
+    max-width: 100%;
+    margin: auto;
+    top: 150px;
+}
+
+.header {
+    background-color: #252327;
+    height: 140px;
+    position: fixed;
+    z-index: 1;
+    width: 110%;
+    left: -10px;
+    top: -20px;
+}
+
+.header-border {
+    border-style: solid;
+    border-width: 32px;
+    border-bottom-style: none;
+    border-radius: 48px;
+    top: 100px;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    height: 40px;
+    border-color: #252327;
+    
 }
 
 .MJ-logo {
@@ -269,4 +261,68 @@ button:hover {
     padding-left: 48px;
     padding-right: 52px;
     background-color: #e28f4b;
+}
+
+@media (max-width: 1020px) {
+    .container {
+        scale: 120%;
+        top: 400px;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        scale: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .card {
+        scale: 100%;
+        max-width: 100%;
+    }
+    .container {
+        top: 300px;
+        width: 110%;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        scale: 90%
+    }
+    .card {
+        margin-left: -24px;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 450px) {
+    .card {
+        scale: 100%;
+        margin-left: -10vw;
+    }
+    .container {
+        scale: 85%;
+    }
+}
+
+@media (max-width: 412px) {
+    .card {
+        margin-left: -12vw;
+        scale: 100%;
+    }
+    .container {
+        scale: 80%;
+        /* right: 12px; */
+        top: 200px;
+    }
+    .social-links {
+        width: 100%;
+        left: 10%;
+    }
+    .dropdown-panel {
+        right: 11%;
+    }
 }

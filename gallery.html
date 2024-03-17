@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rai's art gallery</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/bcdd885ad8.js" crossorigin="anonymous"></script>
+  <script src="lib/masonry.pkgd.js"></script>
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/x-icon" href="media/Rai/favicon.png">
+</head>
+<body style="background-color: #403b37;">
+  
+  <ul class="social-links">
+    <li class="slist">
+      <button onclick="window.open('https://discord.gg/GcH9Du4bqw', '_blank');"
+      class="slink fa-brands fa-discord" aria-label="Discord server"></button>
+    </li>
+    <li class="slist">
+      <button onclick="window.open('https://www.tumblr.com/blog/rai-dev', '_blank');"
+      class="slink fa fa-tumblr" aria-label="Tumblr link"></button>
+    </li>
+    <li class="slist">
+      <button onclick="window.open('https://twitter.com/RaiDev_', '_blank');"
+      class="slink fa fa-twitter" aria-label="Twitter link"></button>
+    </li>
+    <li class="slist">
+      <div class="dropdown">
+        <button class="slink fa fa-ellipsis-h all-links" aria-label="All links"></button>
+        
+      </div>
+    </li>
+    <div class="dropdown-panel">
+      <button class="slink dropdown-slink" 
+      onclick="window.open('https://instagram.com/raidev_/', '_blank');">
+        <a class="fa fa-instagram"></a> Instagram</button>
+      <button class="slink dropdown-slink" 
+      onclick="window.open('hhttps://www.deviantart.com/spyrosrai/', '_blank');">
+        <a class="fa fa-deviantart"></a> DeviantArt</button>
+      <button class="slink dropdown-slink" 
+      onclick="window.open('https://github.com/RaiHormo', '_blank');">
+        <a class="fa fa-github"></a> Github</button>
+      <button class="slink dropdown-slink"
+      onclick="window.open('https://ko-fi.com/raidev', '_blank');">
+        <a class="fa fa-mug-hot"></a> Ko-fi</button>
+      <button class="slink dropdown-slink"
+      onclick="window.open('https://steamcommunity.com/id/spyrosrai/', '_blank');">
+        <a class="fa fa-steam"></a> Steam</button>
+    </div>
+  </ul>
+
+  <div class="header" >
+    <div class="header-border"></div>
+  </div>
+
+  <div class="gallery-container" data-masonry='{ 
+    "itemSelector": ".gallery-img", "columnWidth": 300, "gutter":1,
+    "fitWidth": true, "initLayout": true, "stagger": 0}'>
+    <img src="media/Artwork/2fursonas.png" class="gallery-img">
+    <img src="media/Artwork/artaia concept.png" class="gallery-img">
+    <img src="media/Artwork/iris jacket.png" class="gallery-img">
+    <img src="media/Artwork/makoto.png" class="gallery-img">
+  </div>
+
+</body>
+</html>
