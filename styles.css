@@ -211,6 +211,7 @@ button:hover {
     object-fit: cover;
     max-width: 100%;
     width: 300px;
+    margin-bottom: 20px;
 }
 
 .gallery-button {
@@ -224,6 +225,8 @@ button:hover {
     max-width: 100%;
     margin: auto;
     top: 150px;
+    /* border-style: solid;
+    border-width: 32px; */
 }
 
 .header {
@@ -231,23 +234,33 @@ button:hover {
     height: 140px;
     position: fixed;
     z-index: 1;
-    width: 110%;
-    left: -10px;
+    width: 100%;
+    left: 0;
     top: -20px;
 }
+.curved-bg {
+    background-color: #252327;
+    position: absolute;
+    top: 140px;
+    width: 100%;
+    height: 35px;
+}
+.curved {
+    border-radius: 35px 35px 0px 0px; 
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background-color: #403b37; 
+}
 
-.header-border {
-    border-style: solid;
-    border-width: 32px;
-    border-bottom-style: none;
-    border-radius: 48px;
-    top: 100px;
+.curved-gradient {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(64,59,55,1) 0%, rgba(64,59,55,0) 100%);
     position: fixed;
     width: 100%;
-    left: 0px;
-    height: 40px;
-    border-color: #252327;
-    
+    height: 50px; 
+    z-index: 1;
+    top: 150px;
 }
 
 .MJ-logo {
@@ -319,7 +332,7 @@ button:hover {
         top: 200px;
     }
     .social-links {
-        width: 100%;
+        /* width: 100%; */
         left: 10%;
     }
     .dropdown-panel {
