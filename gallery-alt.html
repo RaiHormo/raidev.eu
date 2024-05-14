@@ -12,7 +12,7 @@
 </head>
 <body style="background-color: #403b37;">
   
-  <ul class="social-links">
+  <ul class="social-links hide-mobile">
     <li class="slist">
       <button onclick="window.open('https://discord.gg/GcH9Du4bqw', '_blank');"
       class="slink fa-brands fa-discord" aria-label="Discord server"></button>
@@ -50,19 +50,34 @@
     </div>
   </ul>
 
+  <div class="header-cont">
+    <button class="home-button fa fa-angle-left" onclick="window.location.href='index.html';">
+    </button>
+    <h1 style="display: inline; margin-left: 82px ;">Gallery</h1>
+  </div>
+
   <div class="header" >
     <div class="curved-bg">
       <div class="curved"></div>
     </div>
   </div>
-  <div class="gallery-container" data-masonry='{ 
-    "itemSelector": ".gallery-img", "columnWidth": 300, "gutter":20,
-    "fitWidth": true, "initLayout": true, "stagger": 0}'>
-    <div class="curved-gradient"></div>
-    <img src="media/Artwork/2fursonas.png" class="gallery-img">
-    <img src="media/Artwork/artaia concept.png" class="gallery-img">
-    <img src="media/Artwork/iris jacket.png" class="gallery-img">
-    <img src="media/Artwork/makoto.png" class="gallery-img">
+
+  
+  <div style="position: fixed; top: 150px; left: 32px;">
+    <h2 style="color: white; font-size: 42px;">You can view my artwork on</h2>
+    <button class="slink dropdown-slink" 
+      onclick="window.open('https://www.twitter.com/RaiArtss/', '_blank');">
+        <a class="fa fa-twitter"></a> Twitter (Alt)
+    </button>
+    <button class="slink dropdown-slink" 
+      onclick="window.open('https://instagram.com/raidev_/', '_blank');">
+        <a class="fa fa-instagram"></a> Instagram
+    </button>
+    <button class="slink dropdown-slink" 
+      onclick="window.open('https://www.deviantart.com/spyrosrai/', '_blank');">
+        <a class="fa fa-deviantart"></a> DeviantArt
+    </button>
+      
   </div>
 
 </body>
