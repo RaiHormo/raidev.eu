@@ -176,6 +176,42 @@ button:hover {
     animation: open-drop 0.1s ease forwards;
 }
 
+.section-button {
+    display: none;
+    position: fixed;
+    right: 28px;
+    top: 24px;
+    height: 52px;
+    width: 52px;
+}
+
+@media (max-width: 908px) {
+    .section-button {
+        display: block;
+    }
+    .hide-smaller {
+        display: none;
+    }
+}
+
+.section-panel {
+    display: none;
+}
+
+.section-button:hover {
+    height: 64px;
+    width: 64px;
+}
+
+.MJ-dropdown:hover .section-panel {
+    display: block;
+}
+
+.section-button:focus {
+    height: 64px;
+    width: 64px;
+}
+
 @keyframes open-drop {
     to {   
         opacity: 100%;
