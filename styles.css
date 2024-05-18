@@ -475,7 +475,7 @@ button:hover {
 
 @media (max-width: 412px) {
     .card {
-        margin-left: -12vw;
+        margin-left: -14.5vw;
         scale: 100%;
     }
     .container {
