@@ -281,7 +281,8 @@ button:hover {
     margin: 0px;
     padding-left: 48px;
     padding-right: 52px;
-    background-color: #e28f4b;
+    margin-top: 18px;
+    background-color: #ea9f75;
 }
 
 .MJ-sect-list {
