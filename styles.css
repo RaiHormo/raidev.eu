@@ -349,9 +349,9 @@ button:hover {
 
 
 .section-button {
-    border-radius: 100%;
+    border-radius: 32px;
     transition: all 0.5s;
-    width: 32px;
+    min-width: 32px;
     height: 36px;
     align-items: center;
     padding-top: 12px;
@@ -363,10 +363,15 @@ button:hover {
 }
 
 .section-button:hover, .section-button:focus {
-    width: 32px;
+    min-width: 32px;
     height: 44px;
     padding-top: 18px;
     padding-bottom: 2px;
+}
+
+.section-text {
+    margin-left: 12px;
+    font-family: Cyrenia;
 }
 
 .topnav {
@@ -446,6 +451,9 @@ button:hover {
     .container {
         top: 300px;
         width: 110%;
+    }
+    .section-text {
+        display: none;
     }
 }
 
