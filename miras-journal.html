@@ -16,19 +16,10 @@
   <div class="header-cont">
     <button class="home-button fa fa-angle-left" style="background-color: #fdaa7b;" onclick="window.location.href='index.html';">
     </button>
-    <img src="https://raw.githubusercontent.com/RaiHormo/Miras-Journal/main/art/Branding/logo.png" class="MJ-logo" style="height: 100px; margin-left: 92px; position: fixed; width: 200px; top: 12px">
+    <img src="https://raw.githubusercontent.com/RaiHormo/Miras-Journal/main/art/Branding/logo.png" class="MJ-logo-header">
   </div>
 
-  <div class="section-panel">
-    <div class="MJ-sect-list">
-      <button class="MJ-sect-button">What is it</button>
-      <button class="MJ-sect-button">How it started</button>
-      <button class="MJ-sect-button">Characters</button>
-      <button class="MJ-sect-button">Setting</button>
-      <button class="MJ-sect-button">How it's going</button>
-      <button class="MJ-sect-button">FAQ</button>
-    </div>
-  </div>
+  
 
   <div class="header" style="background-color: #403939;">
       <div class="MJ-sect-list hide-smaller">
@@ -40,13 +31,39 @@
         <button class="MJ-sect-button">FAQ</button>
       </div>
 
-      <div class="MJ-dropdown"><button class="MJ-sect-button section-button">
+      <!--<div class="MJ-dropdown"><button class="MJ-sect-button section-button">
         <a class="fa fa-bars"></a>
-      </button></div>
+      </button></div>-->
       <div class="curved-bg" style="background-color: #403939">
         <div class="curved" style="background-color: #2c2929;"></div>
       </div>
   </div>
 
+  <div class="topnav">
+    <a href="javascript:void(0);" class="icon MJ-sect-button section-button" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <div id="myLinks">
+      <div class="MJ-sect-list">
+        <button class="MJ-sect-button">What is it</button>
+        <button class="MJ-sect-button">How it started</button>
+        <button class="MJ-sect-button">Characters</button>
+        <button class="MJ-sect-button">Setting</button>
+        <button class="MJ-sect-button">How it's going</button>
+        <button class="MJ-sect-button">FAQ</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
 </body>
 </html>
