@@ -394,11 +394,6 @@ button:hover {
     width: 100%;
 }
 
-.active {
-    background-color: #04AA6D;
-    color: white;
-}
-
 .MJ-logo-header {
     height: 100px; 
     margin-left: 92px; 
