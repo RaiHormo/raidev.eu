@@ -23,12 +23,18 @@
 
   <div class="header" style="background-color: #403939;">
       <div class="MJ-sect-list hide-smaller">
-        <button class="MJ-sect-button">What is it</button>
-        <button class="MJ-sect-button">How it started</button>
-        <button class="MJ-sect-button">Characters</button>
-        <button class="MJ-sect-button">Setting</button>
-        <button class="MJ-sect-button">How it's going</button>
-        <button class="MJ-sect-button">FAQ</button>
+        <button class="MJ-sect-button about" onclick="tab_press('#about');">
+          What is it</button>
+        <button class="MJ-sect-button how-it-started" onclick="tab_press('#how-it-started');">
+          How it started</button>
+        <button class="MJ-sect-button characters" onclick="tab_press('#characters');">
+          Characters</button>
+        <button class="MJ-sect-button setting" onclick="tab_press('#setting');">
+          The setting</button>
+        <button class="MJ-sect-button how-its-going" onclick="tab_press('#how-its-going');">
+          How it's going</button>
+        <button class="MJ-sect-button FAQ" onclick="tab_press('#FAQ');">
+          FAQ</button>
       </div>
 
       <div class="curved-bg" style="background-color: #403939">
@@ -37,30 +43,80 @@
   </div>
 
   <div class="topnav">
-    <a href="javascript:void(0);" class="icon MJ-sect-button section-button" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon MJ-sect-button section-button" onclick="toggle_menu()">
       <i class="fa fa-bars"><h class="section-text">Sections</h></i>
     </a>
     <div id="myLinks">
       <div class="MJ-sect-list">
-        <button class="MJ-sect-button">What is it</button>
-        <button class="MJ-sect-button">How it started</button>
-        <button class="MJ-sect-button">Characters</button>
-        <button class="MJ-sect-button">Setting</button>
-        <button class="MJ-sect-button">How it's going</button>
-        <button class="MJ-sect-button">FAQ</button>
+        <button class="MJ-sect-button about" onclick="tab_press('#about');">
+          What is it</button>
+        <button class="MJ-sect-button how-it-started" onclick="tab_press('#how-it-started');">
+          How it started</button>
+        <button class="MJ-sect-button characters" onclick="tab_press('#characters');">
+          Characters</button>
+        <button class="MJ-sect-button setting" onclick="tab_press('#setting');">
+          The setting</button>
+        <button class="MJ-sect-button how-its-going" onclick="tab_press('#how-its-going');">
+          How it's going</button>
+        <button class="MJ-sect-button FAQ" onclick="tab_press('#FAQ');">
+          FAQ</button>
       </div>
     </div>
   </div>
 
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-    </script>
+    <div class="MJ-tab-container" style="top: 180px; position: absolute; color: white;">
+      <div id="about" class="MJ-tab">
+        this is one tab
+      </div>
+      <div id="how-it-started" class="MJ-tab">
+        this is another tab
+      </div>
+      <div id="characters" class="MJ-tab">
+        this is the character tab
+      </div>
+      <div id="setting" class="MJ-tab">
+        this is the setting tab
+      </div>
+      <div id="how-its-going" class="MJ-tab">
+        going well
+      </div>
+      <div id="FAQ" class="MJ-tab">
+        the faq?
+      </div>
+    </div>
+
 </body>
+<script>
+  function toggle_menu() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
+  function tab_press(section) {
+    document.getElementById("myLinks").style.display = "none";
+    window.location.href = section;
+    select_tab();
+  }
+
+  window.onload = function() {
+    if (window.location.hash.substring(1) == "") {
+      tab_press("#about");
+    }
+    document.getElementsByClassName("." + window.location.hash.substring(1)).disabled = true;
+    select_tab();
+  }
+  
+  function select_tab() {
+    document.querySelectorAll('.MJ-sect-button').forEach(function(button) {
+      button.className = button.className.replace(" MJ-active-tab", "");
+    });
+    document.querySelectorAll('.'+window.location.hash.substring(1)).forEach(function(button) {
+      button.className += " MJ-active-tab";
+    });
+  }
+</script>
 </html>

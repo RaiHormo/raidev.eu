@@ -306,9 +306,9 @@ button:hover {
     margin: 10px;
 }
 
-.MJ-sect-button:hover {
+.MJ-sect-button:hover, .MJ-active-tab, .MJ-sect-button:focus {
     background-color: white;
-    color: #ea9f75;
+    color: black;
     outline-width: 0;
     padding: 10px;
     padding-left: 18px;
@@ -317,15 +317,8 @@ button:hover {
     margin: 4px;
 }
 
-.MJ-sect-button:focus {
-    background-color: white;
+.MJ-active-tab, .MJ-active-tab:hover {
     color: #ea9f75;
-    outline-width: 0;
-    padding: 10px;
-    padding-left: 18px;
-    padding-right: 18px;
-    scale: 100%;
-    margin: 4px;
 }
 
 .home-button {
@@ -402,6 +395,14 @@ button:hover {
     object-fit: scale-down; 
     top: 12px;
     max-width: calc(75vw - 150px);
+}
+
+.MJ-tab:not(:target) {
+    display: none;
+}
+  
+.MJ-tab:target {
+    display: block;
 }
 
 @media (max-width: 1020px) {
