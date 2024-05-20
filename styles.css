@@ -348,7 +348,7 @@ button:hover {
     position: fixed;
     display: inline;
     top: 28px;
-    left: 32px;
+    left: 24px;
 }
 
 .header-cont {
@@ -374,6 +374,7 @@ button:hover {
     right: 0;
     top: 0;
     text-align: center;
+    text-decoration: none;
 }
 
 .section-button-on, .section-button:hover {
@@ -399,7 +400,7 @@ button:hover {
     z-index: 4;
     min-height: 64px;
     top: 24px;
-    right: 32px;
+    right: 24px;
     transition: all 0.3s;
     display: none;
 }
