@@ -6,7 +6,7 @@
   <title>Rai's art gallery</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/bcdd885ad8.js" crossorigin="anonymous"></script>
-  <script src="lib/masonry.pkgd.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/x-icon" href="media/Rai/favicon.png">
 </head>
@@ -39,6 +39,7 @@
 
       <div class="curved-bg" style="background-color: #403939">
         <div class="curved" style="background-color: #2c2929;"></div>
+        <div class="MJ-curved-gradient"></div>
       </div>
   </div>
 
@@ -64,12 +65,57 @@
     </div>
   </div>
 
-    <div class="MJ-tab-container" style="top: 180px; position: absolute; color: white;">
+    <div class="MJ-tab-container">
+      <br><br>
       <div id="about" class="MJ-tab">
-        this is one tab
+        <h2>A top down turn-based RPG with calendar progression a color based magic system</h2>
+        <p>
+          A young anthro girl named Mira Levenor find herself in a strange realm full of monsters and ruins, with a few people stuck there trying to survive.<br>
+          As each day passes the sourrounding get more and more corrupted.<br><br>
+          Follow her day to day life exploring the lost realm, fighting in turn-based battles and getting to know new people as they try to find a way to the outside world and discover the truth before it's too late.<br><br>
+          During her adventures, Mira will keep a journal, giving her thoughts on everything that happens on a day-to-day basis.
+        </p>
       </div>
       <div id="how-it-started" class="MJ-tab">
-        this is another tab
+        <h2>My history with game development</h2>
+        <p>
+          I've been technically been making games since I was 9 on scratch, but who cares about that?<br><br>
+          The only other real game I've made was a Pokemon fangame called "Pokemon Redder and Bluer", stupid name I know.<br>
+          It was my interpretation as a 14 year old of what a Kanto game would look like 15 years after the events of the original.<br><br>
+          I never finished it due to lack of motivation after a while, and it's now basically lost media to anyone but me since the Relic Castle website shut down.<br><br>
+          Another game I have attempted to make was something I called "Project BZ". It mostly stayed as a concept, but it was a sci-fi RPG with a focus on action commands. I designed a lot of characters and locations for it, but having no real gamedev experience, the scope was way too high.
+        </p>
+        <h2>The initial concept for Mira's Journal</h2>
+        <p>
+          With Project BZ being such a dream project, I wanted to make a more down to earth RPG.<br>
+          Of course any kind of RPG is still a huge project, and not what most people would recommend as a beginner game.<br><br>
+          It was October of 2021 when I drew the first sketches of some of the character for Mira's Journal.<br><br>
+          The first characters I made for this game were Mira, Daze and Alcine.
+          <br><br>
+          <img src="media/MJ/EarlyMira1.bmp" alt="The first sketch of Mira" style="max-height: 200px; max-width: 60%; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+          <img src="media/MJ/EarlyMira2.bmp" alt="The first sketch of Mira but colored digitally" style="max-height: 200px; max-width: 25%; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br><br>
+          Mira was a young wolf girl with some fire powers who ends up getting mixed up in Daze's affairs.<br><br>
+          <img src="media/MJ/EarlyGame3.bmp" alt="First sketch of Daze and Alcine, along with some UI elements" style="max-height: 300px; max-width: 98%; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br><br>
+          Daze was meant to be a stereotypical hero, the usual leader of the party with a special destiny.<br><br>
+          <img src="media/MJ/EarlyAlcine.png" alt="Early sketch of Alcine" style="max-height: 200px; object-fit: scale-down; max-width: 25%;" class="clickable-image" onclick="show_image(this);">
+          <img src="media/MJ/EarlyAlcineLater.png" alt="Later sketch of Alcine" style="max-height: 200px; object-fit: scale-down; max-width: 20%;" class="clickable-image" onclick="show_image(this);">
+          <img src="media/MJ/EarlyAlcineLater2.bmp" alt="Sketch of alcine on top of Mira" style="max-height: 200px; max-width: 22%; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br><br>
+          Alcine has changed a lot through development. What's stayed the same is that they're a spirit creature with a liquid body.<br>
+          But originally they had a more mature look with something that resembles long hair. But I later decided to make them more like a child originally that grows along the journey.<br><br>
+          These are some other early sketches related to the game:<br><br>
+          <img src="media/MJ/EarlyGame1.bmp" alt="An early idea for the battle scene" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+          <img src="media/MJ/EarlyGame2.bmp" alt="Sketch of a certain building" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br>
+          <img src="media/MJ/EarlyYaru.bmp" alt="First sketch of Yaru" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+          <img src="media/MJ/EarlyGame4.bmp" alt="Early concept for the main menu + Mira holding a flame" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br>
+        </p>
+        <h2>The RPG Maker MZ version of the game</h2>
+        <p>
+          In early 2022 I bought the RPG Maker MZ engine with the intention of using it to make this game.<br><br> 
+          The reason I picked it was simple:<br>
+           I wanted to make a top down rpg that I thought was not too complex, and this seemed to be what this engine was designed for.<br><br>
+           I worked on this version of the game for about 9 months, with some results.
+           (unfinished document)
+        </p>
       </div>
       <div id="characters" class="MJ-tab">
         this is the character tab
@@ -85,19 +131,29 @@
       </div>
     </div>
 
+
+    <div id="image-popup" class="modal">
+      <span id="close-popup">&times;</span>
+      <div id="caption"></div>
+      <img class="modal-content" id="img01">
+    </div>
 </body>
 <script>
-  function toggle_menu() {
+  function toggle_menu(state = null) {
     var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
+    var btn = document.getElementsByClassName("section-button")[0];
+    if (state == null) state = x.style.display != "block";
+    if (state) {
       x.style.display = "block";
+      btn.className = "icon MJ-sect-button section-button MJ-active-tab section-button-on";
+    } else {
+      x.style.display = "none";
+      btn.className = "icon MJ-sect-button section-button";
     }
   }
 
   function tab_press(section) {
-    document.getElementById("myLinks").style.display = "none";
+    toggle_menu(false);
     window.location.href = section;
     select_tab();
   }
@@ -119,4 +175,5 @@
     });
   }
 </script>
+<script src="lib/image-popup.js"></script>
 </html>

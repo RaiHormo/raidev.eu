@@ -262,13 +262,21 @@ button:hover {
 }
 
 .curved-gradient {
-    background: rgb(2,0,36);
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(64,59,55,1) 0%, rgba(64,59,55,0) 100%);
     position: fixed;
     width: 100%;
     height: 50px; 
     z-index: 1;
     top: 150px;
+}
+
+.MJ-curved-gradient {
+    background: linear-gradient(180deg, rgba(16, 14, 52, 0) 0%, #2b2929 0%, rgba(73, 48, 27, 0) 100%);
+    position: fixed;
+    width: 100%;
+    height: 100px; 
+    z-index: 1;
+    top: 155px;
 }
 
 .MJ-logo {
@@ -291,6 +299,8 @@ button:hover {
     margin-top: 24px;
     margin-right: 28px;
     margin-left: 324px;
+    max-width: 800px;
+    float: right;
 }
 
 .MJ-sect-button {
@@ -306,7 +316,7 @@ button:hover {
     margin: 10px;
 }
 
-.MJ-sect-button:hover, .MJ-active-tab, .MJ-sect-button:focus {
+.MJ-sect-button:hover, .MJ-active-tab {
     background-color: white;
     color: black;
     outline-width: 0;
@@ -319,6 +329,17 @@ button:hover {
 
 .MJ-active-tab, .MJ-active-tab:hover {
     color: #ea9f75;
+}
+
+.MJ-tab-container {
+    width: 90%;
+    left: 5%;
+    top: 150px; 
+    position: absolute; 
+    color: white;
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 1000px;
 }
 
 .home-button {
@@ -355,7 +376,7 @@ button:hover {
     text-align: center;
 }
 
-.section-button:hover, .section-button:focus {
+.section-button-on, .section-button:hover {
     min-width: 32px;
     height: 44px;
     padding-top: 18px;
@@ -367,13 +388,19 @@ button:hover {
     font-family: Cyrenia;
 }
 
+.MJ-nav {
+    position: relative;
+    top: 100px;
+}
+
 .topnav {
     background-color: none;
-    position: relative;
+    position: fixed;
     z-index: 4;
     min-height: 64px;
-    top: 16px;
-    float: right;
+    top: 24px;
+    right: 32px;
+    transition: all 0.3s;
     display: none;
 }
 
@@ -405,6 +432,101 @@ button:hover {
     display: block;
 }
 
+ /* Style the Image Used to Trigger the Modal */
+ .clickable-image {
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .clickable-image:hover {opacity: 0.9;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 6; /* Sit on top */
+    padding-top: 0px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    text-align: center;
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    position: sticky;
+    object-fit: scale-down;
+    max-width: 100%;
+    max-height: calc(90vh - 64px);
+    border-radius: 12px;
+    margin-top: 0;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    position: relative;
+    display: block;
+    max-width: calc(90vw - 100px);
+    text-align: left;
+    color: #ccc;
+    padding: 10px 0;
+    min-height: 48px;
+    max-height: 150px;
+    margin-top: 20px;
+    margin-left: 32px;
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.3s;
+
+  }
+  
+  @keyframes zoom {
+    from {
+        transform:scale(0.6);
+        opacity: 0;
+    }
+    to {
+        transform:scale(1);
+        opacity: 1;
+    }
+  }
+  
+  /* The Close Button */
+  #close-popup {
+    position: fixed;
+    top: 12px;
+    right: 32px;
+    color: #f1f1f1;
+    font-size: 64px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  #close-popup:hover,
+  #close-popup:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  } 
+
+
 @media (max-width: 1020px) {
     .container {
         scale: 120%;
@@ -420,10 +542,14 @@ button:hover {
         display: none;
     }
     .MJ-sect-list {
-        width: 95%;
+        width: 90%;
         left: 0px;
         margin-left: 24px;
         margin-bottom: 24px;
+        float: left;
+    }
+    .MJ-sect-button {
+        float: left;
     }
     .topnav {
         display: block;
