@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mira's Journal</title>
+  <title>Rai's art gallery</title>
   <link rel="stylesheet" href="/styles.css">
   <script src="https://kit.fontawesome.com/bcdd885ad8.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -12,16 +12,19 @@
 </head>
 <body style="background-color: #2c2929;">
   
+
   <div class="header-cont">
     <button class="home-button fa fa-angle-left" style="background-color: #fdaa7b;" onclick="window.location.href='/';">
     </button>
     <img src="https://raw.githubusercontent.com/RaiHormo/Miras-Journal/main/art/Branding/logo.png" class="MJ-logo-header">
   </div>
 
+  
+
   <div class="header" style="background-color: #403939;">
       <div class="MJ-sect-list hide-smaller">
         <button class="MJ-sect-button about" onclick="tab_press('#about');">
-          What is it</button>
+          About</button>
         <button class="MJ-sect-button how-it-started" onclick="tab_press('#how-it-started');">
           How it started</button>
         <button class="MJ-sect-button characters" onclick="tab_press('#characters');">
@@ -47,7 +50,7 @@
     <div id="myLinks">
       <div class="MJ-sect-list">
         <button class="MJ-sect-button about" onclick="tab_press('#about');">
-          What is it</button>
+          About</button>
         <button class="MJ-sect-button how-it-started" onclick="tab_press('#how-it-started');">
           How it started</button>
         <button class="MJ-sect-button characters" onclick="tab_press('#characters');">
@@ -66,12 +69,21 @@
       <br><br>
       <div id="about" class="MJ-tab">
         <h2>A top down turn-based RPG with calendar progression a color based magic system</h2>
+        <img src="/media/MJ/MiraCool.png" alt="The protagonist Mira" style="max-height: 400px; max-width: 40%; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+        <img src="/media/MJ/AlcineSticker.png" alt="The protagonist Mira" style="max-height: 400px; max-width: 50%; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
         <p>
           A young anthro girl named Mira Levenor find herself in a strange realm full of monsters and ruins, with a few people stuck there trying to survive.<br>
           As each day passes the sourrounding get more and more corrupted.<br><br>
           Follow her day to day life exploring the lost realm, fighting in turn-based battles and getting to know new people as they try to find a way to the outside world and discover the truth before it's too late.<br><br>
           During her adventures, Mira will keep a journal, giving her thoughts on everything that happens on a day-to-day basis.
+          <br><br>
+          The game is still in early development, and all the work so far has been done by one person.
         </p>
+        <h2>Early Screenshots</h2>
+        <img src="/media/MJ/AboutScreenshot1.png" alt="Alcine on the party menu" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+        <img src="/media/MJ/AboutScreenshot2.png" alt="The turn based battle system" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br>
+        <img src="/media/MJ/AboutScreenshot3.png" alt="A ruined town called Amberelm" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+        <img src="/media/MJ/AboutScreenshot4.png" alt="The main menu" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br>
       </div>
       <div id="how-it-started" class="MJ-tab">
         <h2>My history with game development</h2>
@@ -79,9 +91,10 @@
           I've been technically been making games since I was 9 on scratch, but who cares about that?<br><br>
           The only other real game I've made was a Pokemon fangame called "Pokemon Redder and Bluer", stupid name I know.<br>
           It was my interpretation as a 14 year old of what a Kanto game would look like 15 years after the events of the original.<br><br>
-          I never finished it due to lack of motivation after a while, and it's now basically lost /media to anyone but me since the Relic Castle website shut down.<br><br>
+          I never finished it due to lack of motivation after a while, and it's now basically lost media to anyone but me since the Relic Castle website shut down.<br><br>
           Another game I have attempted to make was something I called "Project BZ". It mostly stayed as a concept, but it was a sci-fi RPG with a focus on action commands. I designed a lot of characters and locations for it, but having no real gamedev experience, the scope was way too high.
         </p>
+        <img src="/media/MJ/BZConcept.png" alt="A concept of the game's battle screen, never made it into a real thing." style="max-height: 300px; max-width: 100%; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
         <h2>The initial concept for Mira's Journal</h2>
         <p>
           With Project BZ being such a dream project, I wanted to make a more down to earth RPG.<br>
@@ -110,8 +123,28 @@
           In early 2022 I bought the RPG Maker MZ engine with the intention of using it to make this game.<br><br> 
           The reason I picked it was simple:<br>
            I wanted to make a top down rpg that I thought was not too complex, and this seemed to be what this engine was designed for.<br><br>
-           I worked on this version of the game for about 9 months, with some results.
-           (unfinished document)
+           I worked on this version of the game for about 9 months, with some results.<br>
+           However RPG Maker turned out to be quite limiting for what I wanted to do. <br><br>
+           Working on a game on it feels more like modding an existing game rather than creating something new, as the pre-existing systems are designed for a very specific type of battle system. Creating mechanics and especially UI were pretty tedious, and working with plug-ins such as VizuStella was just annoying, so I ended up scrapping that version of the game.
+           <br><br>
+           Here are some screenshots of this version:
+        </p>
+        <img src="/media/MJ/RMScreenshot1.png" alt="The main menu did not look that fancy back then" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+        <img src="/media/MJ/RMScreenshot2.png" alt="It's not supposed to be this zoomed out, there is a bug in the latest version of this that was never fixed." style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+        <img src="/media/MJ/RMScreenshot3.png" alt="The first Guardian boss." style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+        <img src="/media/MJ/RMScreenshot4.png" alt="You can see some other party member sprites here" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" 
+        onclick="show_image(this);">
+        <img src="/media/MJ/RMScreenshot5.png" alt="Neortoria" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+        <img src="/media/MJ/RMScreenshot6.png" alt="Outside Mira's house in Neortoria" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br>
+        <h2>The Godot version</h2>
+        <p>
+          After I was done with my entrance exams in the 15th of July 2023, I instantly jumped into this engine I had never used before called Godot.<br><br>
+          Why Godot? There are Plenty of reasons.<br><br>
+          One was the fact that it was open source, which comes with the usual benefits like being completly free and independent from a company's dumb decisions. <br>
+          Open source software also often works great on Linux, which I had started using as my main operating system around that time. Godot had also just released the 4.0 update back then, so it felt like a great chance to jump in.<br><br>
+          I had absolutely no programming knowlegde at the time, but I felt like it was a perfect chance to learn. <br><br>
+          So I just started working on this game again and I slowly learned how to use most things in the engine. This time I had to implement stuff like saving and inventories myself, which I had taken for granted in RPG Maker, but it's honestly more fun this way.<br><br>
+          And that brings us to the present, thanks for reading!
         </p>
       </div>
       <div id="characters" class="MJ-tab">
@@ -124,7 +157,16 @@
         going well
       </div>
       <div id="FAQ" class="MJ-tab">
-        the faq?
+        <h2>When will this be released?</h2>
+        <p>I honestly have no idea. Game development is very complicated and I'm currently doing this myself entirely as a hobby. It'll probably take years.<br>
+        Maybe some sort of demo release is closer, but don't hold your breath.
+      </p>
+      <h2>What platforms will it be available on?</h2>
+      <p>
+        Well the main target during development is Linux and Windows, with it releasing on Steam.<br>
+        Mac is probably possible but I would have nothing to test it on. An android release is also something I would want to do after launch, but it would need a seprate UI mode for it to work.<br><br>
+        Consoles? I wish I had the budget for that.
+      </p>
       </div>
     </div>
 
