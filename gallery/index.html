@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rai's art gallery</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="https://kit.fontawesome.com/bcdd885ad8.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="/lib/masonry.pkgd.js"></script>
+  <script src="/lib/include-html.js"></script>
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/x-icon" href="/media/Rai/favicon.png">
+</head>
+<body style="background-color: #403b37;">
+  
+  <div include-html="/social-links.html" class="hide-mobile"></div> 
+
+  <div class="header-cont">
+    <button class="home-button fa fa-angle-left" onclick="window.location.href='/';">
+    </button>
+    <h1 style="display: inline; margin-left: 82px ;">Gallery</h1>
+  </div>
+
+  <div class="header" >
+    <div class="curved-bg">
+      <div class="curved"></div>
+    </div>
+  </div>
+
+  <div class="header" >
+    <div class="curved-bg">
+      <div class="curved"></div>
+    </div>
+  </div>
+  <div class="gallery-container" data-masorny='{
+    "columnWidth": 1,
+    "itemSelector": ".gallery-img",
+    "fitWidth": true
+  }'>
+    <div class="curved-gradient"></div>
+
+    <img src="/media/Artwork/spirit tracks.png" alt="Commission - Spirit Tracks - Oct 21 2024" class="gallery-img clickable-image" onclick="show_image(this);">
+
+    <img src="/media/Artwork/alcine sticker bg.png" alt="Alcine sticker - Oct 16 2024" class="gallery-img clickable-image" onclick="show_image(this);">
+
+    <img src="/media/Artwork/raidesign.png" alt="Raidesign - Sep 7 2024" class="gallery-img clickable-image" onclick="show_image(this);">
+
+    <img src="/media/Artwork/nia xenoblade.png" alt="Nia Xenoblade - Aug 16 2024"  class="gallery-img clickable-image" onclick="show_image(this);">
+
+    <img src="/media/Artwork/amy lee.png" alt="Amy Lee, Sade's favorite - Aug 9 2024" class="gallery-img clickable-image" onclick="show_image(this);">
+
+    <img src="/media/Artwork/brown noise.png" alt="Brown - 8 Jul 2024" class="gallery-img clickable-image" onclick="show_image(this);">
+
+    <img src="/media/Artwork/cyan.png" alt="Cyan - May 18 2024" class="gallery-img gallery-img-wide clickable-image" onclick="show_image(this);">
+
+    <img src="/media/Artwork/mush.png" alt="DTIYS for mush.7221 - May 7 2024" class="gallery-img clickable-image" onclick="show_image(this);">
+
+    <img src="/media/Artwork/rai ponytail.png" alt="Rai with a ponytail - Apr 14 2024" class="gallery-img clickable-image" onclick="show_image(this);">
+
+    <img src="/media/Artwork/artaia concept.png" alt="Artaria concept art - Mar 12 2024" class="gallery-img gallery-img-wide clickable-image" onclick="show_image(this);">
+    
+    <img src="/media/Artwork/2fursonas.png" alt="Cat and Mouse - Feb 23 2024" class="gallery-img clickable-image" onclick="show_image(this);">
+
+    <img src="/media/Artwork/toonlink.png" alt="Commission - Wind Waker Switch Daily - Feb 12 2024" class="gallery-img clickable-image" onclick="show_image(this);">
+
+    <img src="/media/Artwork/miraplush.png" alt="Mira holding a plush of herself - Feb 6 2024" class="gallery-img clickable-image" onclick="show_image(this);">
+
+    <img src="/media/Artwork/makoto.png" alt="Makoto - Feb 6 2024" class="gallery-img clickable-image" onclick="show_image(this);">
+
+    <img src="/media/Artwork/iris jacket.png" alt="Iris jacket - Jan 23 2024" class="gallery-img clickable-image" onclick="show_image(this);">
+  </div>
+
+  <div id="image-popup" class="modal">
+    <span id="close-popup">&times;</span>
+    <div id="caption"></div>
+    <img class="modal-content" id="img01">
+  </div>
+</body>
+</html>
+<script>includeHTML();</script> 
+<script src="/lib/image-popup.js"></script>
+<script>
+  $(window).on("load", function() {
+    console.log( "ready!" );
+    $('.gallery-container').masonry("layout");
+  });
+</script>

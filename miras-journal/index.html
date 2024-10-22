@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mira's Journal</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="https://kit.fontawesome.com/bcdd885ad8.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/x-icon" href="/media/Rai/favicon.png">
+</head>
+<body style="background-color: #2c2929;">
+  
+
+  <div class="header-cont">
+    <button class="home-button fa fa-angle-left" style="background-color: #fdaa7b;" onclick="window.location.href='/';">
+    </button>
+    <img src="https://raw.githubusercontent.com/RaiHormo/Miras-Journal/main/art/Branding/logo.png" class="MJ-logo-header">
+  </div>
+
+  
+
+  <div class="header" style="background-color: #403939;">
+      <div class="MJ-sect-list hide-smaller">
+        <button class="MJ-sect-button about" onclick="tab_press('#about');">
+          About</button>
+        <button class="MJ-sect-button how-it-started" onclick="tab_press('#how-it-started');">
+          How it started</button>
+        <button class="MJ-sect-button characters" onclick="tab_press('#characters');">
+          Characters</button>
+        <button class="MJ-sect-button setting" onclick="tab_press('#setting');">
+          The setting</button>
+        <button class="MJ-sect-button how-its-going" onclick="tab_press('#how-its-going');">
+          How it's going</button>
+        <button class="MJ-sect-button FAQ" onclick="tab_press('#FAQ');">
+          FAQ</button>
+      </div>
+
+      <div class="curved-bg" style="background-color: #403939">
+        <div class="curved" style="background-color: #2c2929;"></div>
+        <div class="MJ-curved-gradient"></div>
+      </div>
+  </div>
+
+  <div class="topnav">
+    <a href="javascript:void(0);" class="icon MJ-sect-button section-button" onclick="toggle_menu()">
+      <i class="fa fa-bars"><h class="section-text">Sections</h></i>
+    </a>
+    <div id="myLinks">
+      <div class="MJ-sect-list">
+        <button class="MJ-sect-button about" onclick="tab_press('#about');">
+          About</button>
+        <button class="MJ-sect-button how-it-started" onclick="tab_press('#how-it-started');">
+          How it started</button>
+        <button class="MJ-sect-button characters" onclick="tab_press('#characters');">
+          Characters</button>
+        <button class="MJ-sect-button setting" onclick="tab_press('#setting');">
+          The setting</button>
+        <button class="MJ-sect-button how-its-going" onclick="tab_press('#how-its-going');">
+          How it's going</button>
+        <button class="MJ-sect-button FAQ" onclick="tab_press('#FAQ');">
+          FAQ</button>
+      </div>
+    </div>
+  </div>
+
+    <div class="MJ-tab-container">
+      <br><br>
+      <div id="about" class="MJ-tab">
+        <h2>A top down turn-based RPG with calendar progression a color based magic system</h2>
+        <img src="/media/MJ/MiraCool.png" alt="The protagonist Mira" style="max-height: 400px; max-width: 40%; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+        <img src="/media/MJ/AlcineSticker.png" alt="The protagonist Mira" style="max-height: 400px; max-width: 50%; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+        <p>
+          A young anthro girl named Mira Levenor find herself in a strange realm full of monsters and ruins, with a few people stuck there trying to survive.<br>
+          As each day passes the sourrounding get more and more corrupted.<br><br>
+          Follow her day to day life exploring the lost realm, fighting in turn-based battles and getting to know new people as they try to find a way to the outside world and discover the truth before it's too late.<br><br>
+          During her adventures, Mira will keep a journal, giving her thoughts on everything that happens on a day-to-day basis.
+          <br><br>
+          The game is still in early development, and all the work so far has been done by one person.
+        </p>
+        <h2>Early Screenshots</h2>
+        <img src="/media/MJ/AboutScreenshot1.png" alt="Alcine on the party menu" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+        <img src="/media/MJ/AboutScreenshot2.png" alt="The turn based battle system" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br>
+        <img src="/media/MJ/AboutScreenshot3.png" alt="A ruined town called Amberelm" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+        <img src="/media/MJ/AboutScreenshot4.png" alt="The main menu" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br>
+      </div>
+      <div id="how-it-started" class="MJ-tab">
+        <h2>My history with game development</h2>
+        <p>
+          I've been technically been making games since I was 9 on scratch, but who cares about that?<br><br>
+          The only other real game I've made was a Pokemon fangame called "Pokemon Redder and Bluer", stupid name I know.<br>
+          It was my interpretation as a 14 year old of what a Kanto game would look like 15 years after the events of the original.<br><br>
+          I never finished it due to lack of motivation after a while, and it's now basically lost media to anyone but me since the Relic Castle website shut down.<br><br>
+          Another game I have attempted to make was something I called "Project BZ". It mostly stayed as a concept, but it was a sci-fi RPG with a focus on action commands. I designed a lot of characters and locations for it, but having no real gamedev experience, the scope was way too high.
+        </p>
+        <img src="/media/MJ/BZConcept.png" alt="A concept of the game's battle screen, never made it into a real thing." style="max-height: 300px; max-width: 100%; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+        <h2>The initial concept for Mira's Journal</h2>
+        <p>
+          With Project BZ being such a dream project, I wanted to make a more down to earth RPG.<br>
+          Of course any kind of RPG is still a huge project, and not what most people would recommend as a beginner game.<br><br>
+          It was October of 2021 when I drew the first sketches of some of the character for Mira's Journal.<br><br>
+          The first characters I made for this game were Mira, Daze and Alcine.
+          <br><br>
+          <img src="/media/MJ/EarlyMira1.bmp" alt="The first sketch of Mira" style="max-height: 200px; max-width: 60%; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+          <img src="/media/MJ/EarlyMira2.bmp" alt="The first sketch of Mira but colored digitally" style="max-height: 200px; max-width: 25%; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br><br>
+          Mira was a young wolf girl with some fire powers who ends up getting mixed up in Daze's affairs.<br><br>
+          <img src="/media/MJ/EarlyGame3.bmp" alt="First sketch of Daze and Alcine, along with some UI elements" style="max-height: 300px; max-width: 98%; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br><br>
+          Daze was meant to be a stereotypical hero, the usual leader of the party with a special destiny.<br><br>
+          <img src="/media/MJ/EarlyAlcine.png" alt="Early sketch of Alcine" style="max-height: 200px; object-fit: scale-down; max-width: 25%;" class="clickable-image" onclick="show_image(this);">
+          <img src="/media/MJ/EarlyAlcineLater.png" alt="Later sketch of Alcine" style="max-height: 200px; object-fit: scale-down; max-width: 20%;" class="clickable-image" onclick="show_image(this);">
+          <img src="/media/MJ/EarlyAlcineLater2.bmp" alt="Sketch of alcine on top of Mira" style="max-height: 200px; max-width: 22%; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br><br>
+          Alcine has changed a lot through development. What's stayed the same is that they're a spirit creature with a liquid body.<br>
+          But originally they had a more mature look with something that resembles long hair. But I later decided to make them more like a child originally that grows along the journey.<br><br>
+          These are some other early sketches related to the game:<br><br>
+          <img src="/media/MJ/EarlyGame1.bmp" alt="An early idea for the battle scene" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+          <img src="/media/MJ/EarlyGame2.bmp" alt="Sketch of a certain building" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br>
+          <img src="/media/MJ/EarlyYaru.bmp" alt="First sketch of Yaru" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+          <img src="/media/MJ/EarlyGame4.bmp" alt="Early concept for the main menu + Mira holding a flame" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br>
+        </p>
+        <h2>The RPG Maker MZ version of the game</h2>
+        <p>
+          In early 2022 I bought the RPG Maker MZ engine with the intention of using it to make this game.<br><br> 
+          The reason I picked it was simple:<br>
+           I wanted to make a top down rpg that I thought was not too complex, and this seemed to be what this engine was designed for.<br><br>
+           I worked on this version of the game for about 9 months, with some results.<br>
+           However RPG Maker turned out to be quite limiting for what I wanted to do. <br><br>
+           Working on a game on it feels more like modding an existing game rather than creating something new, as the pre-existing systems are designed for a very specific type of battle system. Creating mechanics and especially UI were pretty tedious, and working with plug-ins such as VizuStella was just annoying, so I ended up scrapping that version of the game.
+           <br><br>
+           Here are some screenshots of this version:
+        </p>
+        <img src="/media/MJ/RMScreenshot1.png" alt="The main menu did not look that fancy back then" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+        <img src="/media/MJ/RMScreenshot2.png" alt="It's not supposed to be this zoomed out, there is a bug in the latest version of this that was never fixed." style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+        <img src="/media/MJ/RMScreenshot3.png" alt="The first Guardian boss." style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+        <img src="/media/MJ/RMScreenshot4.png" alt="You can see some other party member sprites here" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" 
+        onclick="show_image(this);">
+        <img src="/media/MJ/RMScreenshot5.png" alt="Neortoria" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+        <img src="/media/MJ/RMScreenshot6.png" alt="Outside Mira's house in Neortoria" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br>
+        <h2>The Godot version</h2>
+        <p>
+          After I was done with my entrance exams in the 15th of July 2023, I instantly jumped into this engine I had never used before called Godot.<br><br>
+          Why Godot? There are Plenty of reasons.<br><br>
+          One was the fact that it was open source, which comes with the usual benefits like being completly free and independent from a company's dumb decisions. <br>
+          Open source software also often works great on Linux, which I had started using as my main operating system around that time. Godot had also just released the 4.0 update back then, so it felt like a great chance to jump in.<br><br>
+          I had absolutely no programming knowlegde at the time, but I felt like it was a perfect chance to learn. <br><br>
+          So I just started working on this game again and I slowly learned how to use most things in the engine. This time I had to implement stuff like saving and inventories myself, which I had taken for granted in RPG Maker, but it's honestly more fun this way.<br><br>
+          And that brings us to the present, thanks for reading!
+        </p>
+      </div>
+      <div id="characters" class="MJ-tab">
+        this is the character tab
+      </div>
+      <div id="setting" class="MJ-tab">
+        this is the setting tab
+      </div>
+      <div id="how-its-going" class="MJ-tab">
+        going well
+      </div>
+      <div id="FAQ" class="MJ-tab">
+        <h2>When will this be released?</h2>
+        <p>I honestly have no idea. Game development is very complicated and I'm currently doing this myself entirely as a hobby. It'll probably take years.<br>
+        Maybe some sort of demo release is closer, but don't hold your breath.
+      </p>
+      <h2>What platforms will it be available on?</h2>
+      <p>
+        Well the main target during development is Linux and Windows, with it releasing on Steam.<br>
+        Mac is probably possible but I would have nothing to test it on. An android release is also something I would want to do after launch, but it would need a seprate UI mode for it to work.<br><br>
+        Consoles? I wish I had the budget for that.
+      </p>
+      </div>
+    </div>
+
+
+    <div id="image-popup" class="modal">
+      <span id="close-popup">&times;</span>
+      <div id="caption"></div>
+      <img class="modal-content" id="img01">
+    </div>
+</body>
+<script>
+  function toggle_menu(state = null) {
+    var x = document.getElementById("myLinks");
+    var btn = document.getElementsByClassName("section-button")[0];
+    if (state == null) state = x.style.display != "block";
+    if (state) {
+      x.style.display = "block";
+      btn.className = "icon MJ-sect-button section-button MJ-active-tab section-button-on";
+    } else {
+      x.style.display = "none";
+      btn.className = "icon MJ-sect-button section-button";
+    }
+  }
+
+  function tab_press(section) {
+    toggle_menu(false);
+    window.location.href = section;
+    select_tab();
+  }
+
+  window.onload = function() {
+    if (window.location.hash.substring(1) == "") {
+      tab_press("#about");
+    }
+    document.getElementsByClassName("." + window.location.hash.substring(1)).disabled = true;
+    select_tab();
+  }
+  
+  function select_tab() {
+    window.scrollTo(0,-50)
+    document.querySelectorAll('.MJ-sect-button').forEach(function(button) {
+      button.className = button.className.replace(" MJ-active-tab", "");
+    });
+    document.querySelectorAll('.'+window.location.hash.substring(1)).forEach(function(button) {
+      button.className += " MJ-active-tab";
+    });
+  }
+</script>
+<script src="/lib/image-popup.js"></script>
+</html>

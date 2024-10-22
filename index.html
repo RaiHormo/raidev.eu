@@ -6,51 +6,14 @@
   <title>Rai's fancy website</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/bcdd885ad8.js" crossorigin="anonymous"></script>
-  <script src="lib/masonry.pkgd.js"></script>
+  <script src="/lib/masonry.pkgd.js"></script>
+  <script src="/lib/include-html.js"></script>
   <meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/x-icon" href="media/Rai/favicon.png">
 </head>
 <body>
   
-  <ul class="social-links">
-    <li class="slist">
-      <button onclick="window.open('https://discord.gg/GcH9Du4bqw', '_blank');"
-      class="slink fa-brands fa-discord" aria-label="Discord server"></button>
-    </li>
-    <li class="slist">
-      <button onclick="window.open('https://bsky.app/profile/raidev.bsky.social', '_blank');"
-      class="slink fa-brands fa-bluesky" aria-label="BSky link"></button>
-    </li>
-    <li class="slist">
-      <button onclick="window.open('https://twitter.com/RaiDev_', '_blank');"
-      class="slink fa-brands fa-twitter" aria-label="Twitter link"></button>
-    </li>
-    <li class="slist">
-      <div class="dropdown">
-        <button class="slink fa fa-ellipsis-h all-links" aria-label="All links"></button>
-      </div>
-    </li>
-    <div class="dropdown-panel">
-      <button class="slink dropdown-slink" 
-      onclick="window.open('https://instagram.com/raidev_/', '_blank');">
-        <a class="fa fa-instagram"></a> Instagram</button>
-      <button class="slink dropdown-slink" 
-        onclick="window.open('https://www.tumblr.com/blog/rai-dev', '_blank');">
-      <a class="fa fa-tumblr"></a> Tumblr</button>
-      <button class="slink dropdown-slink" 
-      onclick="window.open('https://www.deviantart.com/spyrosrai/', '_blank');">
-        <a class="fa fa-deviantart"></a> DeviantArt</button>
-      <button class="slink dropdown-slink" 
-      onclick="window.open('https://github.com/RaiHormo', '_blank');">
-        <a class="fa fa-github"></a> Github</button>
-      <button class="slink dropdown-slink"
-      onclick="window.open('https://ko-fi.com/raidev', '_blank');">
-        <a class="fa fa-mug-hot"></a> Ko-fi</button>
-      <button class="slink dropdown-slink"
-      onclick="window.open('https://steamcommunity.com/id/spyrosrai/', '_blank');">
-        <a class="fa fa-steam"></a> Steam</button>
-    </div>
-  </ul>
+  <div include-html="/social-links.html"></div> 
 
   <div class="container" data-masonry='{ 
     "itemSelector": ".card", "columnWidth": 500, "gutter":24,
@@ -59,18 +22,18 @@
     <div class="card card--c1" style="height: 310px;">
       <img class = "sitting-rai", src="media/Rai/sitting.png" alt="Rai sitting">
       <h2 style="text-align: right; font-size: 34px; margin-bottom: 0px; color: #3d2e43;">about me</h2>
-      <h1 style="text-align: right; font-size: 72px; color: #97459e; margin: 0; margin-top: 24px;">
-        Iris Hormoviti</h1>
-      <h4 style="text-align: right; margin: 0; color: #605863; font-size: 18px">
+      <h1 style="text-align: right; font-size: 72px; color: #97459e; margin: 0;">
+        Iris</h1>
+      <h4 style="text-align: right; margin: 0; color: #605863; font-size: 24px">
         aka RaiDev_</h4>
       <h2 style="text-align: right; font-size: 34px; margin: 8px; color: #3d2e43;">
         they/them</h2>
       <h4 style="text-align: right; margin: 0; color: #605863; font-size: 28px;">
-        19 year old digital artist and game developer</h4>
+        19 year old digital artist and hobbyist game developer</h4>
     </div>
 
     <div class="card card--c2" style="height: 616px;">
-      <h1 style="text-align: center; font-size: 34px; margin-bottom: 0px;">
+      <h1 style="text-align: center; font-size: 34px; margin-bottom: 0px; color: #3d2e43"">
         Art gallery</h1>
       <div class="gallery-grid">
         <img src="media/Artwork/2fursonas.png" class="gallery-img-frontpage" 
@@ -83,7 +46,7 @@
         style="border-bottom-right-radius: 32px;">
       </div>
 
-      <div style="text-align: center;"><button class="gallery-button" onclick="window.location.href='/Gallery';">
+      <div style="text-align: center;"><button class="gallery-button" onclick="window.location.href='/gallery';">
         View gallery</button></div>
     </div>
 
@@ -91,18 +54,32 @@
       <img src="https://raw.githubusercontent.com/RaiHormo/Miras-Journal/main/art/Branding/logo.png" class="MJ-logo">
       <h4 style="font-weight: normal; font-size: 24px;";>
         A game I'm currently working on</h4>
-        <div style="text-align: center;"><button class="MJ-button" onclick="window.location.href='/MirasJournal';">
+        <div style="text-align: center;"><button class="MJ-button" onclick="window.location.href='/miras-journal';">
           Learn more
         </button></div>
     </div>
 
+    <div class="card" style="height: 230px;">
+      <h1 style="text-align: center; font-size: 34px; color: #3d2e43"">
+        Gaming profiles</h1>
+      <h4 style="text-align: left; margin: 0; color: #605863; font-size: 28px;">
+       <ul>
+        <li style="color: #3d2e43">Steam: <a style="color: #605863" href="https://steamcommunity.com/id/raidev/_blank">raidev</a></li>
+        <li style="color: #3d2e43">Switch: <dev style="color: #605863">SW-5341-2547-1618</dev></li>
+        <li style="color: #3d2e43">Pretendo 3DS: <dev style="color: #605863">3409-1500-8052</dev></li>
+        <li style="color: #3d2e43">PSN: <dev style="color: #605863">IrisHormo</dev></li>
+       </ul>
+      </h4>
+    </div>
+
     <div class="card" style="height: 200px;">
-      <h1 style="text-align: center; font-size: 34px;">
+      <h1 style="text-align: center; font-size: 34px; color: #3d2e43"">
         This site is under construction</h1>
       <h4 style="text-align: center; margin: 0; color: #605863; font-size: 28px;">
-        My current website is <a href="https://raidev.carrd.co">raidev.carrd.co</a>.</h4>
+        My current website is <a style="color: #3d2e43" href="https://raidev.carrd.co">raidev.carrd.co</a>.</h4>
     </div>
 
   </div>
 </body>
 </html>
+<script>includeHTML();</script> 

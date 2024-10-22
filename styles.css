@@ -216,10 +216,18 @@ button:hover {
 }
 
 .gallery-img {
-    object-fit: cover;
+    object-fit:cover;
     max-width: 100%;
     width: 300px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    max-width: 48%
+
+}
+
+.gallery-img-wide {
+    max-width: 98%;
+    width: 608px;
 }
 
 .gallery-button {
@@ -438,9 +446,15 @@ button:hover {
     border-radius: 12px;
     cursor: pointer;
     transition: 0.3s;
+    outline-width: 0px;
+    outline-style: solid;
+    outline-color: #ccc;
   }
   
-  .clickable-image:hover {opacity: 0.9;}
+  .clickable-image:hover {
+    opacity: 0.9;
+    outline-width: 6px;
+    }
   
   /* The Modal (background) */
   .modal {
