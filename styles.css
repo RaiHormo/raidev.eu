@@ -613,6 +613,14 @@ button:hover {
     .container {
         scale: 85%;
     }
+    .gallery-img {
+        width: 48%;
+        margin-right: 1%;
+        margin-bottom: 1%;;
+    }
+    .gallery-img-wide {
+        width: 98%;
+    }
 }
 
 @media (max-width: 412px) {
@@ -632,5 +640,11 @@ button:hover {
     .dropdown-panel {
         right: 11%;
     }
+}
 
+@media (max-width: 320px) {
+    .gallery-img {
+        width: 100%;
+        max-width: 100%;
+    }
 }
