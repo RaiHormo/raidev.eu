@@ -6,6 +6,7 @@
   <title>Rai's fancy website</title>
   <link rel="stylesheet" href="/styles.css">
   <script src="https://kit.fontawesome.com/bcdd885ad8.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="/lib/masonry.pkgd.js"></script>
   <script src="/lib/include-html.js"></script>
   <meta name="viewport" content="width=device-width">
@@ -83,7 +84,5 @@
 </body>
 </html>
 <script>
-  $(document).ready(function () {
-    includeHTML();
-  });
+  document.addEventListener("DOMContentLoaded", function(){ includeHTML(); });
 </script>
