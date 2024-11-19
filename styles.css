@@ -462,7 +462,11 @@ button:hover {
     position: fixed;
     text-align: center;
     width: 100%;
-    top: 200px
+    top: 200px;
+    z-index: 3;
+    background-color: #403b37f5;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
  /* Style the Image Used to Trigger the Modal */
