@@ -240,7 +240,7 @@ button:hover {
 }
 
 .gallery-container {
-    max-width: 100%;
+    width: 100%;
     margin: auto;
     top: 150px;
     /* border-style: solid;
@@ -445,7 +445,7 @@ button:hover {
 
 .header-corner {
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     position: absolute;
     border-color: #252327;
     border-style: solid;
@@ -469,7 +469,7 @@ button:hover {
  .clickable-image {
     border-radius: 12px;
     cursor: pointer;
-    transition: all 0.3s !important;
+    transition: all 0.2s !important;
     outline-width: 0px;
     outline-style: solid;
     outline-color: #ccc;
