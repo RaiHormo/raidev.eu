@@ -221,8 +221,10 @@ button:hover {
     width: 300px;
     margin-bottom: 8px;
     margin-right: 8px;
-    max-width: 48%
-
+    max-width: 48%;
+    text-align: center;
+    background-color: #5d565191;
+    color: #a69cad79;
 }
 
 .gallery-img-wide {
@@ -471,6 +473,7 @@ button:hover {
     outline-width: 0px;
     outline-style: solid;
     outline-color: #ccc;
+    /* background-color: #ccc; */
   }
   
   .clickable-image:hover {
@@ -636,7 +639,7 @@ button:hover {
         scale: 85%;
     }
     .gallery-img {
-        width: 48%;
+        width: 47%;
         /* margin-right: 1%;
         margin-bottom: 1%;; */
     }
@@ -664,7 +667,7 @@ button:hover {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 350px) {
     .gallery-img {
         width: 100%;
         max-width: 100%;
