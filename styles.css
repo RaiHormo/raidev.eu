@@ -441,11 +441,13 @@ button:hover {
     display: block;
 }
 
+
+
  /* Style the Image Used to Trigger the Modal */
  .clickable-image {
     border-radius: 12px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s !important;
     outline-width: 0px;
     outline-style: solid;
     outline-color: #ccc;
@@ -615,8 +617,8 @@ button:hover {
     }
     .gallery-img {
         width: 48%;
-        margin-right: 1%;
-        margin-bottom: 1%;;
+        /* margin-right: 1%;
+        margin-bottom: 1%;; */
     }
     .gallery-img-wide {
         width: 98%;
