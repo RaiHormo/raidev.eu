@@ -56,7 +56,7 @@ button:hover {
     box-sizing: border-box;
     background: transparent;
     margin: auto;
-    top: 200px;
+    top: 280px;
     padding: 0%;
     max-width: 100%;
     transition: all 0.1s;
@@ -105,10 +105,10 @@ button:hover {
 
 .sitting-rai {
     position: absolute;
-    bottom: 180px;
-    right: 220px;
+    top: -471px;
+    right: -74px;
     float: left;
-    scale: 85%;
+    scale: 50%;
     z-index: 2;
 }
 
@@ -571,12 +571,12 @@ button:hover {
   } 
 
 
-@media (max-width: 1020px) {
+/* @media (max-width: 1020px) {
     .container {
         scale: 120%;
-        top: 400px;
+        top: 500px;
     }
-}
+} */
 
 @media (max-width: 908px) {
     .section-button {
@@ -601,9 +601,6 @@ button:hover {
 }
 
 @media (max-width: 650px) {
-    .container {
-        scale: 100%;
-    }
     .hide-mobile {
         visibility: hidden;
     }
@@ -615,8 +612,9 @@ button:hover {
         max-width: 100%;
     }
     .container {
-        top: 300px;
-        width: 110%;
+        scale: 80%;
+        top: 100px;
+        max-width: 100vw;
     }
     .section-text {
         display: none;
@@ -624,10 +622,6 @@ button:hover {
 }
 
 @media (max-width: 500px) {
-    .container {
-        width: 100%;
-        scale: 90%
-    }
     .card {
         margin-left: -24px;
         max-width: 500px;
@@ -638,9 +632,6 @@ button:hover {
     .card {
         scale: 100%;
         margin-left: -10vw;
-    }
-    .container {
-        scale: 85%;
     }
     .gallery-img {
         width: 47%;
@@ -656,11 +647,6 @@ button:hover {
     .card {
         margin-left: -14.5vw;
         scale: 100%;
-    }
-    .container {
-        scale: 80%;
-        /* right: 12px; */
-        top: 200px;
     }
     .social-links {
         /* width: 100%; */

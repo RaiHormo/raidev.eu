@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta id="vp" name="viewport" content="width=device-width, user-scalable=0" >
   <title>Iris' fancy website</title>
   <link rel="stylesheet" href="/styles.css">
   <script src="https://kit.fontawesome.com/bcdd885ad8.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="/lib/masonry.pkgd.js"></script>
   <script src="/lib/include-html.js"></script>
-  <meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/x-icon" href="/media/Rai/favicon.png">
 </head>
 <body>
@@ -20,12 +19,12 @@
     "itemSelector": ".card", "columnWidth": 500, "gutter":24,
     "fitWidth": true, "initLayout": true, "stagger": 0
   }'>
-    <div class="card card--c1" style="height: 350px;">
+    <div class="card card--c1" style="height: 330px;">
       <img class = "sitting-rai", src="media/Rai/sitting.png" alt="Rai sitting">
-      <h2 style="text-align: right; font-size: 34px; margin-bottom: 0px; color: #3d2e43;">about me</h2>
-      <h1 style="text-align: right; font-size: 72px; color: #97459e; margin: 0;">
+      <h2 style="text-align: right; font-size: 28px; margin-bottom: 0px; color: #3d2e43;">about me</h2>
+      <h1 style="text-align: right; font-size: 78px; color: #97459e; margin: 0;">
         Iris</h1>
-      <h2 style="text-align: left; font-size: 24px; margin: 8px; color: #3d2e43;">
+      <h2 style="text-align: left; line-height: 14px; margin: 8px; color: #3d2e43;">
           they/them<span style="color: #605863; float: right;">aka RaiDev_</span></h2>
       <h4 style="text-align: left;margin: 10px; color: #605863; font-size: 26px;">
         I'm a 19 year old hobbyist artist and gamedev.<br> Currently a uni student, but I have a bunch of personal projects I'm working on.</h4>
@@ -84,6 +83,10 @@
           Pricing and info</button></div>
     </div>
 
+    <div class="card" style="height: 270px; background-color: black; padding: 32px;">
+      <a class="stamp" href="https://ivan-krul.github.io/CharacterRegister" target="_blank"><img src="https://ivan-krul.github.io/CharacterRegister/image/Kiwii's%20CharacterRegister%20button.png" alt="Kiwii Devulopir's Character Register"></a>
+    </div>
+
     <div class="card" style="height: 200px;">
       <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
         This site is under construction</h1>
@@ -97,3 +100,13 @@
 <script>
   document.addEventListener("DOMContentLoaded", function(){ includeHTML(); });
 </script>
+<script>
+  window.addEventListener("resize", function() {
+    var mvp = document.getElementById('vp');
+    if (screen.width < 432) {
+      mvp.setAttribute('content','user-scalable=no,width=432');
+    } else {
+      mvp.setAttribute('content','user-scalable=no,width=device-width');
+    }
+  }, true);
+  </script>
