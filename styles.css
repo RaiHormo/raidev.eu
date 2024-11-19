@@ -342,9 +342,9 @@ button:hover {
 .MJ-tab-container {
     width: 90%;
     left: 5%;
-    top: 150px; 
+    top: 100px; 
     position: absolute; 
-    color: white;
+    color: rgb(214, 210, 208);
     font-size: 20px;
     line-height: 26px;
     max-width: 1000px;
@@ -441,7 +441,19 @@ button:hover {
     display: block;
 }
 
-
+.header-corner {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    border-color: #252327;
+    border-style: solid;
+    border-width: 24px;
+    border-radius: 64px;
+    top: 116px;
+    left: -24px;
+    pointer-events: none;
+    z-index: -1;
+}
 
  /* Style the Image Used to Trigger the Modal */
  .clickable-image {
