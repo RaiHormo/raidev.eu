@@ -455,6 +455,14 @@ button:hover {
     z-index: -1;
 }
 
+.gallery-loader {
+    color:#a69cad ;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top: 200px
+}
+
  /* Style the Image Used to Trigger the Modal */
  .clickable-image {
     border-radius: 12px;
