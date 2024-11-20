@@ -134,14 +134,6 @@ button:hover {
     }
 }
 
-@keyframes loadFromHeader {
-    from {
-        height: 150%;
-    } to {
-        height: 140px;
-    }
-}
-
 @keyframes fix-width{
     from {
         width: 10px;
@@ -313,7 +305,8 @@ button:hover {
 .header {
     background-color: #252327;
     /* height: 140px; */
-    height: 200%;
+    height: 140px;
+    transform: scaleY(100);
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -321,10 +314,19 @@ button:hover {
     top: -20px;
     animation: loadFromHeader;
     animation-timing-function: cubic-bezier();
-    animation-duration: 0.3s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-delay: 1s;
 }
+
+@keyframes loadFromHeader {
+    from {
+        transform: scaleY(50);
+    } to {
+        transform: scaleY(1);
+    }
+}
+
 .curved-bg {
     background-color: #252327;
     position: absolute;
@@ -373,7 +375,7 @@ button:hover {
 }
 
 .MJ-sect-list {
-    z-index: 5; 
+    z-index: 5;
     margin-left: 24px;
     margin-top: 24px;
     margin-right: 28px;
