@@ -641,19 +641,12 @@ button:hover {
     .gallery-img-wide {
         width: 98%;
     }
-}
-
-@media (max-width: 412px) {
-    .card {
-        margin-left: -14.5vw;
-        scale: 100%;
-    }
     .social-links {
         /* width: 100%; */
-        left: 10%;
+        left: 12%;
     }
     .dropdown-panel {
-        right: 11%;
+        right: 13.5%;
     }
 }
 
