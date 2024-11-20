@@ -9,10 +9,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="/lib/masonry.pkgd.js"></script>
   <script src="/lib/include-html.js"></script>
+  <script src="/lib/jquery-3.7.1.min.js"></script>
   <link rel="icon" type="image/x-icon" href="/media/Rai/favicon.png">
 </head>
+<script>
+  function link(pageUrl) { 
+    for (var i = 0; i < document.getElementsByClassName("card").length; i++) {
+      var card = document.getElementsByClassName("card")[i];
+      card.classList.add('fade-down-class');
+    }
+    window.location.href = pageUrl;
+  }
+</script>
 <body>
-  
+
   <div include-html="/social-links.html"></div> 
 
   <div class="container" data-masonry='{ 
@@ -44,7 +54,7 @@
         style="border-bottom-right-radius: 32px;">
       </div>
 
-      <div style="text-align: center;"><button class="gallery-button" onclick="window.location.href='/gallery';">
+      <div style="text-align: center;"><button class="gallery-button" onclick="link('/gallery');">
         View gallery</button></div>
     </div>
 
@@ -52,7 +62,7 @@
       <img src="https://raw.githubusercontent.com/RaiHormo/Miras-Journal/main/art/Branding/logo.png" class="MJ-logo">
       <h4 style="font-weight: normal; font-size: 24px;";>
         A game I'm currently working on</h4>
-        <div style="text-align: center;"><button class="MJ-button" onclick="window.location.href='/miras-journal';">
+        <div style="text-align: center;"><button class="MJ-button" onclick="link('/miras-journal');">
           Learn more
         </button></div>
     </div>
@@ -74,17 +84,19 @@
       
     </div>
 
-    <div class="card" style="height: 270px;">
+    <div class="card" style="height: 250px;">
       <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
         Commissions</h1>
       <h4 style="text-align: center; margin: 0; color: #605863; font-size: 28px;">
         I'm currently open for commissions. The prices range from 15-30€.</h4>
-        <div style="text-align: center;"><button class="gallery-button" onclick="window.location.href='https://raidev.carrd.co/#comminfo';">
+        <div style="text-align: center;"><button class="gallery-button" onclick="link('https://raidev.carrd.co/#comminfo');">
           Pricing and info</button></div>
     </div>
 
-    <div class="card" style="height: 270px; background-color: black; padding: 32px;">
-      <a class="stamp" href="https://ivan-krul.github.io/CharacterRegister" target="_blank"><img src="https://ivan-krul.github.io/CharacterRegister/image/Kiwii's%20CharacterRegister%20button.png" alt="Kiwii Devulopir's Character Register"></a>
+    <div class="card" style="height: 150px; background-color: black; padding: 8px; padding-left: 32px; line-height: 10px;">
+      <h1 style="text-align: center; font-size: 34px; color: rgb(146, 144, 144)">
+        Stamps</h1>
+      <a href="https://ivan-krul.github.io/CharacterRegister" target="_blank"><img class="stamp" src="https://ivan-krul.github.io/CharacterRegister/image/Kiwii's%20CharacterRegister%20button.png" alt="Kiwii Devulopir's Character Register"></a>
     </div>
 
     <div class="card" style="height: 200px;">
@@ -111,4 +123,9 @@
   };
 
   window.addEventListener("load", setWidth());
+
+  for (var i = 0; i < document.getElementsByClassName("card").length; i++) {
+    var card = document.getElementsByClassName("card")[i];
+    card.style.setProperty('--animation-order', i);
+  }
   </script>

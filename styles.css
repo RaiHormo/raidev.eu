@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #252327;
+    background: #252327;
     font-family: Cyrenia;
     overflow-x: hidden;
 }
@@ -59,22 +59,7 @@ button:hover {
     top: 280px;
     padding: 0%;
     max-width: 100%;
-    transition: all 0.1s;
-}
-
-@keyframes fix-width{
-    from {
-        width: 10px;
-    }
-    to {
-        width: fit-content;
-    }
-}
-
-@keyframes appear{
-    to {
-        opacity: 100%;
-    }
+    transition: all 0.3s;
 }
 
 .container::after {
@@ -95,12 +80,85 @@ button:hover {
     transform-origin: center;
     height: 300px;
     object-fit: contain;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: slideUp;
+    animation-duration: 0.5s;
+    transition: all 0.5s;
+    animation-timing-function: cubic-bezier();
+    animation-delay: calc(var(--animation-order) * 100ms);
 }
 
 .card--c3 {
     background-color: #403b37;
     color: white;
     padding: 24px;
+}
+
+@keyframes slideUp {
+    0% {
+      transform: translateY(200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideDown {
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  }
+
+.fade-down-class {
+    transition: all 0.3s !important;
+    animation-delay: 0s !important;
+    animation-duration: 0.3s;
+    animation-name: fadeDown;
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 1;
+        transform: translateY(0px);
+    } to {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+}
+
+@keyframes loadFromHeader {
+    from {
+        height: 150%;
+    } to {
+        height: 140px;
+    }
+}
+
+@keyframes fix-width{
+    from {
+        width: 10px;
+    }
+    to {
+        width: fit-content;
+    }
+}
+
+@keyframes appear{
+    to {
+        opacity: 100%;
+    }
+}
+
+.stamp {
+    height: 60px;
 }
 
 .sitting-rai {
@@ -245,16 +303,27 @@ button:hover {
     top: 150px;
     /* border-style: solid;
     border-width: 32px; */
+    opacity: 0;
+    animation-name: slideUp;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-delay: 1.5s;
 }
 
 .header {
     background-color: #252327;
-    height: 140px;
+    /* height: 140px; */
+    height: 200%;
     position: fixed;
     z-index: 1;
     width: 100%;
     left: 0;
     top: -20px;
+    animation: loadFromHeader;
+    animation-timing-function: cubic-bezier();
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
 }
 .curved-bg {
     background-color: #252327;
@@ -311,6 +380,12 @@ button:hover {
     margin-left: 324px;
     max-width: 800px;
     float: right;
+
+    opacity: 0;
+    animation-name: SlideLeft;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
 }
 
 .MJ-sect-button {
@@ -357,8 +432,8 @@ button:hover {
     display: inline;
     position: fixed;
     display: inline;
-    top: 28px;
-    left: 24px;
+    top: -5px;
+    left: 0px;
 }
 
 .header-cont {
@@ -369,6 +444,22 @@ button:hover {
     left: 32px;
     color: #a69cad;
     font-size: 28px;
+
+    opacity: 0;
+    animation-name: SlideLeft;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes SlideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    } to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 
@@ -392,6 +483,7 @@ button:hover {
     height: 44px;
     padding-top: 18px;
     padding-bottom: 2px;
+
 }
 
 .section-text {
@@ -413,6 +505,12 @@ button:hover {
     right: 24px;
     transition: all 0.3s;
     display: none;
+
+    opacity: 0;
+    animation-name: SlideLeft;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
 }
 
 .topnav #myLinks {
@@ -431,7 +529,7 @@ button:hover {
     position: fixed; 
     width: 200px; 
     object-fit: scale-down; 
-    top: 12px;
+    top: -18px;
     max-width: calc(75vw - 150px);
 }
 
@@ -463,7 +561,7 @@ button:hover {
     text-align: center;
     width: 100%;
     top: 200px;
-    z-index: 3;
+    z-index: 0;
     background-color: #403b37f5;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -643,10 +741,11 @@ button:hover {
     }
     .social-links {
         /* width: 100%; */
-        left: 12%;
+        left: 11%;
+        animation: 0.5s ease-out 0s 1 slideDown;
     }
     .dropdown-panel {
-        right: 13.5%;
+        margin: auto;
     }
 }
 
