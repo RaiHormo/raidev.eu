@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta id="vp" name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mira's Journal</title>
   <link rel="stylesheet" href="/styles.css">
   <script src="https://kit.fontawesome.com/bcdd885ad8.js" crossorigin="anonymous"></script>
@@ -211,6 +211,19 @@
     document.querySelectorAll('.'+window.location.hash.substring(1)).forEach(function(button) {
       button.className += " MJ-active-tab";
     });
+
+    function setWidth() {
+    var mvp = document.getElementById('vp');
+    if (screen.width < 440) {
+      mvp.setAttribute('content','width=440px');
+      console.log("mobile mode");
+    } else {
+      mvp.setAttribute('content','width=device-width');
+      console.log("swakrop mode");
+    }
+  };
+
+  window.addEventListener("load", setWidth());
   }
 </script>
 <script src="/lib/image-popup.js"></script>
