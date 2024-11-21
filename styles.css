@@ -740,7 +740,7 @@ button:hover {
 @media (max-width: 450px) {
     .card {
         scale: 100%;
-        margin-left: -10vw;
+        margin-left: -17vw;
     }
     .gallery-img {
         width: 47%;
