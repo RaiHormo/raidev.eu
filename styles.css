@@ -320,11 +320,16 @@ button:hover {
     width: 100%;
     left: 0;
     top: -20px;
-    animation: loadFromHeader;
+    animation-name: loadFromHeader;
     animation-timing-function: cubic-bezier();
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-delay: 1s;
+}
+
+.header-mj {
+    animation-name: loadFromHeaderMJ;
+
 }
 
 @keyframes loadFromHeader {
@@ -332,6 +337,15 @@ button:hover {
         transform: scaleY(50);
     } to {
         transform: scaleY(1);
+    }
+}
+
+@keyframes loadFromHeaderMJ {
+    from {
+        transform: scaleY(50);
+    } to {
+        transform: scaleY(1);
+        background-color: #403939;
     }
 }
 
@@ -540,7 +554,8 @@ button:hover {
     width: 200px; 
     object-fit: scale-down; 
     top: -18px;
-    max-width: calc(75vw - 150px);
+    transition: all 0.3;
+    /* max-width: calc(75vw - 150px); */
 }
 
 .MJ-tab:not(:target) {
