@@ -721,26 +721,28 @@ button:hover {
         max-width: 100%;
     }
     .container {
-        scale: 80%;
-        top: 100px;
+        top: 400px;
         max-width: 100vw;
     }
     .section-text {
         display: none;
     }
-}
-
-@media (max-width: 500px) {
-    .card {
-        margin-left: -24px;
-        max-width: 500px;
+    .social-links {
+        /* width: 100%; */
+        margin: auto;
+        animation: 0.5s ease-out 0s 1 slideDown;
+        position: relative;
+        right: 0;
+    }
+    .dropdown-panel {
+        margin: auto;
+        top: 8px;
     }
 }
 
 @media (max-width: 450px) {
-    .card {
-        scale: 100%;
-        margin-left: -17vw;
+    .container {
+        width: 100%;
     }
     .gallery-img {
         width: 47%;
@@ -749,14 +751,6 @@ button:hover {
     }
     .gallery-img-wide {
         width: 98%;
-    }
-    .social-links {
-        /* width: 100%; */
-        left: 11%;
-        animation: 0.5s ease-out 0s 1 slideDown;
-    }
-    .dropdown-panel {
-        margin: auto;
     }
 }
 
