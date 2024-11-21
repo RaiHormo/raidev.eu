@@ -121,7 +121,7 @@
   function setWidth() {
     var mvp = document.getElementById('vp');
     if (screen.width < 432) {
-      mvp.setAttribute('content','width=432, initial-scale=2.0');
+      mvp.setAttribute('content','width=432, initial-scale=1, maximum-scale=1');
       console.log("mobile mode");
     } else {
       mvp.setAttribute('content','width=device-width');
