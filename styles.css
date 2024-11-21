@@ -120,17 +120,25 @@ button:hover {
 .fade-down-class {
     transition: all 0.3s !important;
     animation-delay: 0s !important;
-    animation-duration: 0.3s;
+    animation-duration: 3s;
     animation-name: fadeDown;
 }
 
 @keyframes fadeDown {
-    from {
+    0% {
         opacity: 1;
         transform: translateY(0px);
-    } to {
+    } 10% {
         opacity: 0;
         transform: translateY(100px);
+    }
+    95% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
 
@@ -335,18 +343,18 @@ button:hover {
     height: 35px;
 }
 .curved {
-    border-radius: 35px 35px 0px 0px; 
+    border-radius: 35px 35px 0px 0px;
     position: relative;
     width: 100%;
     height: 36px;
-    background-color: #403b37; 
+    background-color: #403b37;
 }
 
 .curved-gradient {
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(64,59,55,1) 0%, rgba(64,59,55,0) 100%);
     position: fixed;
     width: 100%;
-    height: 50px; 
+    height: 50px;
     z-index: 1;
     top: 150px;
 }
@@ -355,7 +363,7 @@ button:hover {
     background: linear-gradient(180deg, rgba(16, 14, 52, 0) 0%, #2b2929 0%, rgba(73, 48, 27, 0) 100%);
     position: fixed;
     width: 100%;
-    height: 100px; 
+    height: 100px;
     z-index: 1;
     top: 155px;
 }
@@ -387,7 +395,7 @@ button:hover {
     animation-name: SlideLeft;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-delay: 0.5s;
+    animation-delay: 1.5s;
 }
 
 .MJ-sect-button {
@@ -518,11 +526,11 @@ button:hover {
 .topnav #myLinks {
     display: none;
     position: fixed;
-    top: 118px;
-    right: 0;
+    top: 95px;
+    right: -20px;
     background-color: #403939;
     border-radius: 32px;
-    width: 100%;
+    width: 100vw;
 }
 
 .MJ-logo-header {
@@ -691,6 +699,7 @@ button:hover {
         margin-left: 24px;
         margin-bottom: 24px;
         float: left;
+        animation-delay: 0s;
     }
     .MJ-sect-button {
         float: left;

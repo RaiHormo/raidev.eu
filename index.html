@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta id="vp" name="viewport" content="width=device-width, user-scalable=0" >
+  <meta id="vp" name="viewport" content="width=device-width" >
   <title>Iris' fancy website</title>
   <meta name="description" content="If you read this it means someone shared the website. Anyways this is RaiDev's personal website which is pretty cool and you should totally click on.">
   <meta name="keywords" content="RaiDev, Iris, Personal, Social links, Art, Gallery, Mira's Journal, Gamedev">
@@ -16,19 +16,21 @@
   <link rel="icon" type="image/x-icon" href="/media/Rai/favicon.png">
 </head>
 <script>
-  function link(pageUrl) { 
+  function link(pageUrl) {
     for (var i = 0; i < document.getElementsByClassName("card").length; i++) {
       var card = document.getElementsByClassName("card")[i];
       card.classList.add('fade-down-class');
     }
-    window.location.href = pageUrl;
+    setTimeout(function(){
+      window.location.href = pageUrl;
+    }, 300);
   }
 </script>
 <body>
 
-  <div include-html="/social-links.html"></div> 
+  <div include-html="/social-links.html"></div>
 
-  <div class="container" data-masonry='{ 
+  <div class="container" data-masonry='{
     "itemSelector": ".card", "columnWidth": 500, "gutter":24,
     "fitWidth": true, "initLayout": true, "stagger": 0
   }'>
@@ -47,7 +49,7 @@
       <h1 style="text-align: center; font-size: 34px; margin-bottom: 0px; color: #3d2e43">
         Art gallery</h1>
       <div class="gallery-grid">
-        <img src="media/Artwork/2fursonas.avif" class="gallery-img-frontpage" 
+        <img src="media/Artwork/2fursonas.avif" class="gallery-img-frontpage"
         style="border-top-left-radius: 32px;">
         <img src="media/Artwork/alcine sticker bg.avif" class="gallery-img-frontpage"
         style="border-top-right-radius: 32px;">
@@ -131,4 +133,8 @@
     var card = document.getElementsByClassName("card")[i];
     card.style.setProperty('--animation-order', i);
   }
+  setTimeout(function(){
+    window.scrollTo(0,0);
+    window.
+    }, 300);
   </script>
