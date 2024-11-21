@@ -715,13 +715,13 @@ button:hover {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 525px) {
     .card {
         scale: 100%;
         max-width: 100%;
     }
     .container {
-        top: 400px;
+        top: 300px;
         max-width: 100vw;
     }
     .section-text {
@@ -736,7 +736,7 @@ button:hover {
     }
     .dropdown-panel {
         margin: auto;
-        top: 8px;
+        top: 10px;
     }
 }
 
