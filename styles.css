@@ -551,11 +551,11 @@ button:hover {
     height: 100px; 
     margin-left: 92px; 
     position: fixed; 
-    width: 200px; 
+    width: calc(75vw - 150px);
     object-fit: scale-down; 
     top: -18px;
     transition: all 0.3;
-    /* max-width: calc(75vw - 150px); */
+    max-width: 200px;
 }
 
 .MJ-tab:not(:target) {
