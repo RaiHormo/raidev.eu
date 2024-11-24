@@ -60,8 +60,8 @@
             "date": "2023-Sep-25",
             "tags": ["mj", "asteria"]
         },
-        {"filename":"banner2024",
-            "title": "Banner 2024",
+        {"filename":"banner2023",
+            "title": "Banner 2023",
             "date": "2023-Dec-31",
             "tags": ["rai"]
         },
@@ -273,6 +273,101 @@
         {"filename": "eevee2024",
         "title":"Annual Eevee 2024",
         "date":"2024-Nov-14",
+        "tags": ["fanart"]
+        },
+        {"filename":"pomegrante",
+        "title":"Random pomegrante",
+        "date":"2024-Nov-7",
+        "tags": ["comm"]
+        },
+        {"filename":"mira reflect",
+        "title":"Reflect",
+        "date":"2024-Jan-11",
+        "tags": ["mj", "mira"]
+        },
+        {"filename":"rai stretch",
+        "title":"Sleepy",
+        "date":"2023-Nov-11",
+        "tags": ["rai"]
+        },
+        {"filename":"MiraDress",
+        "title":"Mira in a dress",
+        "date":"2023-Jul-4",
+        "tags": ["mj", "mira"]
+        },
+        {"filename":"kite",
+        "title":"Kite",
+        "date":"2021-Mar-24",
+        "tags": []
+        },
+        {"filename":"naoto",
+        "title":"Naoto from Persona 4",
+        "date":"2021-Apr-16",
+        "tags": ["fanart"]
+        },
+        {"filename":"tsuyu",
+        "title":"That frog from MHA",
+        "date":"2021-May-15",
+        "tags": ["fanart"]
+        },
+        {"filename":"aigis",
+        "title":"Aigis from Persona 3",
+        "date":"2021-May-20",
+        "tags": ["fanart"]
+        },
+        {"filename":"furret",
+        "title":"Furret",
+        "date":"2021-Jun-2",
+        "tags": ["fanart"]
+        },
+        {"filename":"akechi",
+        "title":"Akechi from Persona 5",
+        "date":"2021-Jul-9",
+        "tags": ["fanart"]
+        },
+        {"filename":"espi",
+        "title":"Espi",
+        "date":"2021-Jul-17",
+        "tags": ["fanart"]
+        },
+        {"filename":"eevee2021",
+        "title":"Annual Eevee 2021",
+        "date":"2021-Jul-13",
+        "tags": ["fanart"]
+        },
+        {"filename":"banner2022",
+        "title":"Banner 2022",
+        "date":"2022-Mar-28",
+        "tags": ["rai"]
+        },
+        {"filename":"sylvee",
+        "title":"Sylvee",
+        "date":"2021-Jul-17",
+        "tags": ["fanart"]
+        },
+        {"filename":"Illustration45",
+        "title":"Illustration45",
+        "date":"2021-Aug-5",
+        "tags": []
+        },
+        {"filename":"hisuian growlithe",
+        "title":"Hisuian Growlithe",
+        "date":"2021-Aug-21",
+        "tags": ["fanart"]
+        },
+        {"filename":"hisuian growlithe",
+        "title":"Hisuian Growlithe",
+        "date":"2021-Aug-21",
+        "tags": ["fanart"]
+        },
+        {"filename":"failed sylv",
+        "title":"Failed sylv",
+        "date":"2022-Feb-22",
+        "tags": ["fanart"]
+        },
+        {"filename":"ghost",
+        "title":"Ghost",
+        "date":"2022-Mar-16",
         "tags": ["fanart"]
         }
     ]
