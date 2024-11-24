@@ -355,11 +355,6 @@
         "date":"2021-Aug-21",
         "tags": ["fanart"]
         },
-        {"filename":"hisuian growlithe",
-        "title":"Hisuian Growlithe",
-        "date":"2021-Aug-21",
-        "tags": ["fanart"]
-        },
         {"filename":"failed sylv",
         "title":"Failed sylv",
         "date":"2022-Feb-22",
@@ -369,6 +364,26 @@
         "title":"Ghost",
         "date":"2022-Mar-16",
         "tags": ["fanart"]
+        },
+        {"filename":"nahobino",
+        "title":"Nahobino",
+        "date":"2021-Nov-21",
+        "tags": ["fanart"]
+        },
+        {"filename":"kaizo",
+        "title":"Kaizo",
+        "date":"2022-Apr-7",
+        "tags": ["giftart"]
+        },
+        {"filename":"rai but niko",
+        "title":"Rai but Niko",
+        "date":"2022-Apr-7",
+        "tags": ["rai"]
+        },
+        {"filename":"Bun",
+        "title":"Bun",
+        "date":"2022-Apr-15",
+        "tags": ["mj", "asteria"]
         }
     ]
 }
