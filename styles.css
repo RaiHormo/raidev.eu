@@ -158,7 +158,10 @@ button:hover {
 }
 
 .stamp {
-    height: 60px;
+    height: 90px;
+    vertical-align: middle;
+    image-rendering: pixelated;
+    margin: 4px;
 }
 
 .sitting-rai {
