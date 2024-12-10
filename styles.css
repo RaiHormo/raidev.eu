@@ -351,7 +351,7 @@ button:hover {
     height: 140px;
     transform: scaleY(100);
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     width: 100%;
     left: 0;
     top: -20px;
@@ -397,24 +397,6 @@ button:hover {
     width: 100%;
     height: 36px;
     background-color: #403b37;
-}
-
-.curved-gradient {
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(64,59,55,1) 0%, rgba(64,59,55,0) 100%);
-    position: fixed;
-    width: 100%;
-    height: 50px;
-    z-index: 1;
-    top: 150px;
-}
-
-.MJ-curved-gradient {
-    background: linear-gradient(180deg, rgba(16, 14, 52, 0) 0%, #2b2929 0%, rgba(73, 48, 27, 0) 100%);
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    z-index: 1;
-    top: 155px;
 }
 
 .MJ-logo {
@@ -619,8 +601,8 @@ button:hover {
     position: fixed;
     text-align: center;
     width: 100%;
-    top: 200px;
-    z-index: 0;
+    top: 230px;
+    z-index: 1;
     background-color: #403b37f5;
     padding-top: 24px;
     padding-bottom: 24px;
