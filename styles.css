@@ -186,7 +186,7 @@ button:hover {
     background-color: #252327;
     border-radius: 48px;
     margin-top: 12px;
-    z-index: 3;
+    z-index: 4;
     width: fit-content;
 }
 
