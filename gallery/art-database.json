@@ -1,4 +1,53 @@
 {
+    "tags": [
+        {"name": "",
+            "title": "All artwork",
+            "icon": ""
+        },
+        {"name": "mj",
+            "title": "Mira's Journal",
+            "icon": ""
+        },
+        {"name": "fanart",
+            "title": "Fanart",
+            "icon": ""
+        },
+        {"name": "giftart",
+            "title": "Art for others",
+            "icon": ""
+        },{"name": "comm",
+            "title": "Commissions",
+            "icon": ""
+        },
+        {"name": "rai",
+            "title": "OC: Rai",
+            "icon": "/media/Rai/favicon.png"
+        },
+        {"name": "iris",
+            "title": "OC: Iris",
+            "icon": ""
+        },
+        {"name": "mira",
+            "title": "OC: Mira Levenor",
+            "icon": ""
+        },
+        {"name": "alcine",
+            "title": "OC: Alcine",
+            "icon": ""
+        },
+        {"name": "asteria",
+            "title": "OC: Asteria Versea",
+            "icon": ""
+        },
+        {"name": "yaru",
+            "title": "OC: Yaru",
+            "icon": ""
+        },
+        {"name": "erinn",
+            "title": "OC: Erinn Levenor",
+            "icon": ""
+        }
+    ],
     "artwork": [
         {"filename": "2fursonas",
             "title": "Cat and Mouse",
