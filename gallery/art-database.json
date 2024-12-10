@@ -2,34 +2,48 @@
     "tags": [
         {"name": "",
             "title": "All artwork",
-            "icon": ""
+            "icon": "",
+            "sketchinclude": "no"
+        },
+        {"name": "sketch",
+            "title": "Sketches",
+            "icon": "",
+            "sketchinclude": "yes"
         },
         {"name": "mj",
             "title": "Mira's Journal",
-            "icon": ""
+            "icon": "",
+            "sketchinclude": "no"
         },
         {"name": "fanart",
             "title": "Fanart",
-            "icon": ""
+            "icon": "",
+            "sketchinclude": "yes"
         },
         {"name": "giftart",
             "title": "Art for others",
-            "icon": ""
-        },{"name": "comm",
+            "icon": "",
+            "sketchinclude": "yes"
+        },
+        {"name": "comm",
             "title": "Commissions",
-            "icon": ""
+            "icon": "",
+            "sketchinclude": "no"
         },
         {"name": "rai",
             "title": "OC: Rai",
-            "icon": "/media/Rai/favicon.png"
+            "icon": "/media/Rai/favicon.png",
+            "sketchinclude": "yes"
         },
         {"name": "iris",
             "title": "OC: Iris",
-            "icon": ""
+            "icon": "",
+            "sketchinclude": "yes"
         },
         {"name": "mira",
             "title": "OC: Mira Levenor",
-            "icon": ""
+            "icon": "",
+            "sketchinclude": "yes"
         },
         {"name": "alcine",
             "title": "OC: Alcine",
@@ -37,15 +51,23 @@
         },
         {"name": "asteria",
             "title": "OC: Asteria Versea",
-            "icon": ""
+            "icon": "",
+            "sketchinclude": "yes"
         },
         {"name": "yaru",
             "title": "OC: Yaru",
-            "icon": ""
+            "icon": "",
+            "sketchinclude": "yes"
+        },
+        {"name": "daze",
+            "title": "OC: Daze",
+            "icon": "",
+            "sketchinclude": "yes"
         },
         {"name": "erinn",
             "title": "OC: Erinn Levenor",
-            "icon": ""
+            "icon": "",
+            "sketchinclude": "yes"
         }
     ],
     "artwork": [
@@ -433,6 +455,111 @@
         "title":"Bun",
         "date":"2022-Apr-15",
         "tags": ["mj", "asteria"]
+        },
+        {"filename":"frustrated",
+        "title":"Frustrated",
+        "date":"2022-May-13",
+        "tags": ["rai"]
+        },
+        {"filename":"neortoria",
+        "title":"Neortoria",
+        "date":"2022-May-9",
+        "tags": ["mj", "mira"]
+        },
+        {"filename":"mira and daze",
+        "title":"mira and daze",
+        "date":"2022-Aug-24",
+        "tags": ["mj", "mira", "daze"]
+        },
+        {"filename":"mafowo",
+        "title":"Mafowo",
+        "date":"2022-Apr-29",
+        "tags": ["giftart"]
+        },
+        {"filename":"smolmira",
+        "title":"smol mira",
+        "date":"2022-May-28",
+        "tags": ["mj", "mira"]
+        },
+        {"filename":"rai wink",
+        "title":"rai wink",
+        "date":"2022-Jul-7",
+        "tags": ["rai"]
+        },
+        {"filename":"Daze",
+        "title":"Daze render",
+        "date":"2023-Aug-17",
+        "tags": ["daze", "mj"]
+        },
+        {"filename":"Alcine",
+        "title":"Alcine render",
+        "date":"2024-Feb-11",
+        "tags": ["mj","alcine"]
+        },
+        {"filename":"Erinn",
+        "title":"Erinn render",
+        "date":"2023-Sep-25",
+        "tags": ["mj","erinn"]
+        },
+        {"filename":"rai or something",
+        "title":"rai or something",
+        "date":"2024-Oct-13",
+        "tags": ["rai", "sketch"]
+        },
+        {"filename":"iris fit",
+        "title":"iris fit",
+        "date":"2024-Aug-11",
+        "tags": ["iris", "sketch"]
+        },
+        {"filename":"daze partners",
+        "title":"Daze's partners (Design concept)",
+        "date":"2024-Aug-14",
+        "tags": ["mj", "sketch", "diamond", "nemeson"]
+        },
+        {"filename":"prettiest mf",
+        "title":"Prettiest mf",
+        "date":"2024-Jul-24",
+        "tags": ["giftart", "sketch"]
+        },
+        {"filename":"mira swimsuit",
+        "title":"mira swimsuit",
+        "date":"2024-Nov-12",
+        "tags": ["mj", "mira", "sketch"]
+        },
+        {"filename":"noreen design attempt",
+        "title":"noreen design attempt",
+        "date":"2024-Nov-11",
+        "tags": ["mj", "noreen", "sketch"]
+        },
+        {"filename":"plush rai",
+        "title":"plush rai",
+        "date":"2023-Oct-29",
+        "tags": ["rai", "sketch"]
+        },
+        {"filename":"chillin mj",
+        "title":"chillin mj",
+        "date":"2023-Mar-11",
+        "tags": ["mj", "mira", "daze", "erinn", "alcine", "asteria", "kai", "sketch"]
+        },
+        {"filename":"bz party",
+        "title":"bz party",
+        "date":"2023-Nov-2",
+        "tags": ["sketch", "bz"]
+        },
+        {"filename":"kai full",
+        "title":"kai full",
+        "date":"2024-May-19",
+        "tags": ["sketch", "giftart"]
+        },
+        {"filename":"MJ cover idea",
+        "title":"MJ cover idea",
+        "date":"2024-Sep-19",
+        "tags": ["sketch", "mj", "mira"]
+        },
+        {"filename":"mira asteria hug",
+        "title":"mira asteria hug",
+        "date":"2024-Nov-15",
+        "tags": ["sketch", "mj", "mira", "asteria"]
         }
     ]
 }
