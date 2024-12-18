@@ -475,7 +475,7 @@ button:hover {
     display: inline;
     top: -5px;
     left: 0px;
-    background-image: url("media/Rai/cursor.avif");
+    background-image: url(media/Rai/cursor.avif);
     background-repeat: no-repeat;
     padding-left: 42px;
     background-size: 20px;
