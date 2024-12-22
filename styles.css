@@ -477,7 +477,7 @@ button:hover {
 
 .mj-screenshot {
     max-height: 200px;
-    max-width: 49%;
+    max-width: 48%;
     object-fit: contain;
 }
 
