@@ -472,6 +472,13 @@ button:hover {
     font-size: 20px;
     line-height: 26px;
     max-width: 1000px;
+    margin: auto;
+}
+
+.mj-screenshot {
+    max-height: 200px;
+    max-width: 49%;
+    object-fit: contain;
 }
 
 .home-button {
