@@ -767,7 +767,6 @@ button:hover {
 @media (max-width: 525px) {
     .card {
         scale: 100%;
-        max-width: 100%;
     }
     .container {
         top: 300px;
