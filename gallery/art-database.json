@@ -28,44 +28,54 @@
         {"name": "comm",
             "title": "Commissions",
             "icon": "",
-            "sketchinclude": "no"
+            "sketchinclude": "yes"
         },
         {"name": "rai",
-            "title": "OC: Rai",
+            "title": "Rai (Pokesona)",
             "icon": "/media/Rai/favicon.png",
             "sketchinclude": "yes"
         },
         {"name": "iris",
-            "title": "OC: Iris",
+            "title": "Iris (Fursona)",
             "icon": "",
             "sketchinclude": "yes"
         },
+        {"name": "nimphe",
+            "title": "Nimphe (Pokemon OC)",
+            "icon": "/media/Rai/favicon.png",
+            "sketchinclude": "yes"
+        },
         {"name": "mira",
-            "title": "OC: Mira Levenor",
+            "title": "Mira Levenor (MJ)",
             "icon": "",
             "sketchinclude": "yes"
         },
         {"name": "alcine",
-            "title": "OC: Alcine",
+            "title": "Alcine (MJ)",
             "icon": ""
         },
         {"name": "asteria",
-            "title": "OC: Asteria Versea",
+            "title": "Asteria Versea (MJ)",
             "icon": "",
             "sketchinclude": "yes"
         },
         {"name": "yaru",
-            "title": "OC: Yaru",
+            "title": "Yaru (MJ)",
             "icon": "",
             "sketchinclude": "yes"
         },
         {"name": "daze",
-            "title": "OC: Daze",
+            "title": "Daze (MJ)",
             "icon": "",
             "sketchinclude": "yes"
         },
         {"name": "erinn",
-            "title": "OC: Erinn Levenor",
+            "title": "Erinn Levenor (MJ)",
+            "icon": "",
+            "sketchinclude": "yes"
+        },
+        {"name": "pokemon",
+            "title": "Non Rai Pokemon",
             "icon": "",
             "sketchinclude": "yes"
         }
@@ -164,7 +174,7 @@
         {"filename":"eevee2023",
             "title": "Annual Eevee 2023",
             "date": "2023-Oct-2",
-            "tags": ["fanart"]
+            "tags": ["fanart", "pokemon"]
         },
         {"filename":"erinn hat",
             "title": "Green",
@@ -219,7 +229,7 @@
         {"filename":"leaf",
             "title": "Leafeon with a hat",
             "date": "2023-Oct-23",
-            "tags": ["giftart"]
+            "tags": ["giftart", "pokemon"]
         },
         {"filename":"marlet",
             "title": "That birb from Undertale Yellow",
@@ -344,7 +354,7 @@
         {"filename": "eevee2024",
         "title":"Annual Eevee 2024",
         "date":"2024-Nov-14",
-        "tags": ["fanart"]
+        "tags": ["fanart", "pokemon"]
         },
         {"filename":"pomegrante",
         "title":"Random pomegrante",
@@ -389,7 +399,7 @@
         {"filename":"furret",
         "title":"Furret",
         "date":"2021-Jun-2",
-        "tags": ["fanart"]
+        "tags": ["fanart", "pokemon"]
         },
         {"filename":"akechi",
         "title":"Akechi from Persona 5",
@@ -399,12 +409,12 @@
         {"filename":"espi",
         "title":"Espi",
         "date":"2021-Jul-17",
-        "tags": ["fanart"]
+        "tags": ["fanart", "pokemon"]
         },
         {"filename":"eevee2021",
         "title":"Annual Eevee 2021",
         "date":"2021-Jul-13",
-        "tags": ["fanart"]
+        "tags": ["fanart", "pokemon"]
         },
         {"filename":"banner2022",
         "title":"Banner 2022",
@@ -414,7 +424,7 @@
         {"filename":"sylvee",
         "title":"Sylvee",
         "date":"2021-Jul-17",
-        "tags": ["fanart"]
+        "tags": ["fanart", "nimphe"]
         },
         {"filename":"Illustration45",
         "title":"Illustration45",
@@ -424,12 +434,12 @@
         {"filename":"hisuian growlithe",
         "title":"Hisuian Growlithe",
         "date":"2021-Aug-21",
-        "tags": ["fanart"]
+        "tags": ["fanart", "pokemon"]
         },
         {"filename":"failed sylv",
         "title":"Failed sylv",
         "date":"2022-Feb-22",
-        "tags": ["fanart"]
+        "tags": ["fanart", "nimphe", "pokemon"]
         },
         {"filename":"ghost",
         "title":"Ghost",
@@ -454,7 +464,7 @@
         {"filename":"Bun",
         "title":"Bun",
         "date":"2022-Apr-15",
-        "tags": ["mj", "asteria"]
+        "tags": ["mj", "asteria", "sketch"]
         },
         {"filename":"frustrated",
         "title":"Frustrated",
@@ -560,6 +570,26 @@
         "title":"mira asteria hug",
         "date":"2024-Nov-15",
         "tags": ["sketch", "mj", "mira", "asteria"]
+        },
+        {"filename":"fly mira",
+        "title":"fly mira",
+        "date":"2024-Oct-24",
+        "tags": ["sketch", "mj", "mira"]
+        },
+        {"filename":"nimphe",
+        "title":"nimphe",
+        "date":"2024-Dec-26",
+        "tags": ["sketch", "nimphe", "pokemon"]
+        },
+        {"filename":"wrapped rai",
+        "title":"wrapped rai",
+        "date":"2024-Dec-26",
+        "tags": ["sketch", "rai"]
+        },
+        {"filename":"new year",
+        "title":"New Year",
+        "date":"2025-Jan-1",
+        "tags": ["rai"]
         }
     ]
 }
