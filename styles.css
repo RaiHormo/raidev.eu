@@ -735,6 +735,22 @@ button:hover {
     }
 } */
 
+.profile-container {
+    background-color: #2b2b2b;
+    border-radius: 32px;
+    color: white;
+    font-size: 20px;
+    padding: 14px;
+    margin: auto;
+    margin-top: 12px;
+    width: 90%;
+    border-width: 8px;
+    border-color: #ea9f75;
+    border-style: solid;
+    max-width: 600px;
+    text-align: left;
+}
+
 @media (max-width: 908px) {
     .section-button {
         display: block;

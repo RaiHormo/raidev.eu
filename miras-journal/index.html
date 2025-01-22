@@ -28,10 +28,10 @@
           About</button>
         <button class="MJ-sect-button screenshots" onclick="tab_press('#screenshots');">
           Screenshots</button>
-        <button class="MJ-sect-button how-it-started" onclick="tab_press('#how-it-started');">
-          How it started</button>
         <button class="MJ-sect-button characters" onclick="tab_press('#characters');">
           Characters</button>
+        <button class="MJ-sect-button how-it-started" onclick="tab_press('#how-it-started');">
+          How it started</button>
         <button class="MJ-sect-button how-its-going" onclick="tab_press('#how-its-going');">
           How it's going</button>
         <button class="MJ-sect-button FAQ" onclick="tab_press('#FAQ');">
@@ -50,10 +50,10 @@
           About</button>
         <button class="MJ-sect-button screenshots" onclick="tab_press('#screenshots');">
           Screenshots</button>
-        <button class="MJ-sect-button how-it-started" onclick="tab_press('#how-it-started');">
-          How it started</button>
         <button class="MJ-sect-button characters" onclick="tab_press('#characters');">
           Characters</button>
+        <button class="MJ-sect-button how-it-started" onclick="tab_press('#how-it-started');">
+          How it started</button>
         <button class="MJ-sect-button how-its-going" onclick="tab_press('#how-its-going');">
           How it's going</button>
         <button class="MJ-sect-button FAQ" onclick="tab_press('#FAQ');">
@@ -88,6 +88,7 @@
           During her adventures, Mira will keep a journal, giving her thoughts on everything that happens every day.<br>
           <h2>Current state</h2>
           The game is still in early development, and all the work so far has been done by one person.
+          <h2 style="color: #fdaa7b">Select another section on the top for more info</h2>
         </p>
       </div>
       <div id="how-it-started" class="MJ-tab">
@@ -155,13 +156,22 @@
       <div id="characters" class="MJ-tab">
         <h2>Mira Levenor</h2>
         <div style="display: flex; width: 100%; justify-content: left;">
-          <img src="https://github.com/RaiHormo/Miras-Journal/blob/main/art/Renders/Mira.png?raw=true" alt="Mira Levenor render" style="height: 300px; width: 300px; max-width: 50%; object-fit: cover; overflow: hidden; padding: 0;" class="clickable-image" onclick="show_image(this);"><p><br>
+          <img src="https://github.com/RaiHormo/Miras-Journal/blob/main/art/Renders/Mira.png?raw=true" alt="Mira Levenor render" style="height: 300px; width: 300px; max-width: 50%; object-fit: cover; overflow: hidden; padding: 0;" class="clickable-image" onclick="profile(this);"><p><br>
           Age: 19<br>Species: Cyrenian<br>Pronouns: She/Her<br>
           Aura affinity: <a style="color: #DAAA81;">Heat</a><br>Birthday: October 18<br><br></p>
         </div>
         Mira is the most knowledgable of the party as well as the main damage dealer. However she struggles quite a bit in social situations and can let her emotions control her easily. <br>Trying to improve herself, she started keeping a personal journal, not knowing where that would lead her...<br><br>
         Being from a species whoose homeland is now gone, she lived in a small village along with other remaining Cyrenians.<br>
         She worked as a librarian in a nearby city.<br>She has an intrest in science, magic and monsters, however she doesn't get many opportunities to use her theoretical knowledge.<br><br>
+        <h2>Alcine</h2>
+        <div style="display: flex; width: 100%; justify-content: left;">
+          <img src="https://github.com/RaiHormo/Miras-Journal/blob/main/art/Renders/Alcine.png?raw=true" alt="Daze render" style="height: 300px; width: 300px; max-width: 50%; object-fit: cover; overflow: hidden; padding: 0;" class="clickable-image" onclick="show_image(this);"><br>
+          <p>Age: less than 1<br>Species: Spirit<br>Pronouns: They/Them<br>Aura affinity: <span style="color: #31AD9E;">Freeze / Spiritual</span><br><br></p>
+        </div>
+        A strange spirit creature Mira found when first entering the Lost Realm. The player as Mira will have the option to name this character, but the cannon name is Alcine.
+        <br><br>Their body is made entirely out of water, that they control the shape and temprature of.<br>
+        While not able to speak, Alcine behaves a lot like a young child and clings to Mira a lot since the day they met.<br><br>
+        Alcine's origins are unknown, even to themself. But sometimes they have visions of another life, not always pleasant ones.<br><br>
         <h2>Asteria Versea</h2>
         <div style="display: flex; width: 100%; justify-content: left;">
           <img src="https://github.com/RaiHormo/Miras-Journal/blob/main/art/Renders/Asteria.png?raw=true" alt="Asteria Versea render" style="height: 300px; width: 300px; max-width: 50%; object-fit: cover; overflow: hidden; padding: 0;" class="clickable-image" onclick="show_image(this);"><br>
@@ -176,6 +186,8 @@
         </div>
         Daze was told from a young age that he would need to be a hero.<br>The one who would free Iseferia from the corrupt Monarchy. Not only did that put a lot of pressure on him as a child but as the word got out that he is the chosen hero, he and his family were hunted to no end. Eventually he found a group of people that he could rely on and he aims to complete his set goal.<br>However after an incident he was seprated from his party and ended up with Mira in the Lost Realm, where he saved her from certain death.<br><br>
         Daze is calm and collected, in a way that might seem cold to some, but he is a caring person in reality. He speaks in a pretty formal way out of habit. Sometimes he might try to be more casual but it only end up making situations more akward
+        <br><br> 
+        <span style="color:gray;">(More characters to be added)</span>
       </div>
       <div id="screenshots" class="MJ-tab">
         <img src="/media/MJ/AboutScreenshot1.png" alt="Party menu" class="clickable-image mj-screenshot" onclick="show_image(this);">
@@ -233,9 +245,21 @@
 
 
     <div id="image-popup" class="modal">
-      <span id="close-popup">&times;</span>
       <div id="caption"></div>
       <img class="modal-content" id="img01">
+    </div>
+
+    <div id="profile-popup" class="modal">
+      <span id="close-popup">&times;</span>
+      <div class="profile-container">
+        <h2 style="margin: 0px;">Mira Levenor</h2>
+          <div style="display: flex; width: 100%; justify-content: left;">
+            <img src="https://github.com/RaiHormo/Miras-Journal/blob/main/art/Renders/Mira.png?raw=true" alt="Mira Levenor render" style="height: 300px; width: 300px; max-width: 50%; object-fit: cover; overflow: hidden; padding: 0;" onclick="show_image(this);"><p><br>
+            Age: 19<br>Species: Cyrenian<br>Pronouns: She/Her<br>
+            Aura affinity: <a style="color: #DAAA81;">Heat</a><br>Birthday: October 18<br><br></p>
+          </div>
+          Long description
+      </div>
     </div>
 </body>
 <script>
@@ -290,4 +314,5 @@
   }
 </script>
 <script src="/lib/image-popup.js"></script>
+<script src="/lib/profile-popup.js"></script>
 </html>

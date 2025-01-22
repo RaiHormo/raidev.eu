@@ -604,7 +604,7 @@
         {"filename":"vibri aaalt",
         "title":"Vibri AAA",
         "date":"2025/Jan/4",
-        "tags": ["mj", "yaru"]
+        "tags": ["fanart"]
         },
         {"filename":"nimphe eep",
         "title":"eep",
@@ -620,6 +620,51 @@
         "title":"birth date",
         "date":"2025/Jan/10",
         "tags": ["rai", "sketch"]
+        },
+        {"filename":"asteria oil green",
+        "title":"Olive",
+        "date":"2025/Jan/14",
+        "tags": ["mj", "asteria"]
+        },
+        {"filename":"carlo1",
+        "title":"Carlo 1",
+        "date":"2025/Jan/18",
+        "tags": ["giftart", "sketch"]
+        },
+        {"filename":"carlo2",
+        "title":"Carlo 2",
+        "date":"2025/Jan/18",
+        "tags": ["giftart", "sketch"]
+        },
+        {"filename":"flipnote mew",
+        "title":"Carlo 2",
+        "date":"2025/Jan/7",
+        "tags": ["fanart", "pokemon", "sketch"]
+        },
+        {"filename":"rai normal",
+        "title":"Normal Alolan Raichu colors",
+        "date":"2025/Jan/12",
+        "tags": ["rai", "sketch"]
+        },
+        {"filename":"reveal",
+        "title":"Reveal",
+        "date":"2025/Jan/16",
+        "tags": ["fanart", "sketch"]
+        },
+        {"filename":"noreen aura",
+        "title":"Reveal",
+        "date":"2025/Jan/15",
+        "tags": ["noreen", "mj"]
+        },
+        {"filename":"stretch",
+        "title":"Stretch",
+        "date":"2025/Jan/19",
+        "tags": ["kai", "mj", "sketch"]
+        },
+        {"filename":"iris rays",
+        "title":"Stretch",
+        "date":"2025/Jan/21",
+        "tags": ["iris"]
         }
     ]
 }
