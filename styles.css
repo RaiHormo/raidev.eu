@@ -363,7 +363,7 @@ button:hover {
     transform: scaleY(100);
     position: fixed;
     z-index: 3;
-    width: 100%;
+    width: 100vw;
     left: 0;
     top: -20px;
     animation-name: loadFromHeader;
