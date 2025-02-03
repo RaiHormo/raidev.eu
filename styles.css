@@ -338,6 +338,12 @@ button:hover {
     font-size: 28px;
 }
 
+.tag-button:focus {
+    background-color: #9948b1;
+    color: white;
+    outline:0;
+}
+
 #tag-container {
     position: absolute;
     top: 190px;
