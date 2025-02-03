@@ -805,6 +805,10 @@ button:hover {
     .gallery-container {
         top: 190px;
     }
+    .gallery-tag-title {
+        font-size: 32px;
+        top: 125px
+    }
 }
 
 @media (max-width: 450px) {

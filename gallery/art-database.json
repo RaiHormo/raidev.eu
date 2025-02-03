@@ -142,7 +142,7 @@
             "tags": ["mj", "asteria"]
         },
         {"filename":"banner2023",
-            "title": "Banner 2023",
+            "title": "Banner 2024",
             "date": "2023/Dec/31",
             "tags": ["rai"]
         },
@@ -665,6 +665,31 @@
         "title":"Stretch",
         "date":"2025/Jan/21",
         "tags": ["iris"]
+        },
+        {"filename":"heartbeat comic",
+        "title":"Heartbeat",
+        "date":"2025/Jan/30",
+        "tags": ["mj", "mira", "asteria", "comic"]
+        },
+        {"filename":"nimphe dress",
+        "title":"Pink",
+        "date":"2025/Jan/27",
+        "tags": ["pokemon", "nimphe"]
+        },
+        {"filename":"lurantis",
+        "title":"Lurantis",
+        "date":"2025/Jan/29",
+        "tags": ["pokemon", "fanart"]
+        },
+        {"filename":"asteria naked",
+        "title":"naked bunny",
+        "date":"2025/Jan/23",
+        "tags": ["mj", "asteria", "sketch"]
+        },
+        {"filename":"banner2025",
+        "title":"Banner 2025",
+        "date":"2025/Jan/31",
+        "tags": ["rai", "iris"]
         }
     ]
 }
