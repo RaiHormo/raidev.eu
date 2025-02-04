@@ -216,6 +216,11 @@ button:hover {
     padding: 0;
 }
 
+.slink-pressed {
+    background-color: #3d2e43;
+    color: #b1a8b9;
+}
+
 .slink::before {
     font-size: 38px;
 }
@@ -238,7 +243,7 @@ button:hover {
     padding-top: 80px;
 }
 
-.dropdown:hover, .social-links:hover .dropdown-panel {
+.caret {
     display: block;
     animation: open-drop 0.1s ease forwards;
 }
