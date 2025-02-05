@@ -10,13 +10,13 @@
     <script onclick="show_image(this);" src="/lib/jquery-3.7.1.min.js"></script>
     <script onclick="show_image(this);" src="/lib/include-html.js"></script>
     <script onclick="show_image(this);" src="/lib/imagesloaded.pkgd.min.js"></script>
-    <meta name="viewport" content="width=device-width">
+    <meta id="vp" name="viewport">
     <link rel="icon" type="image/x-icon" href="/media/Rai/favicon.png">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 </head>
 
 <body style="
-height: 100vh; width: 100vw; background-position: auto 100%;
+height: 100vh;
 background-color: #493842;
 background-image: url(/media/Rai/comm\ bg.png);
 background-repeat: no-repeat; background-size: cover;">
@@ -52,20 +52,28 @@ background-repeat: no-repeat; background-size: cover;">
             <br>
             <span style="line-height: 1px;">
                 To order a comission, please contact me on discord at <b>raidev</b>.<br>
-                <span style="font-size: 18px; opacity: 75%;">Before commissioning, please review the terms below.</span><br>
+                <span style="font-size: 18px; opacity: 75%;">Before commissioning, please review the terms
+                    below.</span><br>
             </span>
             <button class="checked">Terms and details
             </button>
         </div>
         <div class="comm-previews">
             <h1 style="color:#b1a8b9">Examples</h1>
-            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/spirit tracks.avif" alt="2 Characters, Headshot, Shaded">
-            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/eevee2024.avif" alt="Fullbody, Shaded">
-            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/nia xenoblade.avif" alt="Almost fullbody, Shaded">
-            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/kai(zo).avif" alt="Bust, Shaded, Simple background">
-            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/asteria oil green.avif" alt="Monochrome, Half body, Simple background">
-            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/nimphe dress.avif" alt="Colored, Full body">
-            <br><button style="background-color: #b1a8b9; color: #3D2D43; margin: 12px; text-align: center;" onclick="window.location.href='/gallery#comm'";>View past commissions</button>
+            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/spirit tracks.avif"
+                alt="2 Characters, Headshot, Shaded">
+            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/eevee2024.avif"
+                alt="Fullbody, Shaded">
+            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/nia xenoblade.avif"
+                alt="Almost fullbody, Shaded">
+            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/kai(zo).avif"
+                alt="Bust, Shaded, Simple background">
+            <img class="clickable-image comm-img" onclick="show_image(this);"
+                src="/media/Artwork/asteria oil green.avif" alt="Monochrome, Half body, Simple background">
+            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/nimphe dress.avif"
+                alt="Colored, Full body">
+            <br><button style="background-color: #b1a8b9; color: #3D2D43; margin: 12px; text-align: center;"
+                onclick="window.location.href='/gallery#comm'" ;>View past commissions</button>
         </div>
     </div>
 
@@ -79,3 +87,17 @@ background-repeat: no-repeat; background-size: cover;">
 </html>
 <script src="/lib/handle-slinks.js"></script>
 <script src="/lib/image-popup.js"></script>
+<script>
+    function setWidth() {
+        var mvp = document.getElementById('vp');
+        if (screen.width < 472) {
+            mvp.setAttribute('content', 'width=472px');
+            console.log("mobile mode");
+        } else {
+            mvp.setAttribute('content', 'width=device-width');
+            console.log("swakrop mode");
+        }
+    };
+
+    window.addEventListener("load", setWidth());
+</script>
