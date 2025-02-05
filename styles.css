@@ -664,6 +664,7 @@ button:hover {
     /* flex-wrap: wrap; */
     margin: 24px;
     height: max-content;
+    transition: all 0.3;
 }
 
 .comm-panel {
@@ -736,6 +737,7 @@ button:hover {
     border-width: 8px;
     border-style: dotted;
     border-color: #3D2D43;
+    margin-bottom: 30px;
 }
 
 .terms li {
