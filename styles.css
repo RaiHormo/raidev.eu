@@ -678,15 +678,16 @@ button:hover {
     font-size: 24px;
     color: #3D2D43;
     text-align: center;
-    line-height: 42px;
+    line-height: 32px;
     flex-shrink: 0;
     margin-right: 24px;
 }
 
-.comm-panel button {
+.comm-panel button, .terms button {
     color: #3D2D43;
     background-color: #a69cad;
     margin: auto;
+    margin-bottom: 14px;
     padding: 8px;
     padding-right: 12px;
     padding-left: 12px;
@@ -718,7 +719,27 @@ button:hover {
     max-width: 50%;
     vertical-align: middle;
     margin: 2px;
+}
 
+.terms {
+    display: none;
+    background-color: #252327;
+    padding: 24px;
+    border-radius: 32px;
+    width: 80%;
+    margin: auto;
+    max-width: 600px;
+    top: 150px;
+    position: relative;
+    color:white;
+    font-size: 24px;
+    border-width: 8px;
+    border-style: dotted;
+    border-color: #3D2D43;
+}
+
+.terms li {
+    margin: 12px;
 }
 
 /* Style the Image Used to Trigger the Modal */
@@ -914,7 +935,7 @@ button:hover {
     }
 
     .container {
-        top: 300px;
+        top: 375px;
         max-width: 100vw;
     }
 
@@ -926,8 +947,8 @@ button:hover {
         /* width: 100%; */
         margin: auto;
         animation: 0.5s ease-out 0s 1 slideDown;
-        position: relative;
-        right: 0;
+        position: fixed;
+        right: 20%;
     }
 
     .dropdown-panel {

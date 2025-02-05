@@ -50,12 +50,12 @@ background-repeat: no-repeat; background-size: cover;">
                 Additional characters are also a <b>+5€</b>
             </div>
             <br>
-            <span style="line-height: 1px;">
+            <span>
                 To order a comission, please contact me on discord at <b>raidev</b>.<br>
                 <span style="font-size: 18px; opacity: 75%;">Before commissioning, please review the terms
                     below.</span><br>
             </span>
-            <button class="checked">Terms and details
+            <button class="checked" onclick="terms();">Terms and details
             </button>
         </div>
         <div class="comm-previews">
@@ -75,6 +75,26 @@ background-repeat: no-repeat; background-size: cover;">
             <br><button style="background-color: #b1a8b9; color: #3D2D43; margin: 12px; text-align: center;"
                 onclick="window.location.href='/gallery#comm'" ;>View past commissions</button>
         </div>
+    </div>
+
+    <div class="terms">
+        <h2 style="text-align: center;">Terms and details</h2>
+        <ul>
+            <li>Payment can be done through PayPal or Ko-Fi.</li>
+            <li>I will decide the final price after I know what I'm drawing.</li>
+            <li>Communication is preferably done through discord.</li>
+            <li>I can draw stylized humans and furries best. I'm also somewhat decent at drawing ferals. For intricate designs or mechs you've got the wrong person.</li>
+            <li>I will not draw NSFW or fetish art. Suggestive art is allowed.</li>
+            <li>I can deny any commission if I'm not comfortable drawing it.</li>
+            <li>Payment will be done during the coloring process at the latest.</li>
+            <li>You can request a character refrence sheet for around 35€ (may be higher or lower depending on the character).</li>
+            <li>It may take up to a month to finish the commission, unless something comes up in which case i will contact you.</li>
+            <li>I will contact the you for feedback or anything im not sure about.</li>
+            <li>If you're going to post or use the art anywhere, please credit me. This is not a requirement but I'd appriciate it.</li>
+            <li>If asked, the passcode is Strawberry.</li>
+            <li>Commercial use is allowed, as long as I'm properly credited.</li>
+        </ul>
+        <button style="align-self: center; margin: auto; font-size: 32px; display: block;" onclick="terms(true)">Close</button>
     </div>
 
     <div id="image-popup" class="modal">
@@ -100,4 +120,14 @@ background-repeat: no-repeat; background-size: cover;">
     };
 
     window.addEventListener("load", setWidth());
+
+    function terms(close = false) {
+        if (close) {
+            $(".comm-container").css({'display': 'flex'});
+            $(".terms").css({'display': 'none'});
+        } else {
+            $(".comm-container").css({'display': 'none'});
+            $(".terms").css({'display': 'block'});
+        }
+    };
 </script>
