@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris' art gallery</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="/lib/fontawesome/css/all.min.css" rel="stylesheet">
+    <script onclick="show_image(this);" src="/lib/jquery-3.7.1.min.js"></script>
+    <script onclick="show_image(this);" src="/lib/include-html.js"></script>
+    <script onclick="show_image(this);" src="/lib/imagesloaded.pkgd.min.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="/media/Rai/favicon.png">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+</head>
+
+<body style="
+height: 100vh; width: 100vw; background-position: auto 100%;
+background-color: #493842;
+background-image: url(/media/Rai/comm\ bg.png);
+background-repeat: no-repeat; background-size: cover;">
+
+    <div include-html="/social-links.html" class="only-wide"></div>
+
+    <div class="header-cont">
+        <button class="home-button" onclick="window.location.href='/';">
+        </button>
+        <h1 style="display: inline; margin-left: 82px ;">Commissions</h1>
+    </div>
+
+    <div class="header">
+        <div class="header-corner"></div>
+    </div>
+
+    <div class="comm-container">
+        <div class="comm-panel">
+            <h2 style="line-height: 12px;">Pricing</h2>
+            <button class="checked">Illustration
+            </button>
+            <button class="">Pixel art / Assets
+            </button>
+            <div id="Illustration" style="text-align: left;">
+                Price ranges from <b>15-45€</b><br><br>
+                Base price: <b>15€</b> (for a headshot sketch)<br>
+                <b>+2-7€</b> for bust to fullbody<br>
+                <b>+3€</b> for color<br>
+                <b>+5€</b> for shading<br>
+                <b>+5-10€</b> for background<br>
+                Additional characters are also a <b>+5€</b>
+            </div>
+            <br>
+            <span style="line-height: 1px;">
+                To order a comission, please contact me on discord at <b>raidev</b>.<br>
+                <span style="font-size: 18px; opacity: 75%;">Before commissioning, please review the terms below.</span><br>
+            </span>
+            <button class="checked">Terms and details
+            </button>
+        </div>
+        <div class="comm-previews">
+            <h1 style="color:#b1a8b9">Examples</h1>
+            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/spirit tracks.avif" alt="2 Characters, Headshot, Shaded">
+            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/eevee2024.avif" alt="Fullbody, Shaded">
+            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/nia xenoblade.avif" alt="Almost fullbody, Shaded">
+            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/kai(zo).avif" alt="Bust, Shaded, Simple background">
+            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/asteria oil green.avif" alt="Monochrome, Half body, Simple background">
+            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/nimphe dress.avif" alt="Colored, Full body">
+            <br><button style="background-color: #b1a8b9; color: #3D2D43; margin: 12px; text-align: center;" onclick="window.location.href='/gallery#comm'";>View past commissions</button>
+        </div>
+    </div>
+
+    <div id="image-popup" class="modal">
+        <span id="close-popup">&times;</span>
+        <div id="caption"></div>
+        <img class="modal-content" id="img01">
+    </div>
+</body>
+
+</html>
+<script src="/lib/handle-slinks.js"></script>
+<script src="/lib/image-popup.js"></script>

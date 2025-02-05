@@ -66,7 +66,7 @@ button:hover {
     content: '';
     display: block;
     clear: both;
-  }
+}
 
 .card {
     box-sizing: border-box;
@@ -97,25 +97,27 @@ button:hover {
 
 @keyframes slideUp {
     0% {
-      transform: translateY(200px);
-      opacity: 0;
+        transform: translateY(200px);
+        opacity: 0;
     }
+
     100% {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
-  
-  @keyframes slideDown {
+}
+
+@keyframes slideDown {
     100% {
-      transform: translateY(0px);
-      opacity: 1;
+        transform: translateY(0px);
+        opacity: 1;
     }
+
     0% {
-      transform: translateY(-50px);
-      opacity: 0;
+        transform: translateY(-50px);
+        opacity: 0;
     }
-  }
+}
 
 .fade-down-class {
     transition: all 0.3s !important;
@@ -128,30 +130,35 @@ button:hover {
     0% {
         opacity: 1;
         transform: translateY(0px);
-    } 10% {
+    }
+
+    10% {
         opacity: 0;
         transform: translateY(100px);
     }
+
     95% {
         opacity: 0;
         transform: translateY(100px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0px);
     }
 }
 
-@keyframes fix-width{
+@keyframes fix-width {
     from {
         width: 10px;
     }
+
     to {
         width: fit-content;
     }
 }
 
-@keyframes appear{
+@keyframes appear {
     to {
         opacity: 100%;
     }
@@ -257,13 +264,13 @@ button:hover {
 }
 
 @keyframes open-drop {
-    to {   
+    to {
         opacity: 100%;
     }
 }
 
 @keyframes close-drop {
-    to {   
+    to {
         opacity: 0%;
     }
 }
@@ -288,7 +295,7 @@ button:hover {
 }
 
 .gallery-img {
-    object-fit:cover;
+    object-fit: cover;
     max-width: 100%;
     width: 300px;
     margin-bottom: 8px;
@@ -336,7 +343,7 @@ button:hover {
 
 .tag-button {
     background-color: white;
-    color:#403b37;
+    color: #403b37;
     margin: 6px;
     padding: 12px;
     padding-top: 6px;
@@ -344,17 +351,18 @@ button:hover {
     font-size: 28px;
 }
 
+.tag-button-selected,
 .tag-button:focus {
     background-color: #9948b1;
     color: white;
-    outline:0;
+    outline: 0;
 }
 
 #tag-container {
     position: absolute;
     top: 190px;
     right: auto;
-    left:0;
+    left: 0;
     overflow-x: scroll;
     white-space: nowrap;
     max-width: 100vw;
@@ -388,7 +396,9 @@ button:hover {
 @keyframes loadFromHeader {
     from {
         transform: scaleY(50);
-    } to {
+    }
+
+    to {
         transform: scaleY(1);
     }
 }
@@ -396,7 +406,9 @@ button:hover {
 @keyframes loadFromHeaderMJ {
     from {
         transform: scaleY(50);
-    } to {
+    }
+
+    to {
         transform: scaleY(1);
         background-color: #403939;
     }
@@ -409,6 +421,7 @@ button:hover {
     width: 100%;
     height: 35px;
 }
+
 .curved {
     border-radius: 35px 35px 0px 0px;
     position: relative;
@@ -460,7 +473,8 @@ button:hover {
     margin: 10px;
 }
 
-.MJ-sect-button:hover, .MJ-active-tab {
+.MJ-sect-button:hover,
+.MJ-active-tab {
     background-color: white;
     color: black;
     outline-width: 0;
@@ -471,15 +485,16 @@ button:hover {
     margin: 4px;
 }
 
-.MJ-active-tab, .MJ-active-tab:hover {
+.MJ-active-tab,
+.MJ-active-tab:hover {
     color: #ea9f75;
 }
 
 .MJ-tab-container {
     width: 90%;
     left: 5%;
-    top: 100px; 
-    position: absolute; 
+    top: 100px;
+    position: absolute;
     color: rgb(214, 210, 208);
     font-size: 20px;
     line-height: 26px;
@@ -527,7 +542,9 @@ button:hover {
     from {
         opacity: 0;
         transform: translateX(100px);
-    } to {
+    }
+
+    to {
         opacity: 1;
         transform: translateX(0px);
     }
@@ -549,7 +566,8 @@ button:hover {
     text-decoration: none;
 }
 
-.section-button-on, .section-button:hover {
+.section-button-on,
+.section-button:hover {
     min-width: 32px;
     height: 44px;
     padding-top: 18px;
@@ -595,10 +613,10 @@ button:hover {
 }
 
 .MJ-logo-header {
-    height: 100px; 
-    margin-left: 92px; 
-    position: fixed; 
-    object-fit: scale-down; 
+    height: 100px;
+    margin-left: 92px;
+    position: fixed;
+    object-fit: scale-down;
     top: -18px;
     transition: all 0.3;
     width: 200px;
@@ -627,7 +645,7 @@ button:hover {
 }
 
 .gallery-loader {
-    color:#a69cad ;
+    color: #a69cad;
     position: fixed;
     text-align: center;
     width: 100%;
@@ -638,8 +656,73 @@ button:hover {
     padding-bottom: 24px;
 }
 
- /* Style the Image Used to Trigger the Modal */
- .clickable-image {
+.comm-container {
+    display:flex;
+    justify-content: center;
+    top: 132px;
+    position:absolute;
+    /* flex-wrap: wrap; */
+    margin: 24px;
+    height: max-content;
+}
+
+.comm-panel {
+    background-color: #b1a8b9;
+    padding: 24px;
+    padding-top: 8px;
+    border-radius: 32px;
+    max-width: 600px;
+    min-width: 280px;
+    width: 50%;
+    height: fit-content;
+    font-size: 24px;
+    color: #3D2D43;
+    text-align: center;
+    line-height: 42px;
+    flex-shrink: 0;
+    margin-right: 24px;
+}
+
+.comm-panel button {
+    color: #3D2D43;
+    background-color: #a69cad;
+    margin: auto;
+    padding: 8px;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-radius: 32px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.comm-panel .checked {
+    background-color: #3D2D43;
+    color: #b1a8b9;
+}
+
+.comm-previews {
+    display: inline;
+    max-width: 400px;
+    width: 45%;
+    overflow: hidden;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.comm-img {
+    width: inherit;
+    position: relative;
+    object-fit: scale-down;
+    max-width: 50%;
+    vertical-align: middle;
+    margin: 2px;
+
+}
+
+/* Style the Image Used to Trigger the Modal */
+.clickable-image {
     border-radius: 12px;
     cursor: pointer;
     transition: all 0.2s !important;
@@ -647,41 +730,51 @@ button:hover {
     outline-style: solid;
     outline-color: #ccc;
     /* background-color: #ccc; */
-  }
-  
-  .clickable-image:hover {
+}
+
+.clickable-image:hover {
     opacity: 0.9;
     outline-width: 6px;
-    }
-  
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 6; /* Sit on top */
-    padding-top: 0px; /* Location of the box */
+    outline-offset: -6px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 6;
+    /* Sit on top */
+    padding-top: 0px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
     text-align: center;
-  }
-  
-  /* Modal Content (Image) */
-  .modal-content {
+}
+
+/* Modal Content (Image) */
+.modal-content {
     position: sticky;
     object-fit: scale-down;
     max-width: 100%;
     max-height: calc(90vh - 64px);
     border-radius: 12px;
     margin-top: 0;
-  }
-  
-  /* Caption of Modal Image (Image Text) - Same Width as the Image */
-  #caption {
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
     position: relative;
     display: block;
     max-width: calc(90vw - 100px);
@@ -694,28 +787,29 @@ button:hover {
     margin-left: 32px;
     font-size: 24px;
     margin-bottom: 0;
-  }
-  
-  /* Add Animation - Zoom in the Modal */
-  .modal-content, #caption {
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
     animation-name: zoom;
     animation-duration: 0.3s;
+}
 
-  }
-  
-  @keyframes zoom {
+@keyframes zoom {
     from {
-        transform:scale(0.6);
+        transform: scale(0.6);
         opacity: 0;
     }
+
     to {
-        transform:scale(1);
+        transform: scale(1);
         opacity: 1;
     }
-  }
-  
-  /* The Close Button */
-  #close-popup {
+}
+
+/* The Close Button */
+#close-popup {
     position: fixed;
     top: 12px;
     right: 32px;
@@ -723,21 +817,21 @@ button:hover {
     font-size: 64px;
     font-weight: bold;
     transition: 0.3s;
-  }
-  
-  #close-popup:hover,
-  #close-popup:focus {
+}
+
+#close-popup:hover,
+#close-popup:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
     .modal-content {
-      width: 100%;
+        width: 100%;
     }
-  } 
+}
 
 
 /* @media (max-width: 1020px) {
@@ -767,9 +861,11 @@ button:hover {
     .section-button {
         display: block;
     }
+
     .hide-smaller {
         display: none;
     }
+
     .MJ-sect-list {
         width: 90%;
         left: 0px;
@@ -778,9 +874,11 @@ button:hover {
         float: left;
         animation-delay: 0s;
     }
+
     .MJ-sect-button {
         float: left;
     }
+
     .topnav {
         display: block;
     }
@@ -792,17 +890,38 @@ button:hover {
     }
 }
 
+@media (max-width: 777px) {
+    .only-wide {
+        visibility: hidden;
+    }
+    .comm-panel {
+        width: 88%;
+        max-width: unset;
+    }
+    .comm-container {
+        display: block;
+        margin: 0px;
+    }
+    .comm-previews {
+        display: contents;
+        width: 48%;
+    }
+}
+
 @media (max-width: 525px) {
     .card {
         scale: 100%;
     }
+
     .container {
         top: 300px;
         max-width: 100vw;
     }
+
     .section-text {
         display: none;
     }
+
     .social-links {
         /* width: 100%; */
         margin: auto;
@@ -810,13 +929,16 @@ button:hover {
         position: relative;
         right: 0;
     }
+
     .dropdown-panel {
         margin: auto;
         top: 10px;
     }
+
     .gallery-container {
         top: 190px;
     }
+
     .gallery-tag-title {
         font-size: 32px;
         top: 125px
@@ -827,11 +949,13 @@ button:hover {
     .container {
         width: 100%;
     }
+
     .gallery-img {
         width: 47%;
         /* margin-right: 1%;
         margin-bottom: 1%;; */
     }
+
     .gallery-img-wide {
         width: 98%;
     }
