@@ -43,12 +43,12 @@ button {
 }
 
 button:hover {
-    scale: 110%;
+    scale: 95%;
     opacity: 90%;
 }
 
 .button:hover {
-    scale: 110%;
+    scale: 95%;
     opacity: 90%;
 }
 
@@ -84,9 +84,13 @@ button:hover {
     animation-fill-mode: forwards;
     animation-name: slideUp;
     animation-duration: 0.5s;
-    transition: all 0.5s;
+    transition: all 0.3s;
     animation-timing-function: cubic-bezier();
     animation-delay: calc(var(--animation-order) * 100ms);
+}
+
+.card-hover:hover {
+    scale: 102%;
 }
 
 .card--c3 {

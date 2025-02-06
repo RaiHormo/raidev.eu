@@ -24,7 +24,7 @@ background-repeat: no-repeat; background-size: cover;">
     <div include-html="/social-links.html" class="only-wide"></div>
 
     <div class="header-cont">
-        <button class="home-button" onclick="window.location.href='/';">
+        <button class="home-button" onclick="if (window.location.hash == '#terms') window.location.hash = ''; else window.location.href='/';">
         </button>
         <h1 style="display: inline; margin-left: 82px ;">Commissions</h1>
     </div>
@@ -111,6 +111,8 @@ background-repeat: no-repeat; background-size: cover;">
 <script src="/lib/handle-slinks.js"></script>
 <script src="/lib/image-popup.js"></script>
 <script>
+    var terms_open = false;
+
     function setWidth() {
         var mvp = document.getElementById('vp');
         if (screen.width < 472) {
@@ -122,15 +124,31 @@ background-repeat: no-repeat; background-size: cover;">
         }
     };
 
-    window.addEventListener("load", setWidth());
+    window.addEventListener("load", function() {
+        setWidth();
+        if (window.location.hash == "#terms") terms(false);
+    });
+
+    window.addEventListener('hashchange',() => {
+        setTimeout (function() {
+            if (window.location.hash == "#terms" && !terms_open) terms(false);
+            else if (terms_open && window.location.hash != "#terms") terms(true);
+        }, 300);
+    });
 
     function terms(close = false) {
         if (close) {
+            terms_open = false;
             $(".comm-container").css({'opacity': '100'});
             $(".terms").css({'display': 'none'});
+            window.location.hash = ""
+            window.scrollTo(0,0);
         } else {
+            terms_open = true;
             $(".comm-container").css({'opacity': '0'});
             $(".terms").css({'display': 'block'});
+            window.location.hash = "terms";
+            window.scrollTo(0,0);
         }
     };
 </script>
