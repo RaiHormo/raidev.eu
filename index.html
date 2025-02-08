@@ -73,15 +73,23 @@
         </button></div>
         <img src="media/MJ/Idle.gif" style="left: 320px; height: 180px; top: -220px; position: relative; image-rendering: pixelated;">
     </div>
-
+    
     <div class="card card-hover" onclick="link('/comm');"
     style="height: 270px; background-image: url(/media/Rai/comm\ bg.png); background-position: 700px -200px; background-blend-mode: soft-light;">
-      <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
-        Commissions</h1>
+    <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
+      Commissions</h1>
       <h4 style="text-align: center; margin: 0; color: #3d2e43; opacity: 90%; font-size: 28px;">
         I'm currently open for commissions. The prices range from 15-45€.</h4>
         <div style="text-align: center;"><button class="gallery-button" style ="background-color: #3D2D43; color: #CEB0CD;" onclick="link('/comm');">
           Pricing and info</button></div>
+        </div>
+        
+    <div class="card" style="height: 620px; background-color: #C2BDC7;">
+      <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
+        Posts
+        <button onclick="postviewerExpand(true);" style="float: right; font-size: 20px; background-color: #3d2e43;">
+          <i class="fa-solid fa-up-right-and-down-left-from-center"></i>  Expand</button></h1>
+        <iframe src="/lib/PostViewer/index.html?direct_storage=/poststorage" url="/poststorage" class="postviewer"></iframe>
     </div>
 
     <div class="card" style="height: 330px; background-color: black; padding: 8px; padding-left: 32px; line-height: 10px;">
@@ -92,6 +100,7 @@
       <a href="https://ivan-krul.github.io/scriptpostum.github.io" target="_blank"><img class="stamp" src="/media/Stamps/stamp_script.png" alt="Script Postum's Database"></a>
       <a href="https://mintychaos.com" target="_blank"><img class="stamp" src="/media/Stamps/stamp_minty.png" alt="Script Postum's Database"></a>
     </div>
+
 
     <div class="card" style="height: 320px;">
       <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
@@ -116,8 +125,16 @@
       <h4 style="text-align: center; margin: 0; color: #605863; font-size: 28px;">
         I made this site from the ground up in order to learn HTML/CSS/JS.<br> Some things are still a work in progress, but I'm trying my best.</h4>
     </div>
-
   </div>
+
+  <div id="post-expanded">
+    <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
+      Posts
+      <button onclick="postviewerExpand(false);" style="float: right; font-size: 20px; background-color: #3d2e43;">
+        <i class="fa-solid fa-down-left-and-up-right-to-center"></i>  Shrink</button></h1>
+      <iframe class="postviewer"></iframe>
+  </div>
+
 </body>
 </html>
 <script src="/lib/handle-slinks.js"></script>
@@ -133,7 +150,14 @@
     }
   };
 
-  window.addEventListener("load", setWidth());
+  window.addEventListener("load", function() {
+    setWidth();
+    setTimeout(function(){
+      if (window.location.hash == "#postviewer") {
+        postviewerExpand(true);
+      }
+    });
+  });
 
   for (var i = 0; i < document.getElementsByClassName("card").length; i++) {
     var card = document.getElementsByClassName("card")[i];
@@ -142,4 +166,17 @@
   setTimeout(function(){
     window.scrollTo(0,0);
   });
+
+  function postviewerExpand(yes = true) {
+    if (yes){
+      window.location.hash = "#postviewer";
+      document.getElementsByClassName("postviewer")[1].setAttribute("src", document.getElementsByClassName("postviewer")[0].getAttribute("src"));
+      document.getElementById("post-expanded").style.display = "block";
+    } else {
+      window.location.hash = "";
+      document.getElementsByClassName("postviewer")[1].setAttribute("src", "");
+      document.getElementById("post-expanded").style.display = "none";
+      document.getElementsByClassName("postviewer")[0].scrollIntoView({ behavior: "instant", block: "center", inline: "center"});
+    }
+  };
   </script>

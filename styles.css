@@ -284,6 +284,36 @@ button:hover {
     font-family: Cyrenia;
 }
 
+#post-expanded {
+    height: 620px;
+    background-color: #C2BDC7;
+    position: fixed;
+    top: 3%;
+    left: 4vw;
+    z-index: 6;
+    width: 90%;
+    height: 90%;
+    padding: 12px;
+    border-radius: 32px;
+    display: none;
+    outline-color: rgba(0, 0, 0, 0.8);
+    outline-width: 100px;
+    outline-style: solid;
+}
+
+.postviewer {
+    width: 450px;
+    height: 500px;
+    border-style: none;
+    background-color: transparent;
+    border-radius: 32px;
+}
+
+#post-expanded .postviewer {
+    width: 100%;
+    height: 90%;
+}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
