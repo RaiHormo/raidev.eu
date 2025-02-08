@@ -1,0 +1,92 @@
+[
+{
+"name": [ null ],
+"main": "#000000",
+"semi": "#808080",
+"text": "#ffffff"
+},
+{
+"name": [ "iris" ],
+"main": "#d8d5db",
+"semi": "#8b828e",
+"text": "#44354A"
+},
+{
+"name": [ "dark", "black" ],
+"main": "#000000",
+"semi": "#808080",
+"text": "#ffffff"
+},
+{
+"name": [ "light", "white" ],
+"main": "#ffffff",
+"semi": "#808080",
+"text": "#000000"
+},
+{
+"name": [ "bazalt" ],
+"main": "#21212b",
+"semi": "#808080",
+"text": "#ffffff"
+},
+{
+"name": [ "green_old_pc", "green" ],
+"main": "#08170B",
+"semi": "#286924",
+"text": "#49BB3E"
+},
+{
+"name": [ "mind" ],
+"main": "#663399",
+"semi": "#bb99cc",
+"text": "#ffffff"
+},
+{
+"name": [ "bsod" ],
+"main": "#000088",
+"semi": "#6666bb",
+"text": "#ffffff"
+},
+{
+"name": [ "half-life", "hl" ],
+"main": "#222222",
+"semi": "#996600",
+"text": "#ff8800"
+},
+{
+"name": [ "sakura", "pinky" ],
+"main": "#df81dc",
+"semi": "#ffe2f1",
+"text": "#ffffff"
+},
+{
+"name": [ "red", "strawberry" ],
+"main": "#df101f",
+"semi": "#ffe2f1",
+"text": "#ffffff"
+},
+{
+"name": [ "blueberry" ],
+"main": "#4030e0",
+"semi": "#ffe2f1",
+"text": "#ffffff"
+},
+{
+"name": [ "swamp" ],
+"main": "#1d371f",
+"semi": "#9cbb66",
+"text": "#ffffff"
+},
+{
+"name": [ "sand" ],
+"main": "#a68b57",
+"semi": "#e8b779",
+"text": "#ffffff"
+},
+{
+"name": [ "sun" ],
+"main": "#ffffff",
+"semi": "#e0c000",
+"text": "#ff7f3f"
+}
+]

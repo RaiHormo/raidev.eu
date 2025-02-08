@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Post Constructor</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="input_container">
+    <textarea id="input" cols="50" rows="50" style="width: 60ch; height: 50ch;"></textarea>
+    <div><span>Language argument (2 symbols to mark): </span><input type="text" minlength="2" maxlength="2"
+        placeholder="en" id="langArg"></div>
+        <div>Made by Kiwii Devulopir</div>
+    <div><a href="index.html" id="back_linker">Go back to browser</a></div>
+        
+    <button id="buttonSave">Save</button>
+    <select id="select_theme"></select>
+    <div><label for="checkbox_render">Output every time you type the text: </label><input type="checkbox" id="checkbox_render"></input><button id="button_force_render">Render</button></div>
+  </div>
+  <hr>
+  <h1 id="title"></h1>
+  <div id="output"></div>
+
+  <hr>
+  <div id="source"></div>
+  <hr>
+
+  <div style="font-family: consolas;">
+    <div>You can save your work in local storage like a cookie using CTRL + S or clicking that button "Save"</div>
+    <div>It loads your progress refreshing the page</div>
+    <div style="font-size: 32px;">Manuals</div>
+    <div>
+      <div><a href="docs/original_post_parser.md">Original Post Parser</a></div>
+      <div><a href="docs/rocket.md">Post Rocket</a></div>
+    </div>
+  </div>
+
+  <script type="module" src="constructor.js"></script>
+
+</body>
+
+</html>

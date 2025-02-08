@@ -1,0 +1,68 @@
+/* Iris' customizations */
+
+@font-face {
+    font-family: 'Cyrenia';
+    src: url('/lib/cyrenia-regular.ttf');
+}
+
+body {
+    font-family: Cyrenia;
+    overflow-x: hidden;
+    font-size: 20px;
+}
+
+select {
+    border-radius: 32px;
+    border-style: solid;
+    border-color: var(--semi);
+    color: var(--semi);
+    width: 60px;
+    border-width: 2px;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+
+.about-button {
+    border-style: solid;
+    text-decoration: none;
+    border-radius: 32px;
+    border-style: solid;
+    border-color: var(--semi);
+    color: var(--text);
+    border-width: 2px;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.post_link {
+    border-radius: 12px;
+    transition: all 0.3s;
+    background-color: var(--text);
+    color: var(--main) !important;
+    border-style: none;
+}
+
+.post_link a {
+    color: var(--main) !important;
+    font-size: 24px;
+}
+
+.post_link a:visited {
+    color: var(--semi) !important;
+}
+
+.post_link:hover {
+    scale: 95%;
+}
+
+:root {
+    --main: #d8d5db;
+    --semi: #8b828e;
+    --text: #44354A;
+}
+
+#title {
+    font-weight: bold;
+}

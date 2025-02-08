@@ -1,0 +1,66 @@
+:root {
+  --main: #000000;
+  --semi: #808080;
+  --text: #ffffff;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--main);
+}
+
+.post_link {
+  padding: 10px;
+  float: left;
+  border: 2px solid var(--semi);
+  margin: 3px;
+  
+}
+
+.post_link a:link{
+  color: var(--semi);
+  text-decoration: none;
+}
+
+.post_link a:visited{
+  color: var(--semi);
+}
+
+img {
+  max-width: 99vw;
+  max-height: 99vh;
+}
+
+hr {
+  color: var(--semi);
+}
+
+a:link {
+  color: var(--text);
+}
+a:visited {
+  color: var(--semi);
+}
+
+#about {
+  color: var(--semi);
+}
+
+#select_theme {
+  color: var(--text);
+  background-color: var(--main);
+}
+
+button, textarea, input {
+  color: var(--text);
+  background-color: var(--main);
+}
+
+button:disabled, textarea:disabled, input:disabled {
+  color: var(--text);
+  background-color: var(--semi);
+}
+
+td {
+  border: 2px solid var(--text);
+}
