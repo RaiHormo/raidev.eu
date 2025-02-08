@@ -282,6 +282,7 @@ button:hover {
 .dropdown-slink {
     width: 270px;
     font-family: Cyrenia;
+    height: 58px;
 }
 
 #post-expanded {
