@@ -290,7 +290,8 @@ button:hover {
     background-color: #C2BDC7;
     position: fixed;
     top: 3%;
-    left: 4vw;
+    left: 50%;
+    transform: translate(-50%, 0);
     z-index: 6;
     width: 90%;
     height: 90%;

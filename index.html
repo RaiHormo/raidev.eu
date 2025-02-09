@@ -150,8 +150,9 @@
     }
   };
 
+  window.addEventListener("load", setWidth());
+
   window.addEventListener("load", function() {
-    setWidth();
     setTimeout(function(){
       if (window.location.hash == "#postviewer") {
         postviewerExpand(true);

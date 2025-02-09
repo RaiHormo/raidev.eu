@@ -14,28 +14,30 @@ body {
 select {
     border-radius: 32px;
     border-style: solid;
-    border-color: var(--semi);
+    border-color: var(--text);
     color: var(--semi);
-    width: 60px;
     border-width: 2px;
-    padding: 2px;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 18px;
+    font-family: Cyrenia;
 }
-
 
 .about-button {
     border-style: solid;
     text-decoration: none;
     border-radius: 32px;
     border-style: solid;
-    border-color: var(--semi);
+    border-color: var(--text);
     color: var(--text);
     border-width: 2px;
-    padding: 2px;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 18px;
 }
+
 .post_link {
     border-radius: 12px;
     transition: all 0.3s;
@@ -55,6 +57,16 @@ select {
 
 .post_link:hover {
     scale: 95%;
+}
+
+#constructor_linker {
+    float: right;
+}
+
+#back_linker {
+    background-color: var(--text);
+    color: var(--main) !important;
+    font-size: 24px;
 }
 
 :root {
