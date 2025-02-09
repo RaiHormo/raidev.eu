@@ -298,7 +298,7 @@ button:hover {
     border-radius: 32px;
     display: none;
     outline-color: rgba(0, 0, 0, 0.8);
-    outline-width: 100px;
+    outline-width: 200px;
     outline-style: solid;
 }
 
