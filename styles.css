@@ -289,18 +289,19 @@ button:hover {
     height: 620px;
     background-color: #C2BDC7;
     position: fixed;
-    top: 3%;
+    top: 3vh;
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 6;
     width: 90%;
-    height: 90%;
+    height: 90vh;
     padding: 12px;
     border-radius: 32px;
     display: none;
     outline-color: rgba(0, 0, 0, 0.8);
     outline-width: 200px;
     outline-style: solid;
+    contain: strict;
 }
 
 .postviewer {
@@ -313,7 +314,7 @@ button:hover {
 
 #post-expanded .postviewer {
     width: 100%;
-    height: 90%;
+    height: calc(80vh - 24px);
 }
 
 .gallery-grid {
