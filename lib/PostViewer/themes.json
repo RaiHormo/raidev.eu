@@ -6,12 +6,6 @@
 "text": "#ffffff"
 },
 {
-"name": [ "iris" ],
-"main": "#d8d5db",
-"semi": "#8b828e",
-"text": "#44354A"
-},
-{
 "name": [ "dark", "black" ],
 "main": "#000000",
 "semi": "#808080",
@@ -62,7 +56,7 @@
 {
 "name": [ "red", "strawberry" ],
 "main": "#df101f",
-"semi": "#ffe2f1",
+"semi": "#ffc2d1",
 "text": "#ffffff"
 },
 {
@@ -88,5 +82,11 @@
 "main": "#ffffff",
 "semi": "#e0c000",
 "text": "#ff7f3f"
+},
+{
+"name": [ "newspaper", "iris newspaper" ],
+"main": "#d8d5db",
+"semi": "#8b828e",
+"text": "#44354A"
 }
 ]
