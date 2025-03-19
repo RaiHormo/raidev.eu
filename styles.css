@@ -317,6 +317,17 @@ button:hover {
     height: calc(80vh - 24px);
 }
 
+.home-background {
+    background-image: url(/media/Rai/banner2025.avif);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    background-size: cover;
+    height: 300px;
+    background-position-x: center;
+}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -942,6 +953,9 @@ button:hover {
     .topnav {
         display: block;
     }
+    .home-background {
+        background-position-x: 20%;
+    }
 }
 
 @media (max-width: 650px) {
@@ -974,7 +988,7 @@ button:hover {
     }
 
     .container {
-        top: 375px;
+        top: 400px;
         max-width: 100vw;
     }
 
@@ -1002,6 +1016,10 @@ button:hover {
     .gallery-tag-title {
         font-size: 32px;
         top: 125px
+    }
+    .home-background {
+        height: 400px;
+        background-position-x: 55%;
     }
 }
 
