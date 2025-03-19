@@ -127,7 +127,7 @@ button:hover {
     transition: all 0.3s !important;
     animation-delay: 0s !important;
     animation-duration: 3s;
-    animation-name: fadeDown;
+    animation-name: fadeDown !important;
 }
 
 @keyframes fadeDown {
