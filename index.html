@@ -160,6 +160,12 @@
         postviewerExpand(true);
       }
     });
+    setTimeout(function(){
+      Array.from(document.getElementsByClassName("card")).forEach(element => {
+        element.style.animationName = 'unset';
+        element.style.opacity = '1';
+      });
+    }, 1000);
   });
 
   for (var i = 0; i < document.getElementsByClassName("card").length; i++) {
