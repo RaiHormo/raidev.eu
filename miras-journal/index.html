@@ -282,7 +282,10 @@
     select_tab();
   }
 
-  window.onload = function() {
+  window.onload = init();
+  
+  function init() {
+    console.log("boop");
     if (window.location.hash.substring(1) == "") {
       tab_press("#about");
     }
