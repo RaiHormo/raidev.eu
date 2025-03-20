@@ -22,15 +22,16 @@
       var card = document.getElementsByClassName("card")[i];
       card.classList.add('fade-down-class');
     }
+    document.getElementsByClassName("home-background")[0].classList.add("faded");
     setTimeout(function(){
       window.location.href = pageUrl;
     }, 300);
   }
 </script>
-<body class="home-background">
+<body>
 
   <div include-html="/social-links.html"></div>
-
+  <div class="home-background faded"></div>
   <div class="container" data-masonry='{
     "itemSelector": ".card", "columnWidth": 500, "gutter":24,
     "fitWidth": true, "initLayout": true, "stagger": 3
@@ -175,6 +176,10 @@
   setTimeout(function(){
     window.scrollTo(0,0);
   });
+  setTimeout(function(){
+    window.scrollTo(0,0);
+    document.getElementsByClassName("home-background")[0].classList.remove("faded");
+  }, 300);
 
   function postviewerExpand(yes = true) {
     if (yes){
@@ -188,4 +193,14 @@
       document.getElementsByClassName("postviewer")[0].scrollIntoView({ behavior: "instant", block: "center", inline: "center"});
     }
   };
+
+  window.onscroll = function() {
+    var bg = document.getElementsByClassName("home-background")[0];
+    bg.style.opacity = Math.max(remap(window.scrollY, 0, 300, 1, 0), 0);
+  }
+
+  function remap(value, low1, high1, low2, high2) {
+    return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+}
+
   </script>
