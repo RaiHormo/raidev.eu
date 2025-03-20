@@ -322,11 +322,10 @@ button:hover {
     position: fixed;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    background-size: cover;
-    height: 300px;
+    min-height: 300px;
     background-position-x: center;
+    background-size: auto 300px;
     width: 100%;
     left: 0px;
     top: 0px;
@@ -937,6 +936,12 @@ button:hover {
     border-style: solid;
     max-width: 600px;
     text-align: left;
+}
+
+@media (min-width: 1420px) {
+    .home-background {
+        background-position-x: left;
+    }
 }
 
 @media (max-width: 908px) {
