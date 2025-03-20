@@ -1035,6 +1035,7 @@ button:hover {
     }
     .home-background {
         height: 400px;
+        background-size: auto 400px;
         background-position-x: 55%;
     }
 }
