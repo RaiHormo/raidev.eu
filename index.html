@@ -22,6 +22,10 @@
       var card = document.getElementsByClassName("card")[i];
       card.classList.add('fade-down-class');
     }
+    if (window.innerWidth <= 525) {
+      document.getElementsByClassName("social-links")[0].classList.add("faded");
+      console.log("a");
+    }
     document.getElementsByClassName("home-background")[0].classList.add("faded");
     setTimeout(function(){
       window.location.href = pageUrl;
@@ -144,7 +148,7 @@
 <script>
   function setWidth() {
     var mvp = document.getElementById('vp');
-    if (screen.width < 525) {
+    if (window.innerWidth < 525) {
       mvp.setAttribute('content','width=525px');
       console.log("mobile mode");
     } else {

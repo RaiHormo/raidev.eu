@@ -27,7 +27,7 @@
   <div include-html="/social-links.html" class="hide-mobile"></div>
 
   <div class="header-cont">
-    <button class="home-button" onclick="window.location.href='/';">
+    <button class="home-button" onclick="homeButton();">
     </button>
     <h1 style="display: inline; margin-left: 82px ;">Gallery</h1>
   </div>
@@ -61,3 +61,13 @@
 </html>
 <script src="/lib/handle-slinks.js"></script>
 <script src="/lib/image-popup.js"></script>
+<script>
+  function homeButton() {
+      document.getElementsByClassName("header-cont")[0].classList.add("fade-down-class");
+      document.getElementsByClassName("header")[0].style.transform = "unset";
+      document.getElementsByClassName("header")[0].style.animation = "headerUnload ease-in 3s";
+      setTimeout (function() {
+          window.location.href='/';
+      }, 200);
+  }
+</script>

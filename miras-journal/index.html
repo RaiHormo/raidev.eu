@@ -15,7 +15,7 @@
   
 
   <div class="header-cont">
-    <button class="home-button" style="background-color: #fdaa7b;" onclick="window.location.href='/';">
+    <button class="home-button" style="background-color: #fdaa7b;" onclick="homeButton();">
     </button>
     <img src="https://raw.githubusercontent.com/RaiHormo/Miras-Journal/main/art/Branding/logo.png" class="MJ-logo-header">
   </div>
@@ -318,4 +318,14 @@
 </script>
 <script src="/lib/image-popup.js"></script>
 <script src="/lib/profile-popup.js"></script>
+<script>
+  function homeButton() {
+      document.getElementsByClassName("header-cont")[0].classList.add("fade-down-class");
+      document.getElementsByClassName("header")[0].style.transform = "unset";
+      document.getElementsByClassName("header")[0].style.animation = "headerUnload ease-in 3s";
+      setTimeout (function() {
+          window.location.href='/';
+      }, 200);
+  }
+</script>
 </html>

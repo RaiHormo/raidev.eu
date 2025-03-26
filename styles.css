@@ -126,7 +126,7 @@ button:hover {
 .fade-down-class {
     transition: all 0.3s !important;
     animation-delay: 0s !important;
-    animation-duration: 3s;
+    animation-duration: 3s !important;
     animation-name: fadeDown !important;
 }
 
@@ -336,6 +336,7 @@ button:hover {
 
 .faded {
     opacity: 0 !important;
+    transition: all 0.3s !important;
 }
 
 .gallery-grid {
@@ -472,6 +473,25 @@ button:hover {
     }
 }
 
+@keyframes headerUnload {
+    0% {
+        transform: scaleY(1);
+    }
+    10% {
+        transform: scaleY(50);
+        background-color: #252327;
+    }
+
+    95% {
+        transform: scaleY(50);
+        background-color: #252327;
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
 .curved-bg {
     background-color: #252327;
     position: absolute;
@@ -588,7 +608,7 @@ button:hover {
     left: 32px;
     color: #a69cad;
     font-size: 28px;
-
+    transition: all 0.3s;
     opacity: 0;
     animation-name: SlideLeft;
     animation-duration: 0.5s;

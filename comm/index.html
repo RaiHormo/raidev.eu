@@ -24,7 +24,7 @@ background-repeat: no-repeat; background-size: cover;">
     <div include-html="/social-links.html" class="only-wide"></div>
 
     <div class="header-cont">
-        <button class="home-button" onclick="if (window.location.hash == '#terms') window.location.hash = ''; else window.location.href='/';">
+        <button class="home-button" onclick="if (window.location.hash == '#terms') window.location.hash = ''; else homeButton();">
         </button>
         <h1 style="display: inline; margin-left: 82px ;">Commissions</h1>
     </div>
@@ -151,4 +151,14 @@ background-repeat: no-repeat; background-size: cover;">
             window.scrollTo(0,0);
         }
     };
+</script>
+<script>
+    function homeButton() {
+        document.getElementsByClassName("header-cont")[0].classList.add("fade-down-class");
+        document.getElementsByClassName("header")[0].style.transform = "unset";
+        document.getElementsByClassName("header")[0].style.animation = "headerUnload ease-in 3s";
+        setTimeout (function() {
+            window.location.href='/';
+        }, 200);
+    }
 </script>
