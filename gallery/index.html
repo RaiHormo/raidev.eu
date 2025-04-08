@@ -12,7 +12,7 @@
   <script src="/lib/include-html.js"></script>
   <script src="/lib/imagesloaded.pkgd.min.js"></script>
   <script src="/lib/gallery-fetch.js" type="module"></script>
-  <meta name="viewport" content="width=device-width">
+  <meta id="vp" name="viewport">
   <link rel="icon" type="image/x-icon" href="/media/Rai/favicon.png">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
@@ -70,4 +70,18 @@
           window.location.href='/';
       }, 200);
   }
+</script>
+<script>
+  function setWidth() {
+    var mvp = document.getElementById('vp');
+    if (window.innerWidth < 500) {
+      mvp.setAttribute('content','width=500px');
+      console.log("mobile mode");
+    } else {
+      mvp.setAttribute('content','width=device-width');
+      console.log("swakrop mode");
+    }
+  };
+
+  window.addEventListener("load", setWidth());
 </script>
