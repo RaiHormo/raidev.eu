@@ -377,6 +377,15 @@ button:hover {
     margin-bottom: 0;
 }
 
+.gallery-year {
+    color: white;
+    font-size: 84px;
+    background-color: transparent;
+    height: 86px !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
 .gallery-container {
     width: 100%;
     margin: auto;
