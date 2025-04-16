@@ -321,8 +321,10 @@
 <script>
   function homeButton() {
       document.getElementsByClassName("header-cont")[0].classList.add("fade-down-class");
+      document.getElementsByClassName("topnav")[0].classList.add("fade-down-class");
+      document.getElementsByClassName("MJ-sect-list")[0].classList.add("faded");
       document.getElementsByClassName("header")[0].style.transform = "unset";
-      document.getElementsByClassName("header")[0].style.animation = "headerUnload ease-in 3s";
+      document.getElementsByClassName("header")[0].style.animation = "headerUnloadMJ ease-in 3s";
       setTimeout (function() {
           window.location.href='/';
       }, 200);

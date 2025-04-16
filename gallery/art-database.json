@@ -40,11 +40,6 @@
             "icon": "",
             "sketchinclude": "yes"
         },
-        {"name": "nimphe",
-            "title": "Nimphe (Pokemon OC)",
-            "icon": "/media/Rai/favicon.png",
-            "sketchinclude": "yes"
-        },
         {"name": "mira",
             "title": "Mira Levenor (MJ)",
             "icon": "",
@@ -74,8 +69,18 @@
             "icon": "",
             "sketchinclude": "yes"
         },
+        {"name": "nimphe",
+            "title": "Nimphe (Pokemon OC)",
+            "icon": "/media/Rai/favicon.png",
+            "sketchinclude": "yes"
+        },
         {"name": "pokemon",
             "title": "Non Rai Pokemon",
+            "icon": "",
+            "sketchinclude": "yes"
+        },
+        {"name": "ref",
+            "title": "Refrence Sheets",
             "icon": "",
             "sketchinclude": "yes"
         }

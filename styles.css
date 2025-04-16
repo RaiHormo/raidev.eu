@@ -498,6 +498,24 @@ button:hover {
     }
     10% {
         transform: scaleY(50);
+    }
+
+    95% {
+        transform: scaleY(50);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes headerUnloadMJ {
+    0% {
+        transform: scaleY(1);
+        background-color: #403939;
+    }
+    10% {
+        transform: scaleY(50);
         background-color: #252327;
     }
 
