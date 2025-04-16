@@ -205,6 +205,7 @@ button:hover {
     margin-top: 12px;
     z-index: 4;
     width: fit-content;
+    animation: 0.5s ease-out 0s 1 slideDown;
 }
 
 .slist {
@@ -299,7 +300,7 @@ button:hover {
     border-radius: 32px;
     display: none;
     outline-color: rgba(0, 0, 0, 0.8);
-    outline-width: 200px;
+    outline-width: 500px;
     outline-style: solid;
     contain: strict;
 }
@@ -357,12 +358,12 @@ button:hover {
     object-fit: cover;
     max-width: 100%;
     width: 300px;
-    margin-bottom: 8px;
-    margin-right: 8px;
-    max-width: 48%;
     text-align: center;
     background-color: #5d565191;
     color: #a69cad79;
+    display: inline-block;
+    grid-row-end: span 25;
+    margin: auto;
 }
 
 .gallery-img-wide {
@@ -387,18 +388,19 @@ button:hover {
 }
 
 .gallery-container {
-    width: 100%;
+    /* width: calc(100% - 16px); */
     margin: auto;
     top: 260px;
-    position: absolute;
-    /* border-style: solid;
-    border-width: 32px; */
+    position: relative;
     opacity: 0;
     animation-name: slideUp;
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
     animation-delay: 1.5s;
-    contain: strict;
+    display: grid;
+    grid-gap: 8px; /* [1] Add some gap between rows and columns */
+    grid-template-columns: repeat( auto-fill, minmax( 300px, 1fr ) ); /* [2] Make columns adjust according to the available viewport */
+    grid-auto-rows: 0px; /* [3] Set the height for implicitly-created row track */
 }
 
 .gallery-tag-title {
@@ -417,6 +419,14 @@ button:hover {
     padding-top: 6px;
     padding-bottom: 6px;
     font-size: 28px;
+}
+
+.tag-button-front {
+    background-color: #2b2b2b;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: 4px white solid;
 }
 
 .tag-button-selected,
@@ -1007,6 +1017,12 @@ button:hover {
     .hide-mobile {
         visibility: hidden;
     }
+    .masonry {
+        grid-template-columns: repeat( auto-fill, minmax( 200px, 1fr ) );
+    }
+    .gallery-img {
+        width: 240px;
+    }
 }
 
 @media (max-width: 777px) {
@@ -1044,7 +1060,6 @@ button:hover {
     .social-links {
         /* width: 100%; */
         margin: auto;
-        animation: 0.5s ease-out 0s 1 slideDown;
         position: fixed;
         right: 20%;
     }
@@ -1072,12 +1087,6 @@ button:hover {
 @media (max-width: 450px) {
     .container {
         width: 100%;
-    }
-
-    .gallery-img {
-        width: 47%;
-        /* margin-right: 1%;
-        margin-bottom: 1%;; */
     }
 
     .gallery-img-wide {

@@ -22,10 +22,10 @@
       var card = document.getElementsByClassName("card")[i];
       card.classList.add('fade-down-class');
     }
-    if (window.innerWidth <= 525) {
-      document.getElementsByClassName("social-links")[0].classList.add("faded");
-      console.log("a");
-    }
+    // if (window.innerWidth <= 525) {
+    document.getElementsByClassName("social-links")[0].classList.add("faded");
+    console.log("a");
+    // }
     document.getElementsByClassName("home-background")[0].classList.add("faded");
     setTimeout(function(){
       window.location.href = pageUrl;
@@ -109,7 +109,7 @@
     </div>
 
 
-    <div class="card" style="height: 320px;">
+    <div class="card" style="height: fit-content;">
       <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
         Gaming profiles</h1>
       <h4 style="text-align: left; margin: 0; color: #605863; font-size: 24px;">

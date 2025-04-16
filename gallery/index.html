@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/styles.css">
   <link href="/lib/fontawesome/css/all.min.css" rel="stylesheet">
   <script src="/lib/jquery-3.7.1.min.js"></script>
-  <script src="/lib/masonry.pkgd.min.js"></script>
+  <!-- <script src="/lib/masonry.pkgd.min.js"></script> -->
   <script src="/lib/include-html.js"></script>
   <script src="/lib/imagesloaded.pkgd.min.js"></script>
   <script src="/lib/gallery-fetch.js" type="module"></script>
@@ -24,7 +24,7 @@
 </head>
 <body style="background-color: #403b37;">
   
-  <div include-html="/social-links.html" class="hide-mobile"></div>
+  <!-- <div include-html="/social-links.html" class="hide-mobile"></div> -->
 
   <div class="header-cont">
     <button class="home-button" onclick="homeButton();">
@@ -39,17 +39,12 @@
   <h1 class="gallery-tag-title">All artwork</h1>
   <div id="tag-container">
     &emsp; &emsp; &emsp;
-    <button onclick="window.location.href='/gallery/#'" class="tag-button">Show all art</button>
+    <button onclick="window.location.href='/gallery/#'" class="tag-button">Finished Work</button>
   </div>
 
   <h2 class="gallery-loader">Loading images... <br><br>This might take a bit.</h2>
 
-  <div class="gallery-container" data-masorny='{
-    "columnWidth": 1,
-    "itemSelector": ".gallery-img",
-    "fitWidth": true,
-    "precentPosition": true
-  }'>
+  <div class="gallery-container masonry">
   </div>
 
   <div id="image-popup" class="modal">
