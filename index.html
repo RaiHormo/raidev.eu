@@ -30,7 +30,11 @@
     setTimeout(function(){
       window.location.href = pageUrl;
     }, 300);
-  }
+  };
+
+  var container;
+  var msnry;
+
 </script>
 <body>
 
@@ -90,7 +94,53 @@
         <div style="text-align: center;"><button class="gallery-button" style ="background-color: #3D2D43; color: #CEB0CD;" onclick="link('/comm');">
           Pricing and info</button></div>
         </div>
-        
+    
+    <div id="software-card" class="card" style="height: 600px; overflow: hidden;">
+      <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
+        Software I use</h1>
+      <h4 style="text-align: center; margin: 0; color: #605863;">
+        <div style="display: grid; grid-template-columns: 64px 350px; text-align: left; grid-gap: 24px; grid-row-gap: 24px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Calligrakrita-base.svg" alt="Krita" style="width: 64px;">
+          <div>
+            <span style="color: #3D2D43; font-size: 32px;">Krita</span><br>
+            <span style="font-size: 18px;">For drawing<br><br>I used to use CSP, but after switching to Linux I had to find something new.<br>
+            Nowdays I'm pretty comfortable in krita after setting it up the way I like, and It's really good considering it's completely free and open source.</span>
+          </div>
+
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Godot_icon.svg" alt="Godot" style="width: 64px;">
+          <div>
+            <span style="color: #3D2D43; font-size: 32px;">Godot Engine</span><br>
+            <span style="font-size: 18px;">For game development<br><br>It's what I'm using to make Mira's Journal. What can I say? It's what taught me programming in the first place.<br> It has solid tools tools for both 2D and 3D, UI tools better than most other engines and is free with no fine print.</span>
+          </div>
+
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Logo_Aseprite.svg/1200px-Logo_Aseprite.svg.png" alt="Aseprite" style="width: 64px;">
+          <div>
+            <span style="color: #3D2D43; font-size: 32px;">Aseprite</span><br>
+            <span style="font-size: 18px;">For pixel art<br><br>If you do pixel art and don't use Aseprite, you're doing something wrong.<br> It's more than worth the small price imo. Just don't make the same mistake as me and buy it on Steam...</span>
+          </div>
+
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/2023_Obsidian_logo.svg/1200px-2023_Obsidian_logo.svg.png" alt="Obsidian" style="width: 64px;">
+          <div>
+            <span style="color: #3D2D43; font-size: 32px;">Obsidian</span><br>
+            <span style="font-size: 18px;">For note taking<br><br>I mostly use it for Mira's Journal design documents.<br>It does the job as a markdown editor, I just wish there was a better free way to sync it than Git.</span>
+          </div>
+
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519" alt="VS Code" style="width: 64px;">
+          <div>
+            <span style="color: #3D2D43; font-size: 32px;">VS Code</span><br>
+            <span style="font-size: 18px;">For coding<br><br>It's the industry standard, who cares?<br>I just use it cus it has a lot of plugins and haven't looked enough for an alternative.<br>No, I'm not gonna use Vim, those keybinds are stupid.</span>
+          </div>
+        </div>
+      </h4>
+      <div id="software-card-expand" style="position: sticky; bottom: -28px; 
+      background: linear-gradient(180deg,rgba(42, 123, 155, 0) 0%, rgba(87, 199, 133, 0) 29%, rgba(75, 70, 97, 1) 100%); width: 150%; margin-left: -50px; height: 150px;">
+        <button style="margin-left: 180px; margin-top: 64px; background-color: #3d2e43;"
+        onclick="document.getElementById('software-card').style.height = 'fit-content'; document.getElementById('software-card-expand').style.display = 'none';
+        msnry.layout();">
+        <a class="fa-solid fa-chevron-down"></a> Expand</button>
+      </div>
+    </div>
+    
     <div class="card" style="height: 620px; background-color: #C2BDC7;">
       <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
         Posts
@@ -171,6 +221,12 @@
         element.style.opacity = '1';
       });
     }, 1000);
+
+    container = document.querySelector('.container');
+    msnry = new Masonry( container, {
+      itemSelector: ".card", columnWidth: 500, gutter:24,
+      fitWidth: true, initLayout: true, stagger: 3
+    });
   });
 
   for (var i = 0; i < document.getElementsByClassName("card").length; i++) {
