@@ -135,7 +135,7 @@ button:hover {
     text-align: center;
     animation-name: slideUp;
     animation-duration: 1s;
-    animation-delay: 6s;
+    animation-delay: 8s;
     color: white;
     animation-fill-mode: forwards;
     outline-width: 3px;
