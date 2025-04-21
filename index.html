@@ -40,6 +40,7 @@
 
   <div include-html="/social-links.html"></div>
   <div class="home-background faded"></div>
+  <h2 id="loader">Hmm... it's taking a while to load...<br><br>Maybe you have JavaScript blocked or something? Or your internet is really slow, idk.</h2>
   <div class="container" data-masonry='{
     "itemSelector": ".card", "columnWidth": 500, "gutter":24,
     "fitWidth": true, "initLayout": true, "stagger": 3
@@ -215,6 +216,11 @@
         postviewerExpand(true);
       }
     });
+    for (var i = 0; i < document.getElementsByClassName("card").length; i++) {
+      var card = document.getElementsByClassName("card")[i];
+      card.style.animationName = "slideUp";
+    }
+    document.getElementById("loader").style.display = "none";
     setTimeout(function(){
       Array.from(document.getElementsByClassName("card")).forEach(element => {
         element.style.animationName = 'unset';

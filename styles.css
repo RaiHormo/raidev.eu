@@ -82,7 +82,7 @@ button:hover {
     object-fit: contain;
     opacity: 0;
     animation-fill-mode: forwards;
-    animation-name: slideUp;
+    /* animation-name: slideUp; */
     animation-duration: 0.5s;
     transition: all 0.3s;
     animation-timing-function: cubic-bezier();
@@ -128,6 +128,20 @@ button:hover {
     animation-delay: 0s !important;
     animation-duration: 3s !important;
     animation-name: fadeDown !important;
+}
+
+#loader {
+    opacity: 0;
+    text-align: center;
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-delay: 6s;
+    color: white;
+    animation-fill-mode: forwards;
+    outline-width: 3px;
+    vertical-align: middle;
+    top: 300px;
+    position: sticky;
 }
 
 @keyframes fadeDown {
