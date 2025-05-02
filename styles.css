@@ -251,6 +251,16 @@ button:hover {
     font-size: 38px;
 }
 
+.links-text {
+    color: #b1a8b9;
+    font-size: 24px;
+    vertical-align: middle;
+    height: 84px;
+    line-height: 84px;
+    padding-left: 24px;
+    padding-right: 8px;
+}
+
 .dropdown-panel::before {
     right: 24px;
 }
@@ -265,7 +275,7 @@ button:hover {
     position: fixed;
     top: 18px;
     opacity: 0%;
-    width: inherit;
+    width: 336px;
     padding-top: 80px;
 }
 
@@ -295,9 +305,11 @@ button:hover {
 }
 
 .dropdown-slink {
-    width: 270px;
+    width: fit-content;
     font-family: Cyrenia;
     height: 58px;
+    padding-left: 32px;
+    padding-right: 48px;
 }
 
 #post-expanded {
@@ -1093,7 +1105,7 @@ button:hover {
         /* width: 100%; */
         margin: auto;
         position: fixed;
-        right: 20%;
+        right:15%;
     }
 
     .dropdown-panel {
