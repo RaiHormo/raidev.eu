@@ -808,6 +808,10 @@ button:hover {
     transition: all 0.3;
 }
 
+.comm-section {
+    text-align: left;
+}
+
 .comm-panel {
     background-color: #b1a8b9;
     padding: 24px;
@@ -820,7 +824,7 @@ button:hover {
     font-size: 24px;
     color: #3D2D43;
     text-align: center;
-    line-height: 32px;
+    line-height: 28px;
     flex-shrink: 0;
     margin-right: 24px;
 }
@@ -861,6 +865,7 @@ button:hover {
     max-width: 50%;
     vertical-align: middle;
     margin: 2px;
+    background-color: #a69cad;
 }
 
 .terms {
@@ -930,11 +935,13 @@ button:hover {
 /* Modal Content (Image) */
 .modal-content {
     position: sticky;
-    object-fit: scale-down;
+    object-fit: cover;
     max-width: 100%;
     max-height: calc(90vh - 64px);
     border-radius: 12px;
     margin-top: 0;
+    height: inherit;
+    image-rendering: pixelated;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */

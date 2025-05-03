@@ -36,11 +36,11 @@ background-repeat: no-repeat; background-size: cover;">
     <div class="comm-container">
         <div class="comm-panel">
             <h2 style="line-height: 12px;">Pricing</h2>
-            <button class="checked">Illustration
+            <button class="checked" onclick="category('Illustration'); this.classList.add('checked');">Illustration
             </button>
-            <button style="opacity: 50%;" class="">Pixel art / Assets
+            <button class="" onclick="category('Assets'); this.classList.add('checked');">Pixel art / Assets
             </button>
-            <div id="Illustration" style="text-align: left;">
+            <div id="Illustration" class="comm-section">
                 Price ranges from <b>15-45€</b><br><br>
                 Base price: <b>15€</b> (for a headshot sketch)<br>
                 <b>+2-7€</b> for bust to fullbody<br>
@@ -49,16 +49,30 @@ background-repeat: no-repeat; background-size: cover;">
                 <b>+5-10€</b> for background<br>
                 Additional characters are also a <b>+5€</b>
             </div>
+            <div id="Assets" class="comm-section" style=" display: none;">
+                This applies to smaller scale art with many frames, such as sprite sheets. For character art, key art and the like, refer to "Illustration".<br><br>
+                Base price / Designing the sprite: <b>3€</b>.
+                <br><br>
+                24x24 or lower: <b>+1€ per frame</b>.<br>
+                48x48 or lower: <b>+2€ per frame</b>.<br>
+                Higher res or hand-drawn: <b>+4€ per frame</b>.
+                <br><span style="font-size: 18px; opacity: 75%;">
+                    The resolution refers the base character, any extensions (like a sword held forward) won't add to the price.
+                </span><br><br>
+                Shading: <b>+5€ for all frames</b>.
+                <br><br>
+                For example, a sheet of 24x24 walk sprites with a 3 frame walk cycle would be 14€. Any single sprite is just <br>3€<br>.
+            </div>
             <br>
             <span>
-                To order a comission, please contact me on discord at <b>raidev</b>.<br>
-                <span style="font-size: 18px; opacity: 75%;">Before commissioning, please review the terms
+                To order a comission, please contact me preferably on Discord <b>@raidev</b>, or on Bluesky <b>@raidev.eu</b>.<br>
+                <span style="font-size: 18px; opacity: 75%;">Prices are listed in Euro, you can try converting them to your local currency. Before commissioning, please review the terms
                     below.</span><br>
             </span>
             <button class="checked" style="margin-top: 20px;" onclick="terms();">Terms and details
             </button>
         </div>
-        <div class="comm-previews">
+        <div class="comm-previews" id="IllustrationPV">
             <h1 style="color:#b1a8b9">Examples</h1>
             <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/spirit tracks.avif"
                 alt="2 Characters, Headshot, Shaded">
@@ -72,6 +86,17 @@ background-repeat: no-repeat; background-size: cover;">
                 src="/media/Artwork/asteria oil green.avif" alt="Monochrome, Half body, Simple background">
             <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/nimphe dress.avif"
                 alt="Colored, Full body">
+            <br><button style="background-color: #b1a8b9; color: #3D2D43; margin: 12px; text-align: center;"
+                onclick="window.location.href='/gallery#comm'" ;>View past commissions</button>
+        </div>
+        <div class="comm-previews" id="AssetsPV" style="display: none;">
+            <h1 style="color:#b1a8b9">Examples</h1>
+            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/PixelArt/FirstBattle.gif">
+            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/PixelArt/Erinnov.gif">
+            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/PixelArt/Petrogon.gif">
+            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/PixelArt/AsteriaBt.gif">
+            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/PixelArt/amberelm.png">
+            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/PixelArt/AlcineBT.gif">
             <br><button style="background-color: #b1a8b9; color: #3D2D43; margin: 12px; text-align: center;"
                 onclick="window.location.href='/gallery#comm'" ;>View past commissions</button>
         </div>
@@ -135,6 +160,18 @@ background-repeat: no-repeat; background-size: cover;">
             else if (terms_open && window.location.hash != "#terms") terms(true);
         }, 300);
     });
+
+    function category(string) {
+        document.getElementsByClassName("checked")[0].classList.remove("checked");
+        var arr = Array.from(document.getElementsByClassName("comm-section"));
+        arr = arr.concat(Array.from(document.getElementsByClassName("comm-previews")));
+        console.log(arr);
+        arr.forEach(element => {
+            element.style.display = "none";
+        });
+        document.getElementById(string).style = "block";
+        document.getElementById(string+"PV").style = "block";
+    }
 
     function terms(close = false) {
         if (close) {
