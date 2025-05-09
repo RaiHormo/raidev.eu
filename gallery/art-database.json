@@ -83,6 +83,11 @@
             "title": "Refrence Sheets",
             "icon": "",
             "sketchinclude": "yes"
+        },
+        {"name": "vail",
+            "title": "Vail (Pokemon OC)",
+            "icon": "",
+            "sketchinclude": "yes"
         }
     ],
     "artwork": [
@@ -584,12 +589,12 @@
         {"filename":"nimphe",
         "title":"nimphe",
         "date":"2024/Dec/26",
-        "tags": ["sketch", "nimphe", "pokemon"]
+        "tags": ["nimphe", "pokemon"]
         },
         {"filename":"wrapped rai",
         "title":"wrapped rai",
         "date":"2024/Dec/26",
-        "tags": ["sketch", "rai"]
+        "tags": ["rai"]
         },
         {"filename":"new year",
         "title":"New Year",
@@ -654,7 +659,7 @@
         {"filename":"reveal",
         "title":"Reveal",
         "date":"2025/Jan/16",
-        "tags": ["fanart", "sketch"]
+        "tags": ["fanart"]
         },
         {"filename":"noreen aura",
         "title":"Reveal",
@@ -689,7 +694,7 @@
         {"filename":"asteria naked",
         "title":"naked bunny",
         "date":"2025/Jan/23",
-        "tags": ["mj", "asteria", "sketch"]
+        "tags": ["mj", "asteria"]
         },
         {"filename":"banner2025",
         "title":"Banner 2025",
@@ -739,7 +744,7 @@
         {"filename":"parkay",
         "title":"Parkay!",
         "date":"2024/Oct/13",
-        "tags": ["giftart", "sketch"]
+        "tags": ["giftart"]
         },
         {"filename":"chibi asteria",
         "title":"chibi asteria",
@@ -835,6 +840,16 @@
         "title":"Lazulite heart",
         "date":"2025/Mar/28",
         "tags": ["mj", "sketch"]
+        },
+        {"filename":"mira yawn",
+        "title":"mira yawn",
+        "date":"2025/Apr/29",
+        "tags": ["mj", "sketch", "mira", "alcine"]
+        },
+        {"filename":"vail",
+        "title":"a Mystery dungeon and Miitopia partner",
+        "date":"2025/May/9",
+        "tags": ["pokemon", "vail"]
         }
     ]
 }
