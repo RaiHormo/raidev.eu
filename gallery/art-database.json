@@ -69,9 +69,19 @@
             "icon": "",
             "sketchinclude": "yes"
         },
+        {"name": "kai",
+            "title": "Kai (MJ)",
+            "icon": "",
+            "sketchinclude": "yes"
+        },
         {"name": "nimphe",
             "title": "Nimphe (Pokemon OC)",
             "icon": "/media/Rai/favicon.png",
+            "sketchinclude": "yes"
+        },
+        {"name": "vail",
+            "title": "Vail (Pokemon OC)",
+            "icon": "",
             "sketchinclude": "yes"
         },
         {"name": "pokemon",
@@ -81,11 +91,6 @@
         },
         {"name": "ref",
             "title": "Refrence Sheets",
-            "icon": "",
-            "sketchinclude": "yes"
-        },
-        {"name": "vail",
-            "title": "Vail (Pokemon OC)",
             "icon": "",
             "sketchinclude": "yes"
         }
@@ -850,6 +855,11 @@
         "title":"a Mystery dungeon and Miitopia partner",
         "date":"2025/May/9",
         "tags": ["pokemon", "vail"]
+        },
+        {"filename":"uppie",
+        "title":"uppie",
+        "date":"2025/Jan/20",
+        "tags": ["mj", "erinn", "kai", "asteria", "daze", "alcine", "sketch"]
         }
     ]
 }
