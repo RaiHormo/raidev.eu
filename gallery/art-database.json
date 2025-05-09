@@ -13,7 +13,7 @@
         {"name": "mj",
             "title": "Mira's Journal",
             "icon": "",
-            "sketchinclude": "no"
+            "sketchinclude": "yes"
         },
         {"name": "fanart",
             "title": "Fanart",
