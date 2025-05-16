@@ -935,12 +935,12 @@ button:hover {
 /* Modal Content (Image) */
 .modal-content {
     position: sticky;
-    object-fit: cover;
+    object-fit:contain;
     max-width: 100%;
+    height: 100%;
     max-height: calc(90vh - 64px);
     border-radius: 12px;
     margin-top: 0;
-    height: inherit;
     image-rendering: pixelated;
 }
 
