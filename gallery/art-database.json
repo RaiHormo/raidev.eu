@@ -7,27 +7,27 @@
         },
         {"name": "sketch",
             "title": "Sketches",
-            "icon": "",
+            "icon": "/media/Raicons/sketches.png",
             "sketchinclude": "yes"
         },
         {"name": "mj",
             "title": "Mira's Journal",
-            "icon": "",
+            "icon": "/media/MJ/icon.png",
             "sketchinclude": "yes"
         },
         {"name": "fanart",
             "title": "Fanart",
-            "icon": "",
+            "icon": "/media/Raicons/fanart.png",
             "sketchinclude": "yes"
         },
         {"name": "giftart",
             "title": "Art for others",
-            "icon": "",
+            "icon": "/media/Raicons/giftart.png",
             "sketchinclude": "yes"
         },
         {"name": "comm",
             "title": "Commissions",
-            "icon": "",
+            "icon": "/media/Raicons/comm.png",
             "sketchinclude": "yes"
         },
         {"name": "rai",
@@ -37,46 +37,46 @@
         },
         {"name": "iris",
             "title": "Iris (Fursona)",
-            "icon": "",
+            "icon": "/media/Raicons/Iris.png",
             "sketchinclude": "yes"
         },
         {"name": "mira",
             "title": "Mira Levenor (MJ)",
-            "icon": "",
+            "icon": "/media/Raicons/Mira.png",
             "sketchinclude": "yes"
         },
         {"name": "alcine",
             "title": "Alcine (MJ)",
-            "icon": ""
+            "icon": "/media/Raicons/Alcine.png"
         },
         {"name": "asteria",
             "title": "Asteria Versea (MJ)",
-            "icon": "",
+            "icon": "/media/Raicons/Asteria.png",
             "sketchinclude": "yes"
         },
         {"name": "yaru",
             "title": "Yaru (MJ)",
-            "icon": "",
+            "icon": "/media/Raicons/Yaru.png",
             "sketchinclude": "yes"
         },
         {"name": "daze",
             "title": "Daze (MJ)",
-            "icon": "",
+            "icon": "/media/Raicons/Daze.png",
             "sketchinclude": "yes"
         },
         {"name": "erinn",
             "title": "Erinn Levenor (MJ)",
-            "icon": "",
+            "icon": "/media/Raicons/Erinn.png",
             "sketchinclude": "yes"
         },
         {"name": "kai",
             "title": "Kai Reshanne (MJ)",
-            "icon": "",
+            "icon": "/media/Raicons/Kai.png",
             "sketchinclude": "yes"
         },
         {"name": "nimphe",
             "title": "Nimphe (Pokemon OC)",
-            "icon": "/media/Rai/favicon.png",
+            "icon": "",
             "sketchinclude": "yes"
         },
         {"name": "vail",

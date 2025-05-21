@@ -438,7 +438,7 @@ button:hover {
 .gallery-container {
     /* width: calc(100% - 16px); */
     margin: auto;
-    top: 260px;
+    top: 280px;
     position: relative;
     opacity: 0;
     animation-name: slideUp;
@@ -459,14 +459,24 @@ button:hover {
     font-size: 48px;
 }
 
+.tag-icon {
+    object-fit: cover;
+    height: 48px;
+    vertical-align: middle;
+    padding-right: 6px;
+    transform: translateY(-4px);
+}
+
 .tag-button {
     background-color: white;
     color: #403b37;
     margin: 6px;
     padding: 12px;
-    padding-top: 6px;
+    padding-top: 8px;
     padding-bottom: 6px;
+    padding-right: 18px;
     font-size: 28px;
+    vertical-align: middle;
 }
 
 .tag-button-front {
