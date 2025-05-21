@@ -194,6 +194,7 @@ background-repeat: no-repeat; background-size: cover;">
         document.getElementsByClassName("header-cont")[0].classList.add("fade-down-class");
         document.getElementsByClassName("header")[0].style.transform = "unset";
         document.getElementsByClassName("header")[0].style.animation = "headerUnload ease-in 3s";
+        document.getElementsByClassName("social-links")[0].classList.add("faded");
         setTimeout (function() {
             window.location.href='/';
         }, 200);

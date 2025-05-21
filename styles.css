@@ -85,7 +85,7 @@ button:hover {
     /* animation-name: slideUp; */
     animation-duration: 0.5s;
     transition: all 0.3s;
-    animation-timing-function: cubic-bezier();
+    animation-timing-function:cubic-bezier(0.175, 0.485, 0.32, 1.2);
     animation-delay: calc(var(--animation-order) * 100ms);
 }
 
@@ -115,6 +115,11 @@ button:hover {
     100% {
         transform: translateY(0px);
         opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-50px);
+        opacity: 0;
     }
 
     0% {
@@ -208,9 +213,9 @@ button:hover {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     white-space: nowrap;
-    overflow: hidden;
+    top: 0px;
     display: flex;
     position: fixed;
     right: 24px;
@@ -219,7 +224,11 @@ button:hover {
     margin-top: 12px;
     z-index: 4;
     width: fit-content;
-    animation: 0.5s ease-out 0s 1 slideDown;
+    /* opacity: 0; */
+    transition: all 0.3s;
+    animation: slideDown 1s ease-out;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: forwards;
 }
 
 .slist {
@@ -266,22 +275,24 @@ button:hover {
 }
 
 .dropdown-panel {
-    animation: close-drop 0.1s ease forwards;
-    display: none;
+    animation: close-drop 0.2s ease forwards;
     z-index: -9999;
     background-color: #3d2e43;
     padding: 18px;
     border-radius: 42px;
     position: fixed;
-    top: 18px;
+    /* top: 18px; */
     opacity: 0%;
     width: 336px;
     padding-top: 80px;
+    overflow: hidden;
+    transition: all 0.3s;
 }
 
 .caret {
     display: block;
-    animation: open-drop 0.1s ease forwards;
+    animation: open-drop 0.3s forwards cubic-bezier(0.175, 0.885, 0.32, 1.1);
+    /* height: fit-content; */
 }
 
 .section-panel {
@@ -293,13 +304,23 @@ button:hover {
 }
 
 @keyframes open-drop {
+    from {
+        height: 32px;
+        opacity: 25%;
+    }
     to {
+        height: 550px;
         opacity: 100%;
     }
 }
 
 @keyframes close-drop {
+    from {
+        height: 550px;
+        opacity: 100%;
+    }
     to {
+        height: 32px;
         opacity: 0%;
     }
 }
@@ -364,6 +385,7 @@ button:hover {
 .faded {
     opacity: 0 !important;
     transition: all 0.3s !important;
+    animation: none;
 }
 
 .gallery-grid {
@@ -676,7 +698,7 @@ button:hover {
     animation-name: SlideLeft;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-delay: 0.5s;
+    /* animation-delay: 0.5s; */
 }
 
 @keyframes SlideLeft {
@@ -1113,11 +1135,12 @@ button:hover {
         margin: auto;
         position: fixed;
         right:15%;
+        top: 18px;
     }
 
     .dropdown-panel {
         margin: auto;
-        top: 10px;
+        top: 0px;
     }
 
     .gallery-container {
