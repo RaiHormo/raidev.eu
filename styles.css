@@ -644,6 +644,8 @@ button:hover {
     color: white;
     font-size: 24px;
     margin: 10px;
+    font-weight: bold;
+    outline-offset: -1px;
 }
 
 .MJ-sect-button:hover,
@@ -656,6 +658,7 @@ button:hover {
     padding-right: 18px;
     scale: 100%;
     margin: 4px;
+    opacity: 1;
 }
 
 .MJ-active-tab,
@@ -669,10 +672,31 @@ button:hover {
     top: 100px;
     position: absolute;
     color: rgb(214, 210, 208);
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 24px;
+    /* line-height: 26px; */
     max-width: 1000px;
     margin: auto;
+}
+
+.mj-background {
+    width: 100vw; position:fixed;
+    top: 120px ;
+    left: 0;
+    object-fit:cover;
+    object-position:center bottom;
+    z-index: -1;
+    background-color: #150401;
+    height: calc(100vh - 120px);
+    filter: brightness(80%);
+    max-height: 800px;
+}
+
+.mj-behind-background {
+    position: fixed; z-index: -2; background-repeat:repeat; top: 0; left: 0; filter: blur(20px) brightness(50%); height: 100vh; width: 100%;
+}
+
+.mj-main-logo {
+    height: 300px; position: fixed; top: 200px
 }
 
 .mj-screenshot {
@@ -1064,6 +1088,9 @@ button:hover {
     .home-background {
         background-position-x: left;
     }
+    .mj-background {
+        max-height: unset;
+    }
 }
 
 @media (max-width: 908px) {
@@ -1094,6 +1121,10 @@ button:hover {
     .home-background {
         background-position-x: 20%;
     }
+    .mj-background {
+        height: 500px;
+        object-position: calc(50% - 100px);;
+    }
 }
 
 @media (max-width: 650px) {
@@ -1123,6 +1154,9 @@ button:hover {
     .comm-previews {
         display: contents;
         width: 48%;
+    }
+    .mj-main-logo {
+        height: 200px;
     }
 }
 
@@ -1166,6 +1200,10 @@ button:hover {
         background-size: auto 400px;
         background-position-x: 55%;
     }
+    .MJ-tab-container {
+        width: 98%;
+        left: 1%;
+    }
 }
 
 @media (max-width: 450px) {
@@ -1175,6 +1213,13 @@ button:hover {
 
     .gallery-img-wide {
         width: 98%;
+    }
+    .mj-background {
+        height: 320px;
+        object-position: calc(50% - 60px);;
+    }
+    .mj-main-logo{
+        display: none;
     }
 }
 

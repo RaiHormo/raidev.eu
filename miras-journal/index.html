@@ -17,7 +17,7 @@
   <div class="header-cont">
     <button class="home-button" style="background-color: #fdaa7b;" onclick="homeButton();">
     </button>
-    <img src="https://raw.githubusercontent.com/RaiHormo/Miras-Journal/main/art/Branding/logo.png" class="MJ-logo-header">
+    <img src="/media/MJ/logo.png" class="MJ-logo-header">
   </div>
 
   
@@ -32,8 +32,10 @@
           Characters</button>
         <button class="MJ-sect-button how-it-started" onclick="tab_press('#how-it-started');">
           How it started</button>
-        <button class="MJ-sect-button how-its-going" onclick="tab_press('#how-its-going');">
-          How it's going</button>
+        <!-- <button class="MJ-sect-button how-its-going" onclick="tab_press('#how-its-going');">
+          How it's going</button> -->
+        <button class="MJ-sect-button playtest" onclick="tab_press('#Playtest');">
+          Playtest</button>
         <button class="MJ-sect-button FAQ" onclick="tab_press('#FAQ');">
           FAQ</button>
       </div>
@@ -54,8 +56,10 @@
           Characters</button>
         <button class="MJ-sect-button how-it-started" onclick="tab_press('#how-it-started');">
           How it started</button>
-        <button class="MJ-sect-button how-its-going" onclick="tab_press('#how-its-going');">
-          How it's going</button>
+        <button class="MJ-sect-button playtest" onclick="tab_press('#Playtest');">
+          Playtest</button>
+        <!-- <button class="MJ-sect-button how-its-going" onclick="tab_press('#how-its-going');">
+          How it's going</button> -->
         <button class="MJ-sect-button FAQ" onclick="tab_press('#FAQ');">
           FAQ</button>
       </div>
@@ -65,31 +69,39 @@
     <div class="MJ-tab-container">
       <br><br>
       <div id="about" class="MJ-tab">
-        <h2 style="color: red">This page is a work in progress!</h2>
-        <h2>About Mira's Journal</h2>
-        <a href="https://github.com/RaiHormo/Miras-Journal" style="color: #fdaa7b;">View on github</a><br><br>
-        <img src="/media/MJ/MiraCool.png" alt="The protagonist Mira" style="max-height: 400px; max-width: 40%; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
-        <img src="/media/MJ/AlcineSticker.png" alt="Alcine, a party member" style="max-height: 400px; max-width: 50%; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
-        <p>
-          This is a game I've been working on as a side-project for a while.
+        <img src="/media/Artwork/mj capsule.avif" class="mj-background">
+        <img src="/media/Artwork/mj capsule.avif" class="mj-behind-background">
+        <img src="/media/MJ/logo_solid.png" class="mj-main-logo">
+        <div style="column-gap: 24px; top: 500px; position: fixed;">
+          <button class="MJ-sect-button" style="font-size: 38px; color: white; background-color: #fdaa7b; outline-color: #fdaa7b;" onclick="tab_press('#playtest');">Playtest</button>
+          <button class="MJ-sect-button" style="font-size: 38px;" onclick="window.open('http://www.github.com/RaiHormo/Miras-Journal', '_blank');">Github</button></div>
+        <div style="top: 500px; background-color: #2b2b2b; color: white; position: relative; padding: 24px; border-radius: 24px; border-color: #FEFEFE; border-width: 6px; border-style:solid;">
+          <h1>About this game</h1>
+          <p>
+            This is a game I've been working on as a side-project for a while.
 
-          It's a turn-based RPG, somewhat inspired by ATLUS games.<br>
-          It features calendar progression and a color-based battle system.<br></p>
-          <h2>Early Screenshots</h2>
-        <img src="/media/MJ/AboutScreenshot1.png" alt="Alcine on the party menu" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
-        <img src="/media/MJ/AboutScreenshot2.png" alt="The turn based battle system" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br>
-        <img src="/media/MJ/AboutScreenshot3.png" alt="A ruined town called Amberelm" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
-        <img src="/media/MJ/AboutScreenshot4.png" alt="The main menu" style="max-height: 400px; width: 48%; max-width: 300px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br>
-        <h2>Story</h2>
-        <p>
-          A young wolf girl named Mira Levenor who finds herself in a strange realm in ruins, with a few people stuck there trying to survive.<br>
-          As each day passes the surroundings get more and more corrupted.<br><br>
-          Follow her day to day life exploring the lost realm, fighting in turn-based battles and getting to know new people as they try to find a way to the outside world and discover the truth.<br><br>
-          During her adventures, Mira will keep a journal, giving her thoughts on everything that happens every day.<br>
-          <h2>Current state</h2>
-          The game is still in early development, and all the work so far has been done by one person.
-          <h2 style="color: #fdaa7b">Select another section on the top for more info</h2>
-        </p>
+            It's a turn-based RPG, somewhat inspired by ATLUS games.<br>
+            It features calendar progression and a color-based battle system.<br></p>
+          <img src="/media/MJ/AboutScreenshot1.png" alt="Alcine on the party menu" style=" width: 48%; max-width: 500px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+          <img src="/media/MJ/AboutScreenshot2.png" alt="The turn based battle system" style=" width: 48%; max-width: 500px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br>
+          <img src="/media/MJ/AboutScreenshot3.png" alt="A ruined town called Amberelm" style="width: 48%; max-width: 500px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);">
+          <img src="/media/MJ/AboutScreenshot4.png" alt="The main menu" style=" width: 48%; max-width: 500px; object-fit: scale-down;" class="clickable-image" onclick="show_image(this);"><br>
+          <button class="MJ-sect-button">More screenshots</button><br><br>
+          <h2>Story</h2>
+          <p>
+            A young wolf girl named Mira Levenor who finds herself in a strange realm in ruins, with a few people stuck there trying to survive.<br>
+            As each day passes the surroundings get more and more corrupted.<br><br>
+            Follow her day to day life exploring the lost realm, fighting in turn-based battles and getting to know new people as they try to find a way to the outside world and discover the truth.<br><br>
+            During her adventures, Mira will keep a journal, giving her thoughts on everything that happens every day.<br>
+            <h2>Current state</h2>
+            The game is still in early development, and all the work so far has been done by one person. There's a few areas, a tiny part of the story and a fairly complete battle system. There's still no music though. 
+            <br>There's a build available to test above.
+          </p>
+        <br>
+        <a class="icon MJ-sect-button section-button" onclick="window.scrollTo(0,0); toggle_menu()" style="position: relative;">
+          <i class="fa fa-bars"><h class="section-text">Navigate to another section</h></i>
+        </a>
+        </div>
       </div>
       <div id="how-it-started" class="MJ-tab">
         <h2>My history with game development</h2>
@@ -212,6 +224,11 @@
         <h2>How is it going?</h2>
         As fast as a large scale game being worked on my a single person on their free time realistically can.<br><br>Eventually I want to have devlogs in this page, but for now you can join <a  style="color: #fdaa7b;" href="https://discord.gg/GcH9Du4bqw" target="_blank">my Discord server</a> where I talk about my work on the game as it happens.
       </div>
+      <div id="playtest" class="MJ-tab">
+        <h2>Playtest</h2>
+        If you want to try the game in it's current unfinished state, you can <a  style="color: #fdaa7b;" href="https://discord.gg/GcH9Du4bqw" target="_blank">download the latest build from here</a> (under assets).<br><br>
+        If you play it, please provide feedback on <a  style="color: #fdaa7b;" href="https://discord.gg/GcH9Du4bqw" target="_blank">my Discord server</a>.
+      </div>
       <div id="FAQ" class="MJ-tab">
         <h2>When will this be released?</h2>
         <p>I honestly have no idea. Game development is very complicated and I'm currently doing this myself entirely as a hobby. It'll probably take years.<br>
@@ -294,7 +311,7 @@
   }
   
   function select_tab() {
-    window.scrollTo(0,-50)
+    window.scrollTo(0, 0)
     document.querySelectorAll('.MJ-sect-button').forEach(function(button) {
       button.className = button.className.replace(" MJ-active-tab", "");
     });
@@ -311,6 +328,7 @@
       mvp.setAttribute('content','width=device-width');
       console.log("swakrop mode");
     }
+    window.scrollTo(0, 0)
   };
 
   window.addEventListener("load", setWidth());
