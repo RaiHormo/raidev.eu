@@ -76,22 +76,22 @@
         },
         {"name": "nimphe",
             "title": "Nimphe (Pokemon OC)",
-            "icon": "",
+            "icon": "/media/Raicons/Nimphe.png",
             "sketchinclude": "yes"
         },
         {"name": "vail",
             "title": "Vail (Pokemon OC)",
-            "icon": "",
+            "icon": "/media/Raicons/Vail.png",
             "sketchinclude": "yes"
         },
         {"name": "pokemon",
             "title": "Non Rai Pokemon",
-            "icon": "",
+            "icon": "/media/Raicons/pokemon.png",
             "sketchinclude": "yes"
         },
         {"name": "ref",
             "title": "Refrence Sheets",
-            "icon": "",
+            "icon": "/media/Raicons/ref.png",
             "sketchinclude": "yes"
         }
     ],
