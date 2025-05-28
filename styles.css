@@ -25,6 +25,7 @@ button {
     color: white;
     font-family: Cyrenia;
     transition: all 0.3s;
+    font-weight: bold;
 }
 
 .button {
@@ -454,9 +455,15 @@ button:hover {
 .gallery-tag-title {
     position: absolute;
     top: 110px;
-    left: 10vw;
+    left: 210px;
     color: white;
     font-size: 48px;
+}
+
+.tag-expand-button {
+    position: relative;
+    top: 130px;
+    left: 24px;
 }
 
 .tag-icon {
@@ -496,7 +503,7 @@ button:hover {
 
 #tag-container {
     position: absolute;
-    top: 190px;
+    top: 210px;
     right: auto;
     left: 0;
     overflow-x: scroll;
@@ -505,6 +512,7 @@ button:hover {
     padding-top: 4px;
     padding-bottom: 4px;
     scrollbar-width: none;
+    z-index: 1;
 }
 
 .header {
@@ -958,7 +966,6 @@ button:hover {
 }
 
 .clickable-image:hover {
-    opacity: 0.9;
     outline-width: 6px;
     outline-offset: -6px;
 }
@@ -1193,7 +1200,17 @@ button:hover {
 
     .gallery-tag-title {
         font-size: 32px;
-        top: 125px
+        top: 125px;
+        left: 130px
+    }
+    .tag-expand-button {
+        font-size: 24px;
+        left: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        top: 128px;
     }
     .home-background {
         height: 400px;

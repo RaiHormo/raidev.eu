@@ -19,7 +19,7 @@
   <meta content="Iris' fancy gallery" property="og:title" />
   <meta content="A very cool gallery." property="og:description" />
   <meta content="https://raidev.eu" property="og:url" />
-  <meta id="img-meta" content="/media/Artwork/mira jojo.avif" property="og:image" />
+  <meta id="img-meta" content="/media/Stamps/stamp.png" property="og:image" />
   <meta content="#9948b1" data-react-helmet="true" name="theme-color" />
 </head>
 <body style="background-color: #403b37;">
@@ -36,7 +36,7 @@
     <div class="header-corner"></div>
   </div>
 
-  <h1 class="gallery-tag-title">All artwork</h1>
+  <button class="tag-expand-button" onclick="tag_expand();"><i class="fa-solid fa-chevron-down"></i> Tags</a></button><h1 class="gallery-tag-title">All artwork</h1>
   <div id="tag-container">
     <!-- &emsp; &emsp; &emsp; -->
     <button onclick="window.location.href='/gallery/#'" class="tag-button"><img class='tag-icon'>Finished Work</button>
@@ -64,6 +64,28 @@
       setTimeout (function() {
           window.location.href='/';
       }, 200);
+  }
+
+function tag_expand() {
+  var container = document.getElementById("tag-container");
+  var gallery = document.getElementsByClassName("gallery-container")[0];
+  var button = document.getElementsByClassName("tag-expand-button")[0].children[0];
+    if (container.style.whiteSpace != "unset") {
+      container.style.whiteSpace = "unset";
+      gallery.setAttribute('style', 'opacity:10% !important');
+      button.classList.remove("fa-chevron-down");
+      button.classList.add("fa-chevron-up");
+    } else tag_unexpand();
+  }
+
+  function tag_unexpand() {
+    var container = document.getElementById("tag-container");
+    var gallery = document.getElementsByClassName("gallery-container")[0];
+    var button = document.getElementsByClassName("tag-expand-button")[0].children[0];
+    container.style.whiteSpace = "nowrap";
+    gallery.setAttribute('style', '');
+    button.classList.remove("fa-chevron-up");
+    button.classList.add("fa-chevron-down");
   }
 </script>
 <script>
