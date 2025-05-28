@@ -96,8 +96,12 @@ button:hover {
 
 .card--c3 {
     background-color: #403b37;
+    background-image: url("media/Artwork/mj capsule.avif");
+    background-blend-mode: soft-light;
     color: white;
     padding: 24px;
+    background-position-x: calc(60%);
+    background-size: cover;
 }
 
 @keyframes slideUp {
@@ -613,8 +617,8 @@ button:hover {
 
 .MJ-logo {
     object-fit: cover;
-    width: 70%;
-    float: left;
+    width: 66%;
+    /* float: left; */
 }
 
 .MJ-button {
