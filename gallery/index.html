@@ -72,7 +72,7 @@ function tag_expand() {
   var button = document.getElementsByClassName("tag-expand-button")[0].children[0];
     if (container.style.whiteSpace != "unset") {
       container.style.whiteSpace = "unset";
-      gallery.setAttribute('style', 'opacity:10% !important');
+      gallery.setAttribute('style', 'opacity:10% !important; pointer-events: none;');
       button.classList.remove("fa-chevron-down");
       button.classList.add("fa-chevron-up");
     } else tag_unexpand();

@@ -1212,6 +1212,13 @@ button:hover {
         padding-top: 12px;
         top: 128px;
     }
+    .tag-button {
+        font-size: 24px;
+        height: 64px;
+    }
+    .tag-icon {
+        height: 42px;
+    }
     .home-background {
         height: 400px;
         background-size: auto 400px;
