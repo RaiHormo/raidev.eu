@@ -72,16 +72,16 @@
         style="border-bottom-right-radius: 32px;">
       </div>
 
-      <div style="text-align: center;"><button class="gallery-button" onclick="link('/gallery');">
-        View gallery</button></div>
+      <div style="text-align: center;"><a href="/gallery" onclick="link('/gallery'); return false"><button class="gallery-button">
+        View gallery</button></a></div>
     </div>
 
     <div class="card card--c3 card-hover" style="height: 380px;" onclick="link('/miras-journal');">
       <img src="/media/MJ/logo.png" class="MJ-logo">
       <h4 style="font-weight: normal; margin: 0; font-size: 24px;">A turn based RPG game I'm currently working on.</h4>
-      <div style="text-align: center;"><button class="MJ-button" onclick="link('/miras-journal');">
+      <div style="text-align: center;"><a href="/miras-journal"><button class="MJ-button" onclick="link('/miras-journal'); return false">
         Learn more
-      </button></div>
+      </button></a></div>
       <img src="media/MJ/Idle.gif" style="left: -20px; height: 180px; top: 200px; position: absolute; image-rendering: pixelated;">
     </div>
     
@@ -91,8 +91,9 @@
       Commissions</h1>
       <h4 style="text-align: center; margin: 0; color: #3d2e43; opacity: 90%; font-size: 28px;">
         I'm currently open for Illustration and Game Asset commissions. The prices range from 15-45€.</h4>
-        <div style="text-align: center;"><button class="gallery-button" style ="background-color: #3D2D43; color: #CEB0CD;" onclick="link('/comm');">
-          Pricing and info</button></div>
+        <div style="text-align: center;">
+          <a href="/comm" onclick="link('/comm'); return false"><button class="gallery-button" style ="background-color: #3D2D43; color: #CEB0CD;">
+          Pricing and info</button></a></div>
         </div>
     
     <div id="software-card" class="card" style="height: 600px; overflow: hidden;">

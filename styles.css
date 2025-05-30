@@ -48,11 +48,6 @@ button:hover {
     opacity: 90%;
 }
 
-.button:hover {
-    scale: 95%;
-    opacity: 90%;
-}
-
 .container {
     box-sizing: border-box;
     background: transparent;
@@ -234,6 +229,23 @@ button:hover {
     animation: slideDown 1s ease-out;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     animation-fill-mode: forwards;
+    text-decoration: none;
+}
+
+.social-links a:link {
+    text-decoration: none;
+}
+
+.social-links a:visited {
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: none;
+}
+
+.social-links a:active {
+    text-decoration: none;
 }
 
 .slist {
@@ -254,6 +266,7 @@ button:hover {
     margin: 8px;
     border: none;
     padding: 0;
+    text-decoration: none;
 }
 
 .slink-pressed {
