@@ -176,7 +176,7 @@
       <div id="characters" class="MJ-tab">
         <h2>Mira Levenor</h2>
         <div style="display: flex; width: 100%; justify-content: left;">
-          <img src="https://github.com/RaiHormo/Miras-Journal/blob/main/art/Renders/Mira.png?raw=true" alt="Mira Levenor render" style="height: 300px; width: 300px; max-width: 50%; object-fit: cover; overflow: hidden; padding: 0;" class="clickable-image" onclick="profile(this);"><p><br>
+          <img src="https://github.com/RaiHormo/Miras-Journal/blob/main/art/Renders/Mira.png?raw=true" alt="Mira Levenor render" style="height: 300px; width: 300px; max-width: 50%; object-fit: cover; overflow: hidden; padding: 0;" class="clickable-image" onclick="homeButton('/oc#mira');"><p><br>
           Age: 19<br>Species: Cyrenian<br>Pronouns: She/Her<br>
           Aura affinity: <a style="color: #DAAA81;">Heat</a><br>Birthday: October 18<br><br></p>
         </div>
@@ -274,18 +274,6 @@
       <img class="modal-content" id="img01">
     </div>
 
-    <div id="profile-popup" class="modal">
-      <span id="close-popup">&times;</span>
-      <div class="profile-container">
-        <h2 style="margin: 0px;">Mira Levenor</h2>
-          <div style="display: flex; width: 100%; justify-content: left;">
-            <img src="https://github.com/RaiHormo/Miras-Journal/blob/main/art/Renders/Mira.png?raw=true" alt="Mira Levenor render" style="height: 300px; width: 300px; max-width: 50%; object-fit: cover; overflow: hidden; padding: 0;" onclick="show_image(this);"><p><br>
-            Age: 19<br>Species: Cyrenian<br>Pronouns: She/Her<br>
-            Aura affinity: <a style="color: #DAAA81;">Heat</a><br>Birthday: October 18<br><br></p>
-          </div>
-          Long description
-      </div>
-    </div>
 </body>
 <script>
   function toggle_menu(state = null) {
@@ -345,14 +333,14 @@
 <script src="/lib/image-popup.js"></script>
 <script src="/lib/profile-popup.js"></script>
 <script>
-  function homeButton() {
+  function homeButton(to="/") {
       document.getElementsByClassName("header-cont")[0].classList.add("fade-down-class");
       document.getElementsByClassName("topnav")[0].classList.add("fade-down-class");
       document.getElementsByClassName("MJ-sect-list")[0].classList.add("faded");
       document.getElementsByClassName("header")[0].style.transform = "unset";
       document.getElementsByClassName("header")[0].style.animation = "headerUnloadMJ ease-in 3s";
       setTimeout (function() {
-          window.location.href='/';
+            window.location.href=to;
       }, 200);
   }
 </script>

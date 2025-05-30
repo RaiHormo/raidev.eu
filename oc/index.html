@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris' art gallery</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="/lib/fontawesome/css/all.min.css" rel="stylesheet">
+    <script onclick="show_image(this);" src="/lib/jquery-3.7.1.min.js"></script>
+    <script onclick="show_image(this);" src="/lib/include-html.js"></script>
+    <script onclick="show_image(this);" src="/lib/imagesloaded.pkgd.min.js"></script>
+    <meta id="vp" name="viewport">
+    <link rel="icon" type="image/x-icon" href="/media/Rai/favicon.png">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+</head>
+
+<body style="
+height: 100vh;
+background-color: #403b37; background-attachment: fixed;">
+
+    <!-- <div include-html="/social-links.html" class="only-wide"></div> -->
+
+    <div class="header-cont">
+        <button class="home-button" onclick="if (window.location.hash == '#terms') window.location.hash = ''; else homeButton();">
+        </button>
+        <h1 style="display: inline; margin-left: 82px ;">Characters</h1>
+    </div>
+
+    <div class="header">
+        <div class="header-corner"></div>
+    </div>
+
+
+    <div id="profile-popup">
+    <span id="close-popup">&times;</span>
+    <div id="profile-container">
+        <div id="profile-mira">
+            <h2 style="margin: 0px;">Mira Levenor</h2>
+            <div class="profile-div">
+                <img src="https://github.com/RaiHormo/Miras-Journal/blob/main/art/Renders/Mira.png?raw=true" class="profile-img" alt="Mira Levenor render"  onclick="show_image(this);"><p><br>
+                Age: 19<br>Species: Cyrenian<br>Pronouns: She/Her<br>
+                Aura affinity: <a style="color: #DAAA81;">Heat</a><br>Birthday: October 18<br><br></p>
+            </div>
+            Mira is the most knowledgable of the party as well as the main damage dealer. However she struggles quite a bit in social situations and can let her emotions control her easily. <br>Trying to improve herself, she started keeping a personal journal, not knowing where that would lead her...<br><br>
+            Being from a species whoose homeland is now gone, she lived in a small village along with other remaining Cyrenians.<br>
+            She worked as a librarian in a nearby city.<br>She has an interest in science, magic and monsters, however she doesn't get many opportunities to use her theoretical knowledge.<br><br>
+        </div>
+        <button class="profile-btn" onclick="gallery_btn();">View in Gallery</button>
+    </div>
+    </div>
+
+    <div id="image-popup" class="modal">
+        <span id="close-popup">&times;</span>
+        <div id="caption"></div>
+        <img class="modal-content" id="img01">
+    </div>
+</body>
+
+</html>
+<script src="/lib/handle-slinks.js"></script>
+<script src="/lib/image-popup.js"></script>
+<script>
+    var character = "";
+
+    function setWidth() {
+        var mvp = document.getElementById('vp');
+        if (screen.width < 472) {
+            mvp.setAttribute('content', 'width=472px');
+            console.log("mobile mode");
+        } else {
+            mvp.setAttribute('content', 'width=device-width');
+            console.log("swakrop mode");
+        }
+    };
+
+    window.addEventListener("load", function() {
+        setWidth();
+        show_character(window.location.hash.substring(1));
+    });
+
+    window.addEventListener('hashchange',() => {
+        setTimeout (function() {
+            show_character(window.location.hash.substring(1));
+        }, 300);
+    });
+
+    function show_character(string) {
+        character = string
+        var elements = Array.from(document.getElementById("profile-container").children);
+        elements.forEach(element => {
+            if (element.id != "profile-"+character && !element.classList.contains("profile-btn")) {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            };
+        });
+    }
+    function gallery_btn() {
+        homeButton("/gallery#"+character);
+    }
+</script>
+<script>
+    function homeButton(to="/") {
+        document.getElementsByClassName("header-cont")[0].classList.add("fade-down-class");
+        document.getElementsByClassName("header")[0].style.transform = "unset";
+        document.getElementsByClassName("header")[0].style.animation = "headerUnload ease-in 3s";
+        // document.getElementsByClassName("social-links")[0].classList.add("faded");
+        setTimeout (function() {
+            window.location.href=to;
+        }, 200);
+    }
+</script>

@@ -533,7 +533,7 @@ button:hover {
     animation-timing-function: cubic-bezier();
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 0.3s;
 }
 
 .header-mj {
@@ -642,7 +642,7 @@ button:hover {
     animation-name: SlideLeft;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-delay: 1.5s;
+    animation-delay: 0.8s;
 }
 
 .MJ-sect-button {
@@ -958,6 +958,41 @@ button:hover {
     margin: 12px;
 }
 
+#profile-popup {
+    position: relative;
+    top: 132px;
+}
+
+#profile-container {
+    background-color: #2b2b2b;
+    border-radius: 32px;
+    color: white;
+    font-size: 20px;
+    padding: 14px;
+    margin: auto;
+    margin-top: 12px;
+    width: 90%;
+    border-width: 8px;
+    border-color: #ea9f75;
+    border-style: solid;
+    max-width: 1000px;
+    text-align: left;
+}
+
+.profile-img {
+    object-fit: cover; overflow: hidden; padding: 0; max-width: 60%;
+}
+
+.profile-div {
+    display: flex; width: 100%; justify-content: left;
+}
+
+.profile-btn {
+    background-color: white;
+    color: #252327;
+    margin: auto;
+}
+
 /* Style the Image Used to Trigger the Modal */
 .clickable-image {
     border-radius: 12px;
@@ -1078,22 +1113,6 @@ button:hover {
         top: 500px;
     }
 } */
-
-.profile-container {
-    background-color: #2b2b2b;
-    border-radius: 32px;
-    color: white;
-    font-size: 20px;
-    padding: 14px;
-    margin: auto;
-    margin-top: 12px;
-    width: 90%;
-    border-width: 8px;
-    border-color: #ea9f75;
-    border-style: solid;
-    max-width: 600px;
-    text-align: left;
-}
 
 @media (min-width: 1420px) {
     .home-background {
