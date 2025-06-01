@@ -423,18 +423,13 @@ button:hover {
 .gallery-img {
     object-fit: cover;
     max-width: 100%;
-    width: 300px;
+    /* width: 300px; */
     text-align: center;
     background-color: #5d565191;
     color: #a69cad79;
     display: inline-block;
     grid-row-end: span 25;
     margin: auto;
-}
-
-.gallery-img-wide {
-    max-width: 98%;
-    width: 608px;
 }
 
 .gallery-button {
