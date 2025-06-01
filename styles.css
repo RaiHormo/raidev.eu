@@ -1172,9 +1172,6 @@ button:hover {
     .masonry {
         grid-template-columns: repeat( auto-fill, minmax( 200px, 1fr ) );
     }
-    .gallery-img {
-        width: 240px;
-    }
 }
 
 @media (max-width: 777px) {
