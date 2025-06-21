@@ -49,7 +49,13 @@
 
   <div id="image-popup" class="modal">
     <span id="close-popup">&times;</span>
-    <div id="caption"></div>
+    <div id="caption">
+      <b style="font-size: 32px;">Caption</b>
+      <p>Date</p>
+      <div class="caption-tag-container">
+        <button class="caption-tags"
+        onclick="window.location.hash = this.textContent;">Tag</button></div>
+    </div>
     <img class="modal-content" id="img01">
   </div>
 </body>

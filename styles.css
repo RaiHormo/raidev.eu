@@ -1096,6 +1096,21 @@ button:hover {
     margin-left: 32px;
     font-size: 24px;
     margin-bottom: 0;
+    line-height: 12px;
+}
+
+#caption b {
+    line-height:normal;
+}
+
+.caption-tags {
+    font-size: 24px;
+    padding: 12px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    margin-right: 8px;
+    background-color: white; color: black;
+    margin-bottom: 8px;
 }
 
 /* Add Animation - Zoom in the Modal */
@@ -1104,6 +1119,10 @@ button:hover {
     animation-name: zoom;
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
+}
+
+.caption-tag-container {
+    display: inline; position:absolute; top: 58px; left: 145px;
 }
 
 @keyframes zoom {
@@ -1200,6 +1219,11 @@ button:hover {
     }
     .masonry {
         grid-template-columns: repeat( auto-fill, minmax( 200px, 1fr ) );
+    }
+    .caption-tag-container {
+        position: relative;
+        top: auto;
+        left: auto;
     }
 }
 
