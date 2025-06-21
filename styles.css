@@ -1063,6 +1063,8 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.9);
     /* Black w/ opacity */
     text-align: center;
+    pointer-events:visibleFill;
+    /* overflow: hidden; */
 }
 
 /* Modal Content (Image) */
@@ -1075,6 +1077,9 @@ button:hover {
     border-radius: 12px;
     margin-top: 0;
     image-rendering: pixelated;
+    pointer-events: visibleFill;
+    transition: all 0.3s;
+    overflow: scroll;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -1098,6 +1103,7 @@ button:hover {
 #caption {
     animation-name: zoom;
     animation-duration: 0.3s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes zoom {
@@ -1120,7 +1126,7 @@ button:hover {
     color: #f1f1f1;
     font-size: 64px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: all 0.3s;
 }
 
 #close-popup:hover,
