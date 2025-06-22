@@ -866,7 +866,7 @@ button:hover {
     position: fixed;
     text-align: center;
     width: 100%;
-    top: 230px;
+    top: 300px;
     z-index: 1;
     background-color: #403b37f5;
     padding-top: 24px;
@@ -1060,11 +1060,14 @@ button:hover {
     /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
     /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     /* Black w/ opacity */
     text-align: center;
     pointer-events:visibleFill;
     /* overflow: hidden; */
+    backdrop-filter: blur(24px);
+    transition: all 0.3s;
+    opacity: 0%;
 }
 
 /* Modal Content (Image) */
@@ -1127,12 +1130,12 @@ button:hover {
 
 @keyframes zoom {
     from {
-        transform: scale(0.6);
+        transform: scale(0.9) translateY(50%);
         opacity: 0;
     }
 
     to {
-        transform: scale(1);
+        transform: scale(1) translateY(0);
         opacity: 1;
     }
 }
