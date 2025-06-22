@@ -1033,6 +1033,8 @@ button:hover {
     outline-style: solid;
     outline-color: #ccc;
     /* background-color: #ccc; */
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 .clickable-image:hover {
@@ -1068,6 +1070,7 @@ button:hover {
     backdrop-filter: blur(24px);
     transition: all 0.3s;
     opacity: 0%;
+    scrollbar-width: none;
 }
 
 /* Modal Content (Image) */
@@ -1083,6 +1086,7 @@ button:hover {
     pointer-events: visibleFill;
     transition: all 0.3s;
     overflow: scroll;
+    scrollbar-width: none;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
