@@ -1,0 +1,6 @@
+T=>Guestbook!<=T
+" I've wanted to add some sort of interactive element for a while, so here it is! A guest book where any visitor can leave a message with no logins! "
+<br>
+" To make this I used << https://guestbooks.meadowing.club>|<this website >>, pretty easy to setup and completely free. Although I had to edit the css quite  a bit. "
+<br>
+" There's currently no moderation, but if it's needed, I'll see what I do. "
