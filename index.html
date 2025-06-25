@@ -96,13 +96,13 @@
           Pricing and info</button></a></div>
         </div>
     
-    <div class="card" style="height: 700px; background-color: #C2BDC7;">
-      <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
+    <div class="card" style="background-color: #aca6b1;">
+      <h1 style="text-align: center; font-size: 34px; color: rgba(0, 0, 0, 0.712)">
         Guestbook
         <!-- <button onclick="postviewerExpand(true);" style="float: right; font-size: 20px; background-color: #3d2e43;">
           <i class="fa-solid fa-up-right-and-down-left-from-center"></i>  Expand</button> -->
         </h1>
-        <iframe src="https://guestbooks.meadow.cafe/guestbook/713" class="postviewer" style="height: 600px;" frameborder="0"></iframe>
+        <iframe src="https://guestbooks.meadow.cafe/guestbook/713" class="guestbook" frameborder="0"></iframe>
     </div>
     
     <div id="software-card" class="card" style="height: 600px; overflow: hidden;">
@@ -152,18 +152,31 @@
     </div>
 
     
-    <div class="card" style="height: fit-content; background-color: black; padding: 8px; padding-left: 32px; line-height: 10px;">
+    <div class="card" style="background-color: black; padding: 8px; padding-left: 32px; line-height: 10px;">
       <h1 style="text-align: center; font-size: 34px; color: rgb(146, 144, 144)">
-        Stamps</h1>
-      <a href="https://raidev.eu"><img class="stamp" src="/media/Stamps/stamp.png" alt="Iris' fancy website stamp"></a>
+        Friend Stamps</h1>
+      <!-- <a href="https://raidev.eu"><img class="stamp" src="https://raidev.eu/media/Stamps/stamp.png" alt="Iris' fancy website stamp"></a> -->
       <a href="https://ivan-krul.github.io/CharacterRegister" target="_blank"><img class="stamp" src="/media/Stamps/stamp_kiwi.png" alt="Kiwii Devulopir's Character Register"></a>
       <a href="https://ivan-krul.github.io/scriptpostum.github.io" target="_blank"><img class="stamp" src="/media/Stamps/stamp_script.png" alt="Script Postum's Database"></a>
       <a href="https://mintychaos.com" target="_blank"><img class="stamp" src="/media/Stamps/stamp_minty.png" alt="Script Postum's Database"></a>
       <a href="https://omotamiadev.nekoweb.org" target="_blank"><img class="stamp" src="/media/Stamps/stamp_sade.png" alt="Sade / Home"></a>
     </div>
     
-    
-    <div class="card" style="height: fit-content;">
+    <div class="card" style="padding: 8px; padding-left: 32px; line-height: 10px;">
+      <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
+        Embed stamp</h1>
+      <div style="display: flex;">
+        <a href="https://raidev.eu"><img src="https://raidev.eu/media/Stamps/stamp.png" style="height: 130px; image-rendering:pixelated;" alt="Iris' fancy website stamp"></a>
+        <div>
+          <input style="font-size: 18px; margin: 8px; border-radius: 12px; padding: 8px; height:24px; border-style: none;background-color: #d8d5db" type="text"
+          value="&#x3C;a href=&#x22;https://raidev.eu&#x22;&#x3E;&#x3C;img src=&#x22;https://raidev.eu/media/Stamps/stamp.png&#x22; style=&#x22;height: 130px; image-rendering:pixelated;&#x22; alt=&#x22;Iris&#x27; fancy website stamp&#x22;&#x3E;&#x3C;/a&#x3E;"
+          id="embed-text" readonly>
+          <button style="font-size: 18px;  margin: 8px;" onclick="copyEmbed()">Copy HTML</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
       <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
         Gaming profiles</h1>
       <h4 style="text-align: left; margin: 0; color: #605863; font-size: 24px;">
@@ -180,7 +193,7 @@
       
     </div>
     
-    <div class="card" style="height: 620px; background-color: #C2BDC7;">
+    <div class="card" style="height: fit-content; background-color: #C2BDC7;">
       <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
         Site Updates
         <button onclick="postviewerExpand(true);" style="float: right; font-size: 20px; background-color: #3d2e43;">
@@ -193,7 +206,7 @@
       <iframe src="https://discord.com/widget?id=1377010478009553010&theme=dark" width="440" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     </div> -->
 
-    <div class="card" style="height: fit-content;">
+    <div class="card">
       <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
         Thank you for visiting!</h1>
       <h4 style="text-align: center; margin: 0; color: #605863; font-size: 28px;">
@@ -223,6 +236,16 @@
       console.log("swakrop mode");
     }
   };
+
+  function copyEmbed() {
+    var copyText = document.getElementById("embed-text");
+
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value);
+  }
 
   window.addEventListener("load", setWidth());
 

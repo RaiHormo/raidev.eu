@@ -80,4 +80,11 @@ select {
 
 #title {
     font-weight: bold;
+    font-size: 32px;
+    margin: 8px
+}
+
+::-webkit-scrollbar {
+    visibility:collapse !important;
+    scrollbar-width: none;
 }
