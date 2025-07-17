@@ -272,6 +272,7 @@ button:hover {
     border: none;
     padding: 0;
     text-decoration: none;
+
 }
 
 .slink-pressed {
@@ -310,12 +311,14 @@ button:hover {
     padding-top: 80px;
     overflow: hidden;
     transition: all 0.3s;
+    max-height: calc(100vh - 150px);
 }
 
 .caret {
     display: block;
     animation: open-drop 0.3s forwards cubic-bezier(0.175, 0.885, 0.32, 1.1);
-    /* height: fit-content; */
+    height: fit-content;
+    overflow: scroll;
 }
 
 .section-panel {
@@ -332,7 +335,7 @@ button:hover {
         opacity: 25%;
     }
     to {
-        height: 600px;
+        height: 605px;
         opacity: 100%;
     }
 }
@@ -352,6 +355,7 @@ button:hover {
     width: fit-content;
     font-family: Cyrenia;
     height: 58px;
+    padding-top: 0px;
     padding-left: 32px;
     padding-right: 48px;
 }
