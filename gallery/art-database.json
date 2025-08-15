@@ -3,96 +3,121 @@
         {"name": "",
             "title": "All artwork",
             "icon": "",
-            "sketchinclude": "no"
+            "sketchinclude": "no",
+            "exclusive": false
         },
         {"name": "sketch",
             "title": "Sketches",
             "icon": "/media/Raicons/sketches.png",
-            "sketchinclude": "yes"
+            "sketchinclude": "yes",
+            "exclusive": false
         },
         {"name": "mj",
             "title": "Mira's Journal",
             "icon": "/media/MJ/icon.png",
-            "sketchinclude": "yes"
+            "sketchinclude": "yes",
+            "exclusive": false
         },
         {"name": "fanart",
             "title": "Fanart",
             "icon": "/media/Raicons/fanart.png",
-            "sketchinclude": "yes"
+            "sketchinclude": "yes",
+            "exclusive": false
         },
         {"name": "giftart",
             "title": "Art for others",
             "icon": "/media/Raicons/giftart.png",
-            "sketchinclude": "yes"
+            "sketchinclude": "yes",
+            "exclusive": false
         },
         {"name": "comm",
             "title": "Commissions",
             "icon": "/media/Raicons/comm.png",
-            "sketchinclude": "yes"
+            "sketchinclude": "yes",
+            "exclusive": false
         },
         {"name": "rai",
             "title": "Rai (Pokesona)",
             "icon": "/media/Rai/favicon.png",
-            "sketchinclude": "yes"
+            "sketchinclude": "yes",
+            "exclusive": false
         },
         {"name": "iris",
             "title": "Iris (Fursona)",
             "icon": "/media/Raicons/Iris.png",
-            "sketchinclude": "yes"
+            "sketchinclude": "yes",
+            "exclusive": false
         },
         {"name": "mira",
             "title": "Mira Levenor (MJ)",
             "icon": "/media/Raicons/Mira.png",
-            "sketchinclude": "yes"
+            "sketchinclude": "yes",
+            "exclusive": false
         },
         {"name": "alcine",
             "title": "Alcine (MJ)",
-            "icon": "/media/Raicons/Alcine.png"
+            "icon": "/media/Raicons/Alcine.png",
+            "exclusive": false
         },
         {"name": "asteria",
             "title": "Asteria Versea (MJ)",
             "icon": "/media/Raicons/Asteria.png",
-            "sketchinclude": "yes"
+            "sketchinclude": "yes",
+            "exclusive": false
         },
         {"name": "yaru",
             "title": "Yaru (MJ)",
             "icon": "/media/Raicons/Yaru.png",
-            "sketchinclude": "yes"
+            "sketchinclude": "yes",
+            "exclusive": false
         },
         {"name": "daze",
             "title": "Daze (MJ)",
             "icon": "/media/Raicons/Daze.png",
-            "sketchinclude": "yes"
+            "sketchinclude": "yes",
+            "exclusive": false
         },
         {"name": "erinn",
             "title": "Erinn Levenor (MJ)",
             "icon": "/media/Raicons/Erinn.png",
-            "sketchinclude": "yes"
+            "sketchinclude": "yes",
+            "exclusive": false
         },
         {"name": "kai",
             "title": "Kai Reshanne (MJ)",
             "icon": "/media/Raicons/Kai.png",
-            "sketchinclude": "yes"
+            "sketchinclude": "yes",
+            "exclusive": false
         },
         {"name": "nimphe",
             "title": "Nimphe (Pokemon OC)",
             "icon": "/media/Raicons/Nimphe.png",
-            "sketchinclude": "yes"
+            "sketchinclude": "yes",
+            "exclusive": false
         },
         {"name": "vail",
             "title": "Vail (Pokemon OC)",
             "icon": "/media/Raicons/Vail.png",
-            "sketchinclude": "yes"
+            "sketchinclude": "yes",
+            "exclusive": false
         },
         {"name": "pokemon",
             "title": "Non Rai Pokemon",
             "icon": "/media/Raicons/pokemon.png",
-            "sketchinclude": "yes"
+            "sketchinclude": "yes",
+            "exclusive": false
         },
         {"name": "ref",
             "title": "Refrence Sheets",
             "icon": "/media/Raicons/ref.png",
-            "sketchinclude": "yes"
+            "sketchinclude": "yes",
+            "exclusive": false
+        },
+        {"name": "not-mine",
+            "title": "Art by others",
+            "icon": "/media/Raicons/giftart.png",
+            "sketchinclude": "yes",
+            "exclusive": true
         }
     ],
     "artwork": [
@@ -129,7 +154,7 @@
         {"filename":"alcineref",
             "title": "Refrence sheet for Alcine (form 1)",
             "date": "2024/Mar/28",
-            "tags": ["ref", "alcine"]
+            "tags": ["ref", "alcine", "mj"]
         },
         {"filename":"alcine sticker bg",
             "title": "Alcine sticker design",
