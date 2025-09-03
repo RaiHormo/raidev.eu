@@ -48,10 +48,18 @@ button {
     text-decoration: none;
 }
 
-button:hover {
-    scale: 105%;
-    filter: brightness(110%);
-    border-radius: 20px;
+@media (hover: hover) {
+    button:hover {
+        scale: 105%;
+        filter: brightness(110%);
+        border-radius: 20px;
+    }
+}
+
+button:active {
+    scale: 90%;
+    filter: none;
+    border-radius: 24px;
 }
 
 .container {
@@ -94,6 +102,10 @@ button:hover {
 
 .card-hover:hover {
     scale: 102%;
+}
+
+.card-hover:active {
+    scale: 95%;
 }
 
 .card--c3 {
