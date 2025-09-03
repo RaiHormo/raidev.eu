@@ -52,14 +52,14 @@ button {
     button:hover {
         scale: 105%;
         filter: brightness(110%);
-        border-radius: 20px;
+        border-radius: 18px;
     }
 }
 
 button:active {
     scale: 90%;
     filter: none;
-    border-radius: 24px;
+    border-radius: 20px;
 }
 
 .container {
