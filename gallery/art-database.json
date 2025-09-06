@@ -954,7 +954,12 @@
         {"filename":"beach",
         "title":"swimming",
         "date":"2025/Aug/29",
-        "tags": ["rai", "nimphe"]
+        "tags": ["rai", "nimphe", "pokemon"]
+        },
+        {"filename":"wet clothes",
+        "title":"wet clothes",
+        "date":"2025/Sep/4",
+        "tags": ["mira", "alcine", "mj", "sketch"]
         }
     ]
 }
