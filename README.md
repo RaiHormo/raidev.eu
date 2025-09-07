@@ -8,3 +8,4 @@ It was created as an excuse to learn web development, and also to have my own pl
 
 The design is mostly inspired by Google's Material Design 3, but there are a few other inspirations such as Metro, and just thing I think look good in general.
 
+Includes PostViewer by Kiwii Devulopir and Guestbooks by Meadow
