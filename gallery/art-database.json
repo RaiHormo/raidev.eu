@@ -42,8 +42,8 @@
             "sketchinclude": "yes",
             "exclusive": false
         },
-        {"name": "iris",
-            "title": "Iris (Fursona)",
+        {"name": "cyris",
+            "title": "Cyris (Fursona)",
             "icon": "/media/Raicons/Iris.png",
             "sketchinclude": "yes",
             "exclusive": false
@@ -124,7 +124,7 @@
         {"filename": "2fursonas",
             "title": "Cat and Mouse",
             "date": "2024/Feb/23",
-            "tags": ["iris", "rai"]
+            "tags": ["cyris", "rai"]
         },
         {"filename": "miraplush",
             "title": "Mira holding a plush of herself",
@@ -144,7 +144,7 @@
         {"filename": "iris jacket",
             "title": "Iris jacket",
             "date": "2024/Jan/23",
-            "tags": ["iris"]
+            "tags": ["cyris"]
         },
         {"filename":"19birth",
             "title": "19",
@@ -209,7 +209,7 @@
         {"filename":"cyan",
             "title": "Cyan",
             "date": "2024/May/18",
-            "tags": ["iris"]
+            "tags": ["cyris"]
         },
         {"filename":"eevee2023",
             "title": "Annual Eevee 2023",
@@ -244,12 +244,12 @@
         {"filename":"iris2",
             "title": "Mechanical",
             "date": "2023/Jul/16",
-            "tags": ["iris"]
+            "tags": ["cyris"]
         },
         {"filename":"iris skirt",
             "title": "Iris wearing a skirt",
             "date": "2023/Nov/4",
-            "tags": ["iris"]
+            "tags": ["cyris"]
         },
         {"filename":"kai(zo)",
             "title": "Kai(zo)",
@@ -564,7 +564,7 @@
         {"filename":"iris fit",
         "title":"iris fit",
         "date":"2024/Aug/11",
-        "tags": ["iris", "sketch"]
+        "tags": ["cyris", "sketch"]
         },
         {"filename":"daze partners",
         "title":"Daze's partners (Design concept)",
@@ -709,7 +709,7 @@
         {"filename":"iris rays",
         "title":"Rays",
         "date":"2025/Jan/21",
-        "tags": ["iris"]
+        "tags": ["cyris"]
         },
         {"filename":"heartbeat comic",
         "title":"Heartbeat",
@@ -734,7 +734,7 @@
         {"filename":"banner2025",
         "title":"Banner 2025",
         "date":"2025/Jan/31",
-        "tags": ["rai", "iris"]
+        "tags": ["rai", "cyris"]
         },
         {"filename":"mira asteria expressions",
         "title":"mira asteria expressions",
