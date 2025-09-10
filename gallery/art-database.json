@@ -43,8 +43,8 @@
             "exclusive": false
         },
         {"name": "cyris",
-            "title": "Cyris (Fursona)",
-            "icon": "/media/Raicons/Iris.png",
+            "title": "Cyris",
+            "icon": "/media/Raicons/Cyris.png",
             "sketchinclude": "yes",
             "exclusive": false
         },
