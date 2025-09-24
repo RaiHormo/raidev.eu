@@ -335,6 +335,7 @@ button:active {
     animation: open-drop 0.3s forwards cubic-bezier(0.175, 0.885, 0.32, 1.1);
     height: fit-content;
     overflow: scroll;
+    scrollbar-width: none;
 }
 
 .section-panel {
