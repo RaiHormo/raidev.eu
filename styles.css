@@ -743,12 +743,12 @@ button:active {
     top: 120px ;
     left: 0;
     object-fit:cover;
-    object-position:center bottom;
+    object-position:80% 20%;
     z-index: -1;
     background-color: #150401;
-    height: calc(100vh - 120px);
-    filter: brightness(80%);
-    max-height: 800px;
+    height: 90vh;/*calc(100vh - 120px);*/
+    filter: brightness(90%);
+    /* max-height: 800px; */
 }
 
 .mj-behind-background {
@@ -1222,7 +1222,8 @@ button:active {
         background-position-x: left;
     }
     .mj-background {
-        max-height: unset;
+        max-height: 100%;
+        /* object-position: left -200px; */
     }
 }
 
@@ -1254,9 +1255,12 @@ button:active {
     .home-background {
         background-position-x: 20%;
     }
-    .mj-background {
+    /* .mj-background {
         height: 500px;
         object-position: calc(50% - 100px);;
+    } */
+    .mj-main-logo {
+        height: 200px;
     }
 }
 
@@ -1289,9 +1293,6 @@ button:active {
     .comm-previews {
         display: contents;
         width: 48%;
-    }
-    .mj-main-logo {
-        height: 200px;
     }
 }
 
@@ -1368,8 +1369,8 @@ button:active {
         width: 98%;
     }
     .mj-background {
-        height: 320px;
-        object-position: calc(50% - 60px);;
+        /* height: 320px; */
+        object-position: right -50px;/*calc(50% - 60px);;*/
     }
     .mj-main-logo{
         display: none;
