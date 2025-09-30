@@ -747,7 +747,7 @@ button:active {
     z-index: -1;
     background-color: #150401;
     height: 90vh;/*calc(100vh - 120px);*/
-    filter: brightness(90%);
+    filter: brightness(80%);
     /* max-height: 800px; */
 }
 
