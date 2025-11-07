@@ -484,7 +484,7 @@
         {"filename":"ghost",
         "title":"Ghost",
         "date":"2022/Mar/16",
-        "tags": ["fanart"]
+        "tags": ["yaru", "mj", "sketch"]
         },
         {"filename":"nahobino",
         "title":"Nahobino",
@@ -965,6 +965,16 @@
         "title":"Mira's Journal Keyart",
         "date":"2025/Sep/26",
         "tags": ["mira", "alcine", "daze", "yaru", "asteria", "mj"]
+        },
+        {"filename":"cyris sit",
+        "title":"Some Cyris doodles",
+        "date":"2025/Oct/10",
+        "tags": ["cyris"]
+        },
+        {"filename":"kiki two",
+        "title":"Krita's Kiki",
+        "date":"2025/Nov/6",
+        "tags": ["fanart"]
         }
     ]
 }

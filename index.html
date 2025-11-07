@@ -291,11 +291,11 @@
     var card = document.getElementsByClassName("card")[i];
     card.style.setProperty('--animation-order', i);
   };
+  // setTimeout(function(){
+  //   window.scrollTo(0,0);
+  // });
   setTimeout(function(){
-    window.scrollTo(0,0);
-  });
-  setTimeout(function(){
-    window.scrollTo(0,0);
+    // window.scrollTo(0,0);
     document.getElementsByClassName("home-background")[0].classList.remove("faded");
   }, 300);
 

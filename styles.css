@@ -7,6 +7,7 @@ body {
     background: #252327;
     font-family: "Cyrenia", "Comic Sans MS", "Comic Sans", "Comic Neue", sans-serif;
     overflow-x: hidden;
+    /* cursor: url('/media/Rai/mouse.png') !important; */
 }
 
 h4 {
@@ -17,6 +18,11 @@ h4 {
     --card-color: #b3a4bb;
     --slink-height: 340px
 }
+
+@view-transition {
+    navigation: auto;
+}
+
 
 button {
     border-width: 0;
@@ -98,6 +104,7 @@ button:active {
     transition: all 0.3s;
     animation-timing-function:cubic-bezier(0.175, 0.485, 0.32, 1.2);
     animation-delay: calc(var(--animation-order) * 100ms);
+    view-transition-name: card;
 }
 
 .card-hover:hover {
@@ -120,6 +127,10 @@ button:active {
 
 @keyframes slideUp {
     0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    1% {
         transform: translateY(200px);
         opacity: 0;
     }
