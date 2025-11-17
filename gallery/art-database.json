@@ -95,9 +95,9 @@
             "sketchinclude": "yes",
             "exclusive": false
         },
-        {"name": "vail",
-            "title": "Vail (Pokemon OC)",
-            "icon": "/media/Raicons/Vail.png",
+        {"name": "veil",
+            "title": "Veil (Pokemon OC)",
+            "icon": "/media/Raicons/Veil.png",
             "sketchinclude": "yes",
             "exclusive": false
         },
@@ -884,7 +884,7 @@
         {"filename":"vail",
         "title":"a Mystery dungeon and Miitopia partner",
         "date":"2025/May/9",
-        "tags": ["pokemon", "vail"]
+        "tags": ["pokemon", "veil"]
         },
         {"filename":"uppie",
         "title":"uppie",
@@ -975,6 +975,16 @@
         "title":"Krita's Kiki",
         "date":"2025/Nov/6",
         "tags": ["fanart"]
+        },
+        {"filename":"cyrisref",
+        "title":"Refrence Sheet for Cyris",
+        "date":"2025/Nov/15",
+        "tags": ["cyris", "sketch", "ref"]
+        },
+        {"filename":"veil fit",
+        "title":"Goth Vulpix",
+        "date":"2025/Nov/17",
+        "tags": ["veil"]
         }
     ]
 }
