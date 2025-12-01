@@ -979,12 +979,27 @@
         {"filename":"cyrisref",
         "title":"Refrence Sheet for Cyris",
         "date":"2025/Nov/15",
-        "tags": ["cyris", "sketch", "ref"]
+        "tags": ["cyris", "ref"]
         },
         {"filename":"veil fit",
         "title":"Goth Vulpix",
         "date":"2025/Nov/17",
         "tags": ["veil"]
+        },
+        {"filename":"eevee2025",
+        "title":"Annual Eevee 2025",
+        "date":"2025/Nov/30",
+        "tags": ["pokemon", "fanart"]
+        },
+        {"filename":"vin",
+        "title":"A wood elf druid named Vin",
+        "date":"2025/Nov/4",
+        "tags": ["vin"]
+        },
+        {"filename":"alcine2",
+        "title":"A wood elf druid named Vin",
+        "date":"2025/Nov/22",
+        "tags": ["mj", "sketch", "alcine"]
         }
     ]
 }

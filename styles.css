@@ -469,6 +469,7 @@ button:active {
     object-fit: cover;
     width: 100%;
     height: 220px;
+    border-radius: 8px;
 }
 
 .gallery-img {
