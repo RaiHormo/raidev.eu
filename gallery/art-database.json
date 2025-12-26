@@ -997,9 +997,14 @@
         "tags": ["vin"]
         },
         {"filename":"alcine2",
-        "title":"A wood elf druid named Vin",
+        "title":"Concept sketches for a new form for Alcine",
         "date":"2025/Nov/22",
         "tags": ["mj", "sketch", "alcine"]
+        },
+        {"filename":"ivy",
+        "title":"Ivy under the moon",
+        "date":"2025/Dec/25",
+        "tags": ["giftart", "pokemon"]
         }
     ]
 }
