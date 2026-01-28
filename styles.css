@@ -451,6 +451,47 @@ button:active {
 
 }
 
+.webring-arrow {
+    color: white;
+    text-decoration: none;
+    background-color: #373FFF;
+    cursor: pointer;
+}
+
+.webring-arrow-left {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.webring-arrow-left:hover {
+    transform: translateX(-8px);
+    padding-right: 30px;
+    margin-right: 8px;
+}
+
+.webring-arrow-right {
+    background-color: #373FFF;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.webring-arrow-right:hover {
+    transform: translateX(8px);
+    padding-left: 30px;
+    margin-left: 8px;
+}
+
+.webring-text {
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
 .faded {
     opacity: 0 !important;
     transition: all 0.3s !important;
