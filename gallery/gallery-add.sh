@@ -11,7 +11,7 @@ rm $filename
 wl-copy ',
 		{"filename":"'${filename/.png/}'",
 		"title":"'${filename/.png/}'",
-		"date":"$date",
+		"date":"'$date'",
 		"tags": []
 		}'
 wl-paste

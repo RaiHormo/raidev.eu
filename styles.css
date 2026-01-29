@@ -456,6 +456,21 @@ button:active {
 
 }
 
+.frontpage-game{
+    object-fit: cover;
+    width: 100%;
+    
+    border-radius: 8px;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2);
+    grid-gap: 4px;
+    margin-top: 12px;
+}
+
 .webring-arrow {
     color: white;
     text-decoration: none;
