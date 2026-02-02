@@ -108,6 +108,17 @@ background-color: #403b37; background-attachment: fixed;">
 
         <button class="profile-btn" onclick="gallery_btn();">View in Gallery</button>
     </div>
+    
+    <br><br>
+    <section style="text-align: center;">
+        <a href="/oc#rai" onclick="show_character('rai'); return false;" title="Rai"><img class="profile-raicon clickable-profile-raicon" src="/media/Raicons/Rai.png"></a>
+        <a href="/oc#cyris" onclick="show_character('cyris'); return false;" title="Cyris"><img class="profile-raicon clickable-profile-raicon" src="/media/Raicons/Cyris.png"></a>
+        <a href="/oc#mira" onclick="show_character('mira'); return false;" title="Mira Levenor"><img class="profile-raicon clickable-profile-raicon" src="/media/Raicons/Mira.png"></a>
+        <a href="/oc#alcine" onclick="show_character('alcine'); return false;" title="Alcine"><img class="profile-raicon clickable-profile-raicon" src="/media/Raicons/Alcine.png"></a>
+        <a href="/oc#asteria" onclick="show_character('asteria'); return false;" title="Asteria Versea"><img class="profile-raicon clickable-profile-raicon" src="/media/Raicons/Asteria.png"></a>
+        <a href="/oc#daze" onclick="show_character('daze'); return false;" title="Daze"><img class="profile-raicon clickable-profile-raicon" src="/media/Raicons/Daze.png"></a>
+    </section>
+    <br><br>
     </div>
 
     <div id="image-popup" class="modal">
@@ -147,9 +158,11 @@ background-color: #403b37; background-attachment: fixed;">
 
     function show_character(string) {
         if (string == "") {
-            window.location = "/oc#rai";
-            return;
+            document.getElementById("profile-container").style.display = "none";
+        } else {
+            document.getElementById("profile-container").style.display = "block";
         }
+        window.scrollTo(0,0)
         character = string;
         var elements = Array.from(document.getElementById("profile-container").children);
         elements.forEach(element => {
