@@ -456,6 +456,31 @@ button:active {
 
 }
 
+.project-thumbnail {
+    width: 200px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.project-action:hover {
+    scale: 105%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.project-action {
+    transition: all 0.3s;
+    width: 200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
 .frontpage-game{
     object-fit: cover;
     width: 100%;
