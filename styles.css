@@ -7,6 +7,7 @@ body {
     background: #252327;
     font-family: "Cyrenia", "Comic Sans MS", "Comic Sans", "Comic Neue", sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
     /* cursor: url('/media/Rai/mouse.png') !important; */
 }
 
