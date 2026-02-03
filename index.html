@@ -27,6 +27,7 @@
 	document.getElementsByClassName("social-links")[0].classList.add("faded");
 	// }
 	document.getElementsByClassName("home-background")[0].classList.add("faded");
+	exited = true;
 	setTimeout(function(){
 	  window.location.href = pageUrl;
 	}, 300);
@@ -309,6 +310,7 @@
 <script src="/lib/handle-slinks.js"></script>
 <script>
   function setWidth() {
+		var exited = false;
 	var mvp = document.getElementById('vp');
 	if (window.innerWidth < 525) {
 	  mvp.setAttribute('content','width=525px');
@@ -383,7 +385,7 @@
   };
 
   function show_character(string) {
-	link("/oc#"+string);
+		link("/oc#"+string);
   }
 
   window.onscroll = function() {
@@ -397,8 +399,8 @@
 
 
 	window.addEventListener( "pageshow", function ( event ) {
-		if(performance.navigation.type == 2){
-      location.reload(true);
+		if(performance.navigation.type == 2 && exited == true){
+      location.reload();
     }
 	});
 </script>
