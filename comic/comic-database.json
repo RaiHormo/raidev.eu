@@ -1,0 +1,11 @@
+{
+	"cone-mj": {
+		"title":"Mira's Journal Comic strips",
+		"author": "Cone",
+		"pages": [
+			{"filename":"cool", "title":"I'm so cool"},
+			{"filename":"dance", "title":"Lovely dance"},
+			{"filename":"body-swap", "title":"Body Swap"}
+		]
+	}
+}
