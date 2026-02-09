@@ -370,6 +370,7 @@ button:active {
     /* vertical-align: middle; */
     object-fit: contain;
     margin-left: 24px;
+    image-rendering: pixelated;
 }
 
 @keyframes open-drop {
