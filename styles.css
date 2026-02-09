@@ -17,7 +17,8 @@ h4 {
 
 :root {
     --card-color: #b3a4bb;
-    --slink-height: 340px
+    --slink-height: 340px;
+    interpolate-size: allow-keywords;
 }
 
 @view-transition {
@@ -363,7 +364,13 @@ button:active {
     display: block;
 }
 
-
+#oneko-button {
+    background-color: white;
+    text-align: center;
+    /* vertical-align: middle; */
+    object-fit: contain;
+    margin-left: 24px;
+}
 
 @keyframes open-drop {
     from {

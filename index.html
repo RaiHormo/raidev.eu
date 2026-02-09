@@ -292,7 +292,7 @@
 		<br>
 		<div style="text-align: center;">
 			<a href="https://github.com/RaiHormo/raidev.eu" target="_blank"><button style="background-color: #605863;">
-			View on GitHub</button></a></div>
+			View on GitHub</button></a><button id="oneko-button" onclick="add_oneko();"><img src="https://github.com/eepyfemboi/oneko/blob/main/Extension/icons/32.png?raw=true"></button></div>
 		</div>
 	</div>
   </div>
@@ -403,4 +403,12 @@
       location.reload();
     }
 	});
+
+function add_oneko() {
+	var script = document.createElement("script");
+	script.src = src="https://sleepie.uk/oneko.js";
+	script.setAttribute("async", "");
+	document.head.appendChild(script);
+	document.getElementById("oneko-button").style.display = "none";
+}
 </script>
