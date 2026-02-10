@@ -36,9 +36,9 @@ background-repeat: no-repeat; background-size: cover;">
     <div class="comm-container">
         <div class="comm-panel">
             <h2 style="line-height: 12px;">Pricing</h2>
-            <button style="border-top-right-radius: 8px; border-bottom-right-radius: 8px;" class="checked" onclick="category('Illustration'); this.classList.add('checked');">Illustration
+            <button style="border-top-right-radius: 8px; border-bottom-right-radius: 8px;" id="Illustration-btn" class="checked" onclick="category('Illustration'); this.classList.add('checked');">Illustration
             </button>
-            <button style="border-top-left-radius: 8px; border-bottom-left-radius: 8px;" class="" onclick="category('Assets'); this.classList.add('checked');">Animation / Assets
+            <button style="border-top-left-radius: 8px; border-bottom-left-radius: 8px;" id="Assets-btn" class="" onclick="category('Assets'); this.classList.add('checked');">Animation / Assets
             </button>
             <div id="Illustration" class="comm-section">
                 Price ranges from <b>15-55€</b><br><br>
@@ -109,10 +109,9 @@ background-repeat: no-repeat; background-size: cover;">
         <ul>
             <li>Payment can be done through PayPal or Ko-Fi.</li>
             <li>I will decide the final price after I know what I'm drawing.</li>
-            <li>You can request a character refrence sheet for around 40€ (may be higher or lower depending on the character).</li>
-            <li>Communication is preferably done through discord.</li>
             <li>I can draw stylized humans and furries best. I'm also somewhat decent at drawing ferals. For intricate designs or mechs you've got the wrong person.</li>
-            <li>I will not draw NSFW or fetish art. Suggestive art is allowed.</li>
+            <li>I will not draw explicit NSFW or extreme fetish art. Suggestive art is allowed.</li>
+            <li>I will not draw extreme gore.</li>
             <li>I can deny any commission if I'm not comfortable drawing it.</li>
             <li>Payment will be done during the coloring process at the latest.</li>
             <li>It may take up to a month to finish a regular Illustration commission, unless something comes up in which case I will contact you.</li>
@@ -120,9 +119,11 @@ background-repeat: no-repeat; background-size: cover;">
             <li>I will contact you for feedback or anything im not sure about.</li>
             <li>If you're going to post or use the art anywhere, please credit me. This is not a requirement but I'd appriciate it.</li>
             <li>If I find you to be too suspecious (potential scammer), I might cut communication, before any payment that is.</li>
+            <li>You may publish the artwork on social media and such freely. I might ask for permission to publish it on mine.</li>
             <li>If asked, the passcode is Strawberry.</li>
-            <li>You are not allowed to feed my artwork to an AI in any kind of way.</li>
-            <li>You are not allowed to sell my artwork as NFT.</li>
+            <li>You are not allowed to sell my artwork as NFT (Are those even still a thing?).</li>
+            <li>You are not allowed to use my artwork as training data for an AI model.</li>
+            <li>You are not allowed to edit my artwork using generative AI, or feed it to one in any way.</li>
             <li>Commercial use can be allowed, please ask me and we can discuss the terms.</li>
         </ul>
         <button style="align-self: center; margin: auto; font-size: 32px; display: block;" onclick="terms(true)">Close</button>
@@ -154,18 +155,33 @@ background-repeat: no-repeat; background-size: cover;">
 
     window.addEventListener("load", function() {
         setWidth();
-        if (window.location.hash == "#terms") terms(false);
+        hash_check(window.location.hash);
     });
 
     window.addEventListener('hashchange',() => {
         setTimeout (function() {
-            if (window.location.hash == "#terms" && !terms_open) terms(false);
-            else if (terms_open && window.location.hash != "#terms") terms(true);
+            hash_check(window.location.hash);
         }, 300);
     });
 
+    function hash_check(hash) {
+        if (window.location.hash == "#terms") {
+            terms(false);
+        } else {
+            if (terms_open && window.location.hash != "#terms") terms(true);
+            category(hash);
+        }
+    }
+
     function category(string) {
+        if (string == "") {
+            string = prev_category;
+        }
+        string = string.replace("#", "");
+        console.log(string);
+        window.location.hash = string
         document.getElementsByClassName("checked")[0].classList.remove("checked");
+        document.getElementById(string+"-btn").classList.add("checked");
         var arr = Array.from(document.getElementsByClassName("comm-section"));
         arr = arr.concat(Array.from(document.getElementsByClassName("comm-previews")));
         console.log(arr);
@@ -176,14 +192,19 @@ background-repeat: no-repeat; background-size: cover;">
         document.getElementById(string+"PV").style = "block";
     }
 
+    var prev_category = "Illustration";
+
     function terms(close = false) {
         if (close) {
+            category(prev_category);
             terms_open = false;
             $(".comm-container").css({'opacity': '100'});
             $(".terms").css({'display': 'none'});
-            window.location.hash = ""
             window.scrollTo(0,0);
         } else {
+            if (window.location.hash != "#terms") {
+                prev_category = window.location.hash;
+            }
             terms_open = true;
             $(".comm-container").css({'opacity': '0'});
             $(".terms").css({'display': 'block'});
