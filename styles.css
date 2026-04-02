@@ -26,7 +26,8 @@ h4 {
 }
 
 
-button {
+button, .button {
+    display: inline-block;
     border-width: 0;
     border-radius: 32px;
     font-size: 32px;
@@ -39,32 +40,19 @@ button {
     font-family: Cyrenia;
     transition: all 0.3s;
     font-weight: bold;
-}
-
-.button {
-    border-width: 0;
-    border-radius: 32px;
-    font-size: 32px;
-    text-align: center;
-    padding: 24px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    background-color: #9948b1;
-    color: white;
-    font-family: Cyrenia;
-    transition: all 0.3s;
+    align-content: center;
     text-decoration: none;
 }
 
 @media (hover: hover) {
-    button:hover {
+    button:hover, .button:hover {
         scale: 105%;
         filter: brightness(110%);
         border-radius: 18px;
     }
 }
 
-button:active {
+button:active, .button:active {
     scale: 90%;
     filter: none;
     border-radius: 20px;
@@ -305,7 +293,6 @@ button:active {
     border: none;
     padding: 0;
     text-decoration: none;
-
 }
 
 .slink-pressed {

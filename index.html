@@ -53,7 +53,7 @@
 	<div class="home-background faded"></div>
 	<h2 id="loader">Welcome to Iris' fancy website!<br><br>The site is still loading... If this takes too long, try to
 		refresh, or check if you are blocking Javascript in your browser.</h2>
-	
+
 	<main class="container" data-masonry='{
 	"itemSelector": ".card", "columnWidth": 500, "gutter":24,
 	"fitWidth": true, "initLayout": true, "stagger": 3
@@ -85,19 +85,22 @@
 					style="border-bottom-right-radius: 32px;">
 			</div>
 
-			<div style="text-align: center;"><a href="/gallery" onclick="link('/gallery'); return false"><button
-						class="gallery-button">
-						View gallery</button></a></div>
+			<div style="text-align: center;">
+				<a href="/gallery" onclick="link('/gallery'); return false" class="button gallery-button">
+					View gallery
+				</a>
+			</div>
 		</section>
 
 		<section class="card card--c3 card-hover" style="height: 380px;" onclick="link('/miras-journal');">
 			<img src="/media/MJ/logo.png" class="MJ-logo">
 			<h4 style="font-weight: normal; margin: 0; font-size: 24px;">A turn based RPG game I'm currently working on.
 			</h4>
-			<div style="text-align: center;"><a href="/miras-journal"><button class="MJ-button"
-						onclick="link('/miras-journal'); return false">
-						Learn more
-					</button></a></div>
+			<div style="text-align: center;">
+				<a href="/miras-journal" onclick="link('/miras-journal'); return false" class="button MJ-button">
+					Learn more
+				</a>
+			</div>
 			<img src="media/MJ/Idle.gif"
 				style="left: -20px; height: 180px; top: 200px; position: absolute; image-rendering: pixelated;">
 		</section>
@@ -105,20 +108,26 @@
 		<section class="card card-hover" onclick="link('/comm');"
 			style="background-image: url(/media/Rai/comm\ bg.png); background-position: 700px -200px; background-blend-mode: soft-light;">
 			<h1 style="text-align: center; font-size: 34px; color: #3d2e43;">
-				Commissions</h1>
+				Commissions
+			</h1>
 			<h4 style="text-align: center; margin: 0; color: #2b1e30; opacity: 90%; font-size: 28px;">
-				Check current prices here!<br>I can draw both Illustrations and Game Assets.</h4>
+				Check current prices here!<br>
+				I can draw both Illustrations and Game Assets.
+			</h4>
 			<div style="text-align: center;">
-				<a href="/comm" onclick="link('/comm'); return false"><button class="gallery-button"
-						style="background-color: #3D2D43; color: #CEB0CD;">
-						Pricing and info</button></a>
+				<a 
+					href="/comm" onclick="link('/comm'); return false" 
+					class="button gallery-button" style="background-color: #3D2D43; color: #CEB0CD;">
+						Pricing and info
+				</a>
 			</div>
 		</section>
 
 		<section class="card card--c2">
 			<h1 style="text-align: center; font-size: 34px; margin-bottom: 0px; color: #97459e">
 				Other Projects</h1><br>
-			<div style="display: grid; grid-template-columns: 1fr 1fr; text-align: left; grid-gap: 24px; grid-row-gap: 24px;">
+			<div
+				style="display: grid; grid-template-columns: 1fr 1fr; text-align: left; grid-gap: 24px; grid-row-gap: 24px;">
 				<a href="https://raidev.itch.io/unmasked">
 					<div>
 						<img src="https://img.itch.zone/aW1nLzI1MzM4Njc1LnBuZw==/347x500/QDJu2u.png" alt="UnMasked"
@@ -133,15 +142,14 @@
 				</div>
 				<a href="https://shell.raidev.eu" target="_blank">
 					<div>
-						<img src="/media/Misc/HiShell.png" alt="HiShell"
-							class="project-thumbnail">
+						<img src="/media/Misc/HiShell.png" alt="HiShell" class="project-thumbnail">
 						<button class="project-action">Try it</button>
 					</div>
 				</a>
 				<div>
 					<span style="color: #3D2D43; font-size: 32px;">HiShell</span><br>
 					<span style="font-size: 18px;">A unique fake OS and file manager, made in Godot.<p>
-						It's still somewhat unfinished, but you can try it out right now on the web!</span>
+							It's still somewhat unfinished, but you can try it out right now on the web!</span>
 				</div>
 			</div>
 		</section>
@@ -280,9 +288,15 @@
 			<h1 style="text-align: center; font-size: 34px; color: rgba(0, 0, 0, 0.712)">
 				Webring</h1>
 			<div style="text-align: center;">
-				<a href="https://xn--sr8hvo.ws/previous"><button class="webring-arrow webring-arrow-left">←</button></a>
-				<a href="https://xn--sr8hvo.ws" title="An IndieWeb Webring" class="webring-text">🕸💍</a>
-				<a href="https://xn--sr8hvo.ws/next"><button class="webring-arrow webring-arrow-right">→</button></a>
+				<a href="https://xn--sr8hvo.ws/previous" class="button webring-arrow webring-arrow-left">
+					←
+				</a>
+				<a href="https://xn--sr8hvo.ws" title="An IndieWeb Webring" class="webring-text">
+					🕸💍
+				</a>
+				<a href="https://xn--sr8hvo.ws/next" class="button webring-arrow webring-arrow-right">
+					→
+				</a>
 			</div>
 		</section>
 
@@ -357,10 +371,12 @@
 				do.<br><br><span style="font-size: 18px;">© Iris Hormoviti 2024-2026 - All rights reserved</span></h4>
 			<br>
 			<div style="text-align: center;">
-				<a href="https://github.com/RaiHormo/raidev.eu" target="_blank"><button
-						style="background-color: #605863;">
-						View on GitHub</button></a><button id="oneko-button" onclick="add_oneko();"><img
-						src="https://github.com/eepyfemboi/oneko/blob/main/Extension/icons/32.png?raw=true"></button>
+				<a href="https://github.com/RaiHormo/raidev.eu" class="button" target="_blank" style="background-color: #605863;">
+					View on GitHub
+				</a>
+				<button id="oneko-button" onclick="add_oneko();">
+					<img src="https://github.com/eepyfemboi/oneko/blob/main/Extension/icons/32.png?raw=true">
+				</button>
 			</div>
 		</footer>
 	</main>
@@ -482,4 +498,5 @@
 		document.getElementById("oneko-button").style.display = "none";
 	}
 </script>
+
 </html>
