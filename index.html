@@ -1,414 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta id="vp" name="viewport">
-  <title>Iris' fancy website</title>
-  <meta name="description" content="If you read this it means someone shared the website. Anyways this is RaiDev's personal website which is pretty cool and you should totally click on.">
-  <meta name="keywords" content="RaiDev, Iris, Personal, Social links, Art, Gallery, Mira's Journal, Gamedev">
-  <meta name="author" content="Iris Hormoviti">
-  <link rel="stylesheet" href="/styles.css">
-  <link href="/lib/fontawesome/css/all.min.css" rel="stylesheet">
-  <script src="/lib/masonry.pkgd.min.js"></script>
-  <script src="/lib/include-html.js"></script>
-  <script src="/lib/jquery-3.7.1.min.js"></script>
-  <link rel="icon" type="image/x-icon" href="/media/Rai/favicon.png">
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <meta id="img-meta" content="/media/Stamps/stamp.png" property="og:image" />
-  <!-- <base href="https://raidev.eu/"> -->
+	<meta charset="UTF-8">
+	<meta id="vp" name="viewport">
+	<title>Iris' fancy website</title>
+	<meta name="description"
+		content="If you read this it means someone shared the website. Anyways this is RaiDev's personal website which is pretty cool and you should totally click on.">
+	<meta name="keywords" content="RaiDev, Iris, Personal, Social links, Art, Gallery, Mira's Journal, Gamedev">
+	<meta name="author" content="Iris Hormoviti">
+	<link rel="stylesheet" href="/styles.css">
+	<link href="/lib/fontawesome/css/all.min.css" rel="stylesheet">
+	<script src="/lib/masonry.pkgd.min.js"></script>
+	<script src="/lib/include-html.js"></script>
+	<script src="/lib/jquery-3.7.1.min.js"></script>
+	<link rel="icon" type="image/x-icon" href="/media/Rai/favicon.png">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<meta id="img-meta" content="/media/Stamps/stamp.png" property="og:image" />
+	<!-- <base href="https://raidev.eu/"> -->
 </head>
 <script>
-  function link(pageUrl) {
-	for (var i = 0; i < document.getElementsByClassName("card").length; i++) {
-	  var card = document.getElementsByClassName("card")[i];
-	  card.classList.add('fade-down-class');
-	}
-	// if (window.innerWidth <= 525) {
-	document.getElementsByClassName("social-links")[0].classList.add("faded");
-	// }
-	document.getElementsByClassName("home-background")[0].classList.add("faded");
-	exited = true;
-	setTimeout(function(){
-	  window.location.href = pageUrl;
-	}, 300);
-  };
+	function link(pageUrl) {
+		for (var i = 0; i < document.getElementsByClassName("card").length; i++) {
+			var card = document.getElementsByClassName("card")[i];
+			card.classList.add('fade-down-class');
+		}
+		// if (window.innerWidth <= 525) {
+		document.getElementsByClassName("social-links")[0].classList.add("faded");
+		// }
+		document.getElementsByClassName("home-background")[0].classList.add("faded");
+		exited = true;
+		setTimeout(function () {
+			window.location.href = pageUrl;
+		}, 300);
+	};
 
-  var container;
-  var msnry;
+	var container;
+	var msnry;
 
 </script>
+
 <body>
 
-  <span class="h-card" style="display:none;" tabindex="-1">
-	<a href="https://raidev.eu/" class="u-url u-uid p-name" rel="me">Iris</a>
-	<p class="p-note">Digital artist and Hobbyist (game) developer.</p>
-	<img class="u-photo" src="/media/Stamps/stamp.png">
-	<a rel="me" class="u-url" rel="me" href="https://bsky.app/profile/did:plc:hwmlews7fhzg42kcnl4n5ztm">Bluesky</a>
-  </span>
+	<span class="h-card" style="display:none;" tabindex="-1">
+		<a href="https://raidev.eu/" class="u-url u-uid p-name" rel="me">Iris</a>
+		<p class="p-note">Digital artist and Hobbyist (game) developer.</p>
+		<img class="u-photo" src="/media/Stamps/stamp.png">
+		<a rel="me" class="u-url" rel="me" href="https://bsky.app/profile/did:plc:hwmlews7fhzg42kcnl4n5ztm">Bluesky</a>
+	</span>
 
-  <div include-html="/social-links.html"></div>
-  <div class="home-background faded"></div>
-  <h2 id="loader">Welcome to Iris' fancy website!<br><br>The site is still loading... If this takes too long, try to refresh, or check if you are blocking Javascript in your browser.</h2>
-  <div class="container" data-masonry='{
+	<nav include-html="/social-links.html"></nav>
+	<div class="home-background faded"></div>
+	<h2 id="loader">Welcome to Iris' fancy website!<br><br>The site is still loading... If this takes too long, try to
+		refresh, or check if you are blocking Javascript in your browser.</h2>
+	
+	<main class="container" data-masonry='{
 	"itemSelector": ".card", "columnWidth": 500, "gutter":24,
 	"fitWidth": true, "initLayout": true, "stagger": 3
   }'>
-	<div class="card card--c1" >
-	  <img class = "sitting-rai", src="media/Rai/sitting.avif" alt="Rai sitting">
-	  <h2 style="text-align: right; font-size: 28px; margin-bottom: 0px; color: #3d2e43;">about me</h2>
-	  <h1 style="text-align: right; font-size: 78px; color: #97459e; margin: 0;">
-		Iris</h1>
-	  <h2 id="info" style="text-align: left; line-height: 16px; margin: 8px; color: #3d2e43;">
-		  {{AGE}} - they/any<span style="color: #605863; float: right;">aka RaiDev</span></h2>
-	  <h4 style="text-align: left;margin: 10px; color: #605863; font-size: 26px;">
-		Digital artist and Hobbyist (game) developer.</h4>
-	  <h4 style="text-align: left;margin: 10px; color: #605863; font-size: 20px;">
-	  I'm Greek but mainly speak English and I'm also learning Japanese.
-	</h4>
-	</div>
+		<header class="card card--c1">
+			<img class="sitting-rai" , src="media/Rai/sitting.avif" alt="Rai sitting">
+			<h2 style="text-align: right; font-size: 28px; margin-bottom: 0px; color: #3d2e43;">about me</h2>
+			<h1 style="text-align: right; font-size: 78px; color: #97459e; margin: 0;">
+				Iris</h1>
+			<h2 id="info" style="text-align: left; line-height: 16px; margin: 8px; color: #3d2e43;">
+				{{AGE}} - they/any<span style="color: #605863; float: right;">aka RaiDev</span></h2>
+			<h4 style="text-align: left;margin: 10px; color: #605863; font-size: 26px;">
+				Digital artist, programmer and game developer from Greece.
+			</h4>
+		</header>
 
-	<div class="card card--c2 card-hover" style="height: 616px; background-color: #cec1e9;" onclick="link('/gallery');">
-	  <h1 style="text-align: center; font-size: 34px; margin-bottom: 0px; color: #97459e">
-		Art gallery</h1>
-	  <div class="gallery-grid">
-		<img src="media/Artwork/eevee2025.avif" class="gallery-img-frontpage"
-		style="border-top-left-radius: 32px;">
-		<img src="media/Artwork/rai back.avif" class="gallery-img-frontpage"
-		style="border-top-right-radius: 32px;">
-		<img src="media/Artwork/erinn-swim.avif" class="gallery-img-frontpage"
-		style="border-bottom-left-radius: 32px;">
-		<img src="media/Artwork/vibri aaalt.avif" class="gallery-img-frontpage"
-		style="border-bottom-right-radius: 32px;">
-	  </div>
+		<section class="card card--c2 card-hover" style="height: 616px; background-color: #cec1e9;"
+			onclick="link('/gallery');">
+			<h1 style="text-align: center; font-size: 34px; margin-bottom: 0px; color: #97459e">
+				Art gallery</h1>
+			<div class="gallery-grid">
+				<img src="media/Artwork/eevee2025.avif" class="gallery-img-frontpage"
+					style="border-top-left-radius: 32px;">
+				<img src="media/Artwork/rai back.avif" class="gallery-img-frontpage"
+					style="border-top-right-radius: 32px;">
+				<img src="media/Artwork/erinn-swim.avif" class="gallery-img-frontpage"
+					style="border-bottom-left-radius: 32px;">
+				<img src="media/Artwork/vibri aaalt.avif" class="gallery-img-frontpage"
+					style="border-bottom-right-radius: 32px;">
+			</div>
 
-	  <div style="text-align: center;"><a href="/gallery" onclick="link('/gallery'); return false"><button class="gallery-button">
-		View gallery</button></a></div>
-	</div>
+			<div style="text-align: center;"><a href="/gallery" onclick="link('/gallery'); return false"><button
+						class="gallery-button">
+						View gallery</button></a></div>
+		</section>
 
-	<div class="card card--c3 card-hover" style="height: 380px;" onclick="link('/miras-journal');">
-	  <img src="/media/MJ/logo.png" class="MJ-logo">
-	  <h4 style="font-weight: normal; margin: 0; font-size: 24px;">A turn based RPG game I'm currently working on.</h4>
-	  <div style="text-align: center;"><a href="/miras-journal"><button class="MJ-button" onclick="link('/miras-journal'); return false">
-		Learn more
-	  </button></a></div>
-	  <img src="media/MJ/Idle.gif" style="left: -20px; height: 180px; top: 200px; position: absolute; image-rendering: pixelated;">
-	</div>
+		<section class="card card--c3 card-hover" style="height: 380px;" onclick="link('/miras-journal');">
+			<img src="/media/MJ/logo.png" class="MJ-logo">
+			<h4 style="font-weight: normal; margin: 0; font-size: 24px;">A turn based RPG game I'm currently working on.
+			</h4>
+			<div style="text-align: center;"><a href="/miras-journal"><button class="MJ-button"
+						onclick="link('/miras-journal'); return false">
+						Learn more
+					</button></a></div>
+			<img src="media/MJ/Idle.gif"
+				style="left: -20px; height: 180px; top: 200px; position: absolute; image-rendering: pixelated;">
+		</section>
 
-	<div class="card card-hover" onclick="link('/comm');"
-	style="background-image: url(/media/Rai/comm\ bg.png); background-position: 700px -200px; background-blend-mode: soft-light;">
-	<h1 style="text-align: center; font-size: 34px; color: #3d2e43;">
-	  Commissions</h1>
-	  <h4 style="text-align: center; margin: 0; color: #2b1e30; opacity: 90%; font-size: 28px;">
-		Check current prices here!<br>I can draw both Illustrations and Game Assets.</h4>
-		<div style="text-align: center;">
-		  <a href="/comm" onclick="link('/comm'); return false"><button class="gallery-button" style ="background-color: #3D2D43; color: #CEB0CD;">
-		  Pricing and info</button></a></div>
-		</div>
+		<section class="card card-hover" onclick="link('/comm');"
+			style="background-image: url(/media/Rai/comm\ bg.png); background-position: 700px -200px; background-blend-mode: soft-light;">
+			<h1 style="text-align: center; font-size: 34px; color: #3d2e43;">
+				Commissions</h1>
+			<h4 style="text-align: center; margin: 0; color: #2b1e30; opacity: 90%; font-size: 28px;">
+				Check current prices here!<br>I can draw both Illustrations and Game Assets.</h4>
+			<div style="text-align: center;">
+				<a href="/comm" onclick="link('/comm'); return false"><button class="gallery-button"
+						style="background-color: #3D2D43; color: #CEB0CD;">
+						Pricing and info</button></a>
+			</div>
+		</section>
 
-	<div class="card card--c2">
-	  <h1 style="text-align: center; font-size: 34px; margin-bottom: 0px; color: #97459e">
-		Other Projects</h1><br>
-	  <div style="display: grid; grid-template-columns: 1fr 1fr; text-align: left; grid-gap: 24px; grid-row-gap: 24px;">
-		<a href="https://raidev.itch.io/unmasked">
-		  <div>
-			<img src="https://img.itch.zone/aW1nLzI1MzM4Njc1LnBuZw==/347x500/QDJu2u.png" alt="UnMasked" class="project-thumbnail">
-			<img src="https://static.itch.io/images/badge-color.svg" class="project-action">
-		  </div>
-		</a>
-		<div>
-		  <span style="color: #3D2D43; font-size: 32px;">UnMasked</span><br>
-		  <span style="font-size: 18px;">A Stealth game made in 2 days for Global Game Jam [Athens] 2026.<br><br>It was made by 7 other people from University and me as the lead programmer.</span>
-		</div>
-	  </div>
-	</div>
+		<section class="card card--c2">
+			<h1 style="text-align: center; font-size: 34px; margin-bottom: 0px; color: #97459e">
+				Other Projects</h1><br>
+			<div style="display: grid; grid-template-columns: 1fr 1fr; text-align: left; grid-gap: 24px; grid-row-gap: 24px;">
+				<a href="https://raidev.itch.io/unmasked">
+					<div>
+						<img src="https://img.itch.zone/aW1nLzI1MzM4Njc1LnBuZw==/347x500/QDJu2u.png" alt="UnMasked"
+							class="project-thumbnail">
+						<img src="https://static.itch.io/images/badge-color.svg" class="project-action">
+					</div>
+				</a>
+				<div>
+					<span style="color: #3D2D43; font-size: 32px;">UnMasked</span><br>
+					<span style="font-size: 18px;">A Stealth game made in 2 days for Global Game Jam [Athens]
+						2026.<br><br>It was made by 7 other people from University and me as the lead programmer.</span>
+				</div>
+				<a href="https://shell.raidev.eu" target="_blank">
+					<div>
+						<img src="/media/Misc/HiShell.png" alt="HiShell"
+							class="project-thumbnail">
+						<button class="project-action">Try it</button>
+					</div>
+				</a>
+				<div>
+					<span style="color: #3D2D43; font-size: 32px;">HiShell</span><br>
+					<span style="font-size: 18px;">A unique fake OS and file manager, made in Godot.<p>
+						It's still somewhat unfinished, but you can try it out right now on the web!</span>
+				</div>
+			</div>
+		</section>
 
-	<div class="card card--c2" style="background-color: #605863;">
-	  <h1 style="text-align: center; font-size: 34px; margin-bottom: 0px; color: #e1bbe5">
-		Characters</h1><br>
-	  <a href="/oc#rai" onclick="show_character('rai'); return false;" title="Rai"><img class="profile-raicon clickable-profile-raicon" src="/media/Raicons/Rai.png"></a>
-	  <a href="/oc#cyris" onclick="show_character('cyris'); return false;" title="Cyris"><img class="profile-raicon clickable-profile-raicon" src="/media/Raicons/Cyris.png"></a>
-	  <a href="/oc#mira" onclick="show_character('mira'); return false;" title="Mira Levenor"><img class="profile-raicon clickable-profile-raicon" src="/media/Raicons/Mira.png"></a>
-	  <a href="/oc#alcine" onclick="show_character('alcine'); return false;" title="Alcine"><img class="profile-raicon clickable-profile-raicon" src="/media/Raicons/Alcine.png"></a>
-	  <a href="/oc#asteria" onclick="show_character('asteria'); return false;" title="Asteria Versea"><img class="profile-raicon clickable-profile-raicon" src="/media/Raicons/Asteria.png"></a>
-	  <a href="/oc#daze" onclick="show_character('daze'); return false;" title="Daze"><img class="profile-raicon clickable-profile-raicon" src="/media/Raicons/Daze.png"></a>
-	  <p style="font-size: 24px; text-align: center; color: #aca6b1;">Click on a character to learn more!</p>
-	</div>
+		<section class="card card--c2" style="background-color: #605863;">
+			<h1 style="text-align: center; font-size: 34px; margin-bottom: 0px; color: #e1bbe5">
+				Characters</h1><br>
+			<a href="/oc#rai" onclick="show_character('rai'); return false;" title="Rai"><img
+					class="profile-raicon clickable-profile-raicon" src="/media/Raicons/Rai.png"></a>
+			<a href="/oc#cyris" onclick="show_character('cyris'); return false;" title="Cyris"><img
+					class="profile-raicon clickable-profile-raicon" src="/media/Raicons/Cyris.png"></a>
+			<a href="/oc#mira" onclick="show_character('mira'); return false;" title="Mira Levenor"><img
+					class="profile-raicon clickable-profile-raicon" src="/media/Raicons/Mira.png"></a>
+			<a href="/oc#alcine" onclick="show_character('alcine'); return false;" title="Alcine"><img
+					class="profile-raicon clickable-profile-raicon" src="/media/Raicons/Alcine.png"></a>
+			<a href="/oc#asteria" onclick="show_character('asteria'); return false;" title="Asteria Versea"><img
+					class="profile-raicon clickable-profile-raicon" src="/media/Raicons/Asteria.png"></a>
+			<a href="/oc#daze" onclick="show_character('daze'); return false;" title="Daze"><img
+					class="profile-raicon clickable-profile-raicon" src="/media/Raicons/Daze.png"></a>
+			<p style="font-size: 24px; text-align: center; color: #aca6b1;">Click on a character to learn more!</p>
+		</section>
 
-	<div id="software-card" class="card" style="height: 600px; overflow: hidden;">
-	  <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
-		Software I use</h1>
-	  <h4 style="text-align: center; margin: 0; color: #605863;">
-		<div style="display: grid; grid-template-columns: 64px 350px; text-align: left; grid-gap: 24px; grid-row-gap: 24px;">
-		  <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Calligrakrita-base.svg" alt="Krita" style="width: 64px;">
-		  <div>
-			<span style="color: #3D2D43; font-size: 32px;">Krita</span><br>
-			<span style="font-size: 18px;">For drawing<br><br>I used to use CSP, but after switching to Linux I had to find something new.<br>
-			Nowdays I'm pretty comfortable in krita after setting it up the way I like, and It's really good considering it's completely free and open source.</span>
-		  </div>
+		<section id="software-card" class="card" style="height: 600px; overflow: hidden;">
+			<h1 style="text-align: center; font-size: 34px; color: #3d2e43">
+				Software I use</h1>
+			<h4 style="text-align: center; margin: 0; color: #605863;">
+				<div
+					style="display: grid; grid-template-columns: 64px 350px; text-align: left; grid-gap: 24px; grid-row-gap: 24px;">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Calligrakrita-base.svg" alt="Krita"
+						style="width: 64px;">
+					<div>
+						<span style="color: #3D2D43; font-size: 32px;">Krita</span><br>
+						<span style="font-size: 18px;">For drawing<br><br>I used to use CSP, but after switching to
+							Linux I had to find something new.<br>
+							Nowdays I'm pretty comfortable in krita after setting it up the way I like, and It's really
+							good considering it's completely free and open source.</span>
+					</div>
 
-		  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Godot_icon.svg" alt="Godot" style="width: 64px;">
-		  <div>
-			<span style="color: #3D2D43; font-size: 32px;">Godot Engine</span><br>
-			<span style="font-size: 18px;">For game development<br><br>It's what I'm using to make Mira's Journal. What can I say? It's what taught me programming in the first place.<br> It has solid tools tools for both 2D and 3D, UI tools better than most other engines and is free with no fine print.</span>
-		  </div>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Godot_icon.svg" alt="Godot"
+						style="width: 64px;">
+					<div>
+						<span style="color: #3D2D43; font-size: 32px;">Godot Engine</span><br>
+						<span style="font-size: 18px;">For game development<br><br>It's what I'm using to make Mira's
+							Journal. What can I say? It's what taught me programming in the first place.<br> It has
+							solid tools tools for both 2D and 3D, UI tools better than most other engines and is free
+							with no fine print.</span>
+					</div>
 
-		  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Logo_Aseprite.svg/1200px-Logo_Aseprite.svg.png" alt="Aseprite" style="width: 64px;">
-		  <div>
-			<span style="color: #3D2D43; font-size: 32px;">Aseprite</span><br>
-			<span style="font-size: 18px;">For pixel art<br><br>If you do pixel art and don't use Aseprite, you're doing something wrong.<br> It's more than worth the small price imo. Just don't make the same mistake as me of buying it on Steam...</span>
-		  </div>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Logo_Aseprite.svg/1200px-Logo_Aseprite.svg.png"
+						alt="Aseprite" style="width: 64px;">
+					<div>
+						<span style="color: #3D2D43; font-size: 32px;">Aseprite</span><br>
+						<span style="font-size: 18px;">For pixel art<br><br>If you do pixel art and don't use Aseprite,
+							you're doing something wrong.<br> It's more than worth the small price imo. Just don't make
+							the same mistake as me of buying it on Steam...</span>
+					</div>
 
-		  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/2023_Obsidian_logo.svg/1200px-2023_Obsidian_logo.svg.png" alt="Obsidian" style="width: 64px;">
-		  <div>
-			<span style="color: #3D2D43; font-size: 32px;">Obsidian</span><br>
-			<span style="font-size: 18px;">For note taking<br><br>I mostly use it for Mira's Journal design documents.<br>It does the job as a markdown editor, I just wish there was a better free way to sync it than Git.</span>
-		  </div>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/2023_Obsidian_logo.svg/1200px-2023_Obsidian_logo.svg.png"
+						alt="Obsidian" style="width: 64px;">
+					<div>
+						<span style="color: #3D2D43; font-size: 32px;">Obsidian</span><br>
+						<span style="font-size: 18px;">For note taking<br><br>I mostly use it for Mira's Journal design
+							documents.<br>It does the job as a markdown editor, I just wish there was a better free way
+							to sync it than Git.</span>
+					</div>
 
-		  <img src="https://dl.flathub.org/media/io/github/zyedidia.micro/78d9e73ed7422eb510bb4cdb152bba5e/icons/128x128@2/io.github.zyedidia.micro.png" alt="Micro" style="width: 64px;">
-		  <div>
-			<span style="color: #3D2D43; font-size: 32px;">Micro</span><br>
-			<span style="font-size: 18px;">As text editor<br><br>VS Code is owned by Microsoft, Vim is too complicated, Nano is too basic and I don't even know what Emacs is.<br><br>Micro is the only good text editor I've found. It uses standard keybinds (Why is that unusual in CLI editors???) and has enough configuration options to make it comfortable.</span>
-		  </div>
+					<img src="https://dl.flathub.org/media/io/github/zyedidia.micro/78d9e73ed7422eb510bb4cdb152bba5e/icons/128x128@2/io.github.zyedidia.micro.png"
+						alt="Micro" style="width: 64px;">
+					<div>
+						<span style="color: #3D2D43; font-size: 32px;">Micro</span><br>
+						<span style="font-size: 18px;">As text editor<br><br>VS Code is owned by Microsoft, Vim is too
+							complicated, Nano is too basic and I don't even know what Emacs is.<br><br>Micro is the only
+							good text editor I've found. It uses standard keybinds (Why is that unusual in CLI
+							editors???) and has enough configuration options to make it comfortable.</span>
+					</div>
 
-		  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhostingsource.com%2Fwp-content%2Fuploads%2F2020%2F12%2F1024px-Fedora_logo.svg.png" alt="Fedora" style="width: 64px;">
-		  <div>
-			<span style="color: #3D2D43; font-size: 32px;">Fedora Linux</span><br>
-			<span style="font-size: 18px;">As operating system<br><br>Yes, in case you couldn't tell, I'm a linux user.<br>I've tried plenty of desktops, but right now I use GNOME. <br>I do have plenty of extensions on it, but it's mostly stuff like "GSConnect", "Fullscreen to empty workspace" or "TouchUp", just small things that improve the desktop imo.</span>
-		  </div>
-		</div>
-	  </h4>
-	  <div id="software-card-expand" style="position: sticky; bottom: -28px;
+					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhostingsource.com%2Fwp-content%2Fuploads%2F2020%2F12%2F1024px-Fedora_logo.svg.png"
+						alt="Fedora" style="width: 64px;">
+					<div>
+						<span style="color: #3D2D43; font-size: 32px;">Fedora Linux</span><br>
+						<span style="font-size: 18px;">As operating system<br><br>Yes, in case you couldn't tell, I'm a
+							linux user.<br>I've tried plenty of desktops, but right now I use GNOME. <br>I do have
+							plenty of extensions on it, but it's mostly stuff like "GSConnect", "Fullscreen to empty
+							workspace" or "TouchUp", just small things that improve the desktop imo.</span>
+					</div>
+				</div>
+			</h4>
+			<div id="software-card-expand"
+				style="position: sticky; bottom: -28px;
 	  background: linear-gradient(180deg,rgba(42, 123, 155, 0) 0%, rgba(87, 199, 133, 0) 29%, rgba(75, 70, 97, 1) 100%); width: 150%; margin-left: -50px; height: 150px;">
-		<button style="margin-left: 180px; margin-top: 64px; background-color: #3d2e43;"
-		onclick="document.getElementById('software-card').style.height = 'fit-content'; document.getElementById('software-card-expand').style.display = 'none';
+				<button style="margin-left: 180px; margin-top: 64px; background-color: #3d2e43;" onclick="document.getElementById('software-card').style.height = 'fit-content'; document.getElementById('software-card-expand').style.display = 'none';
 		msnry.layout();">
-		<a class="fa-solid fa-chevron-down"></a> Expand</button>
-	  </div>
-	</div>
+					<a class="fa-solid fa-chevron-down"></a> Expand</button>
+			</div>
+		</section>
 
-<div id="games-card" class="card" style="height: 400px; overflow: hidden;">
-	  <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
-		Games I like</h1>
-	  <div class="game-grid">
-		<img src="media/Games/XC3.avif" class="frontpage-game">
-		<img src="media/Games/P4G.avif" class="frontpage-game">
-		<img src="media/Games/Deltarune.avif" class="frontpage-game">
-		<img src="media/Games/PSM.avif" class="frontpage-game">
-		<img src="media/Games/SSBU.avif" class="frontpage-game">
-		<img src="media/Games/P5.avif" class="frontpage-game">
-		<img src="media/Games/Celeste.avif" class="frontpage-game">
-		<img src="media/Games/MRF.avif" class="frontpage-game">
-		<img src="media/Games/PMDEOS.avif" class="frontpage-game">
-	  </div>
-	  <div id="games-card-expand" style="position: sticky; bottom: -28px;
+		<section id="games-card" class="card" style="height: 400px; overflow: hidden;">
+			<h1 style="text-align: center; font-size: 34px; color: #3d2e43">
+				Games I like</h1>
+			<div class="game-grid">
+				<img src="media/Games/XC3.avif" class="frontpage-game">
+				<img src="media/Games/P4G.avif" class="frontpage-game">
+				<img src="media/Games/Deltarune.avif" class="frontpage-game">
+				<img src="media/Games/PSM.avif" class="frontpage-game">
+				<img src="media/Games/SSBU.avif" class="frontpage-game">
+				<img src="media/Games/P5.avif" class="frontpage-game">
+				<img src="media/Games/Celeste.avif" class="frontpage-game">
+				<img src="media/Games/MRF.avif" class="frontpage-game">
+				<img src="media/Games/PMDEOS.avif" class="frontpage-game">
+			</div>
+			<div id="games-card-expand"
+				style="position: sticky; bottom: -28px;
 	  background: linear-gradient(180deg,rgba(42, 123, 155, 0) 0%, rgba(87, 199, 133, 0) 29%, rgba(75, 70, 97, 1) 100%); width: 150%; margin-left: -50px; height: 150px;">
-		<button style="margin-left: 180px; margin-top: 64px; background-color: #3d2e43;"
-		onclick="document.getElementById('games-card').style.height = 'fit-content'; document.getElementById('games-card-expand').style.display = 'none';
+				<button style="margin-left: 180px; margin-top: 64px; background-color: #3d2e43;" onclick="document.getElementById('games-card').style.height = 'fit-content'; document.getElementById('games-card-expand').style.display = 'none';
 		msnry.layout();">
-		<a class="fa-solid fa-chevron-down"></a> Expand</button>
-	  </div>
-	</div>
+					<a class="fa-solid fa-chevron-down"></a> Expand</button>
+			</div>
+		</section>
 
 
-	<div class="card" style="background-color: black; padding: 8px; padding-left: 32px; line-height: 10px;">
-	  <h1 style="text-align: center; font-size: 34px; color: rgb(146, 144, 144)">
-		Friend Stamps</h1>
-	  <!-- <a href="https://raidev.eu"><img class="stamp" src="https://raidev.eu/media/Stamps/stamp.png" alt="Iris' fancy website stamp"></a> -->
-	  <a href="https://ivan-krul.github.io/CharacterRegister" target="_blank"><img class="stamp" src="/media/Stamps/stamp_kiwi.png" alt="Kiwii Devulopir's Character Register"></a>
-	  <a href="https://ivan-krul.github.io/scriptpostum.github.io" target="_blank"><img class="stamp" src="/media/Stamps/stamp_script.png" alt="Script Postum's Database"></a>
-	  <a href="https://mintychaos.com" target="_blank"><img class="stamp" src="/media/Stamps/stamp_minty.png" alt="Script Postum's Database"></a>
-	  <a href="https://omotamiadev.nekoweb.org" target="_blank"><img class="stamp" src="/media/Stamps/stamp_sade.png" alt="Sade / Home"></a>
-	</div>
+		<section class="card" style="background-color: black; padding: 8px; padding-left: 32px; line-height: 10px;">
+			<h1 style="text-align: center; font-size: 34px; color: rgb(146, 144, 144)">
+				Friend Stamps</h1>
+			<!-- <a href="https://raidev.eu"><img class="stamp" src="https://raidev.eu/media/Stamps/stamp.png" alt="Iris' fancy website stamp"></a> -->
+			<a href="https://ivan-krul.github.io/CharacterRegister" target="_blank"><img class="stamp"
+					src="/media/Stamps/stamp_kiwi.png" alt="Kiwii Devulopir's Character Register"></a>
+			<a href="https://ivan-krul.github.io/scriptpostum.github.io" target="_blank"><img class="stamp"
+					src="/media/Stamps/stamp_script.png" alt="Script Postum's Database"></a>
+			<a href="https://mintychaos.com" target="_blank"><img class="stamp" src="/media/Stamps/stamp_minty.png"
+					alt="Script Postum's Database"></a>
+			<a href="https://omotamiadev.nekoweb.org" target="_blank"><img class="stamp"
+					src="/media/Stamps/stamp_sade.png" alt="Sade / Home"></a>
+		</section>
 
-	<div class="card" style="background-color: #c0c7d0;">
-	  <h1 style="text-align: center; font-size: 34px; color: rgba(0, 0, 0, 0.712)">
-		Webring</h1>
-		<div style="text-align: center;">
-		  <a href="https://xn--sr8hvo.ws/previous"><button class="webring-arrow webring-arrow-left">←</button></a>
-			<a href="https://xn--sr8hvo.ws" title="An IndieWeb Webring" class="webring-text">🕸💍</a>
-		  <a href="https://xn--sr8hvo.ws/next"><button class="webring-arrow webring-arrow-right">→</button></a>
-		</div>
-	</div>
+		<section class="card" style="background-color: #c0c7d0;">
+			<h1 style="text-align: center; font-size: 34px; color: rgba(0, 0, 0, 0.712)">
+				Webring</h1>
+			<div style="text-align: center;">
+				<a href="https://xn--sr8hvo.ws/previous"><button class="webring-arrow webring-arrow-left">←</button></a>
+				<a href="https://xn--sr8hvo.ws" title="An IndieWeb Webring" class="webring-text">🕸💍</a>
+				<a href="https://xn--sr8hvo.ws/next"><button class="webring-arrow webring-arrow-right">→</button></a>
+			</div>
+		</section>
 
-	<div class="card" style="background-color: #aca6b1;">
-	  <h1 style="text-align: center; font-size: 34px; color: rgba(0, 0, 0, 0.712)">
-		Guestbook
-		<!-- <button onclick="postviewerExpand(true);" style="float: right; font-size: 20px; background-color: #3d2e43;">
+		<section class="card" style="background-color: #aca6b1;">
+			<h1 style="text-align: center; font-size: 34px; color: rgba(0, 0, 0, 0.712)">
+				Guestbook
+				<!-- <button onclick="postviewerExpand(true);" style="float: right; font-size: 20px; background-color: #3d2e43;">
 		  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>  Expand</button> -->
-		</h1>
-		<!-- <a href="https://guestbooks.meadow.cafe/guestbook/713" style="color: #682A18;">The guestbook is currenly unavailable...</a> -->
-		<iframe src="https://guestbooks.meadow.cafe/guestbook/713" class="guestbook" frameborder="0"></iframe>
-	</div>
+			</h1>
+			<!-- <a href="https://guestbooks.meadow.cafe/guestbook/713" style="color: #682A18;">The guestbook is currenly unavailable...</a> -->
+			<iframe src="https://guestbooks.meadow.cafe/guestbook/713" class="guestbook" frameborder="0"></iframe>
+		</section>
 
-	<div class="card">
-	  <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
-		Gaming profiles</h1>
-	  <h4 style="text-align: left; margin: 0; color: #605863; font-size: 24px;">
-	  <ul>
-		<li style="color: #3d2e43">Steam: <a style="color: #605863" href="https://steamcommunity.com/id/raidev/_blank">raidev</a></li>
-		<li style="color: #3d2e43">Switch: <dev style="color: #605863">SW-5341-2547-1618</dev></li>
-		<li style="color: #3d2e43">Pretendo 3DS: <dev style="color: #605863">3409-1500-8052 <br>
-		  (DM me if you want to add me)</dev></li>
-		  <li style="color: #3d2e43">VR Chat: <a  href="https://vrchat.com/home/user/usr_5e9ab387-4c66-4742-8d1d-90ba0db8bb9b" style="color: #605863">IrisHormo</a></li>
-		<li style="color: #3d2e43">Meta (Oculus): <a style="color: #605863">RaiDev</a></li>
-		<li style="color: #3d2e43">RecRoom: <dev style="color: #605863">RaiDev_</dev></li>
-		<li style="color: #3d2e43">PSN: <dev style="color: #605863">IrisHormo</dev></li>
-	  </ul>
+		<section class="card">
+			<h1 style="text-align: center; font-size: 34px; color: #3d2e43">
+				Gaming profiles</h1>
+			<h4 style="text-align: left; margin: 0; color: #605863; font-size: 24px;">
+				<ul>
+					<li style="color: #3d2e43">Steam: <a style="color: #605863"
+							href="https://steamcommunity.com/id/raidev/_blank">raidev</a></li>
+					<li style="color: #3d2e43">Switch: <dev style="color: #605863">SW-5341-2547-1618</dev>
+					</li>
+					<li style="color: #3d2e43">Pretendo 3DS: <dev style="color: #605863">3409-1500-8052 <br>
+							(DM me if you want to add me)</dev>
+					</li>
+					<li style="color: #3d2e43">VR Chat: <a
+							href="https://vrchat.com/home/user/usr_5e9ab387-4c66-4742-8d1d-90ba0db8bb9b"
+							style="color: #605863">IrisHormo</a></li>
+					<li style="color: #3d2e43">Meta (Oculus): <a style="color: #605863">RaiDev</a></li>
+					<li style="color: #3d2e43">RecRoom: <dev style="color: #605863">RaiDev_</dev>
+					</li>
+					<li style="color: #3d2e43">PSN: <dev style="color: #605863">IrisHormo</dev>
+					</li>
+				</ul>
 
-	</div>
+		</section>
 
-	<div class="card" style="height: fit-content; background-color: #C2BDC7;">
-	  <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
-		Site Updates
-		<button onclick="postviewerExpand(true);" style="float: right; font-size: 20px; background-color: #3d2e43;">
-		  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>  Expand</button></h1>
-		<iframe src="/lib/PostViewer/index.html?direct_storage=/poststorage" class="postviewer"></iframe>
-	</div>
-	<!-- <div class="card" style="height: fit-content;">
-	  <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
-		Dev Discord</h1>
-	  <iframe src="https://discord.com/widget?id=1377010478009553010&theme=dark" width="440" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-	</div> -->
+		<section class="card" style="height: fit-content; background-color: #C2BDC7;">
+			<h1 style="text-align: center; font-size: 34px; color: #3d2e43">
+				Site Updates
+				<button onclick="postviewerExpand(true);"
+					style="float: right; font-size: 20px; background-color: #3d2e43;">
+					<i class="fa-solid fa-up-right-and-down-left-from-center"></i> Expand</button>
+			</h1>
+			<iframe src="/lib/PostViewer/index.html?direct_storage=/poststorage" class="postviewer"></iframe>
+		</section>
 
-	<div class="card" style="padding: 8px; padding-left: 32px; line-height: 10px;">
-	  <h1 style="text-align: center; font-size: 34px; color: #3d2e43">
-		Embed Stamp</h1>
-	  <div style="display: flex;">
-		<a href="https://raidev.eu"><img src="https://raidev.eu/media/Stamps/stamp.png" style="height: 120px; image-rendering:pixelated;" alt="Iris' fancy website stamp"></a>
-		<div>
-		  <input style="font-size: 18px; margin: 8px; border-radius: 12px; padding: 8px; height:24px; border-style: none;background-color: #d8d5db; width: 220px" type="text" width="100px"
-		  value="&#x3C;a href=&#x22;https://raidev.eu&#x22;&#x3E;&#x3C;img src=&#x22;https://raidev.eu/media/Stamps/stamp.png&#x22; style=&#x22;image-rendering:pixelated;&#x22; alt=&#x22;Iris&#x27; fancy website stamp&#x22;&#x3E;&#x3C;/a&#x3E;"
-		  id="embed-text" readonly>
-		  <button style="font-size: 18px;  margin: 8px; width: 180px; height: 48px;" onclick="copyEmbed()"><i class="fa fa-copy"></i> Copy HTML</button>
-		</div>
-	  </div>
-	</div>
+		<section class="card" style="padding: 8px; padding-left: 32px; line-height: 10px;">
+			<h1 style="text-align: center; font-size: 34px; color: #3d2e43">
+				Embed Stamp</h1>
+			<div style="display: flex;">
+				<a href="https://raidev.eu"><img src="https://raidev.eu/media/Stamps/stamp.png"
+						style="height: 120px; image-rendering:pixelated;" alt="Iris' fancy website stamp"></a>
+				<div>
+					<input
+						style="font-size: 18px; margin: 8px; border-radius: 12px; padding: 8px; height:24px; border-style: none;background-color: #d8d5db; width: 220px"
+						type="text" width="100px"
+						value="&#x3C;a href=&#x22;https://raidev.eu&#x22;&#x3E;&#x3C;img src=&#x22;https://raidev.eu/media/Stamps/stamp.png&#x22; style=&#x22;image-rendering:pixelated;&#x22; alt=&#x22;Iris&#x27; fancy website stamp&#x22;&#x3E;&#x3C;/a&#x3E;"
+						id="embed-text" readonly>
+					<button style="font-size: 18px;  margin: 8px; width: 180px; height: 48px;" onclick="copyEmbed()"><i
+							class="fa fa-copy"></i> Copy HTML</button>
+				</div>
+			</div>
+		</section>
 
-	<div class="card">
+		<footer class="card">
+			<h1 style="text-align: center; font-size: 34px; color: #3d2e43">
+				Thank you for visiting!</h1>
+			<h4 style="text-align: center; margin: 0; color: #605863; font-size: 28px;">
+				I made this site from the ground up in order to learn HTML/CSS/JS.<br> Some things are still a work in
+				progress, but I'm trying my best.<br><br> No AI was used in the making of this website, or anything I
+				do.<br><br><span style="font-size: 18px;">© Iris Hormoviti 2024-2026 - All rights reserved</span></h4>
+			<br>
+			<div style="text-align: center;">
+				<a href="https://github.com/RaiHormo/raidev.eu" target="_blank"><button
+						style="background-color: #605863;">
+						View on GitHub</button></a><button id="oneko-button" onclick="add_oneko();"><img
+						src="https://github.com/eepyfemboi/oneko/blob/main/Extension/icons/32.png?raw=true"></button>
+			</div>
+		</footer>
+	</main>
+
+	<div id="post-expanded">
 		<h1 style="text-align: center; font-size: 34px; color: #3d2e43">
-		Thank you for visiting!</h1>
-		<h4 style="text-align: center; margin: 0; color: #605863; font-size: 28px;">
-		I made this site from the ground up in order to learn HTML/CSS/JS.<br> Some things are still a work in progress, but I'm trying my best.<br><br> No AI was used in the making of this website, or anything I do.<br><br><span style="font-size: 18px;">© Iris Hormoviti 2024-2026 - All rights reserved</span></h4>
-		<br>
-		<div style="text-align: center;">
-			<a href="https://github.com/RaiHormo/raidev.eu" target="_blank"><button style="background-color: #605863;">
-			View on GitHub</button></a><button id="oneko-button" onclick="add_oneko();"><img src="https://github.com/eepyfemboi/oneko/blob/main/Extension/icons/32.png?raw=true"></button></div>
-		</div>
+			Posts
+			<button onclick="postviewerExpand(false);"
+				style="float: right; font-size: 20px; background-color: #3d2e43;">
+				<i class="fa-solid fa-down-left-and-up-right-to-center"></i> Shrink</button>
+		</h1>
+		<iframe class="postviewer"></iframe>
 	</div>
-  </div>
-
-  <div id="post-expanded">
-	<h1 style="text-align: center; font-size: 34px; color: #3d2e43">
-	  Posts
-	  <button onclick="postviewerExpand(false);" style="float: right; font-size: 20px; background-color: #3d2e43;">
-		<i class="fa-solid fa-down-left-and-up-right-to-center"></i>  Shrink</button></h1>
-	  <iframe class="postviewer"></iframe>
-  </div>
 
 </body>
-</html>
+
 <script src="/lib/handle-slinks.js"></script>
 <script>
-  function setWidth() {
+	function setWidth() {
 		var exited = false;
-	var mvp = document.getElementById('vp');
-	if (window.innerWidth < 525) {
-	  mvp.setAttribute('content','width=525px');
-	  console.log("mobile mode");
-	} else {
-	  mvp.setAttribute('content','width=device-width');
-	  console.log("swakrop mode");
+		var mvp = document.getElementById('vp');
+		if (window.innerWidth < 525) {
+			mvp.setAttribute('content', 'width=525px');
+			console.log("mobile mode");
+		} else {
+			mvp.setAttribute('content', 'width=device-width');
+			console.log("swakrop mode");
+		}
+	};
+
+	function copyEmbed() {
+		var copyText = document.getElementById("embed-text");
+
+		copyText.select();
+		copyText.setSelectionRange(0, 99999); // For mobile devices
+
+		// Copy the text inside the text field
+		navigator.clipboard.writeText(copyText.value);
 	}
-  };
 
-  function copyEmbed() {
-	var copyText = document.getElementById("embed-text");
+	window.addEventListener("load", setWidth());
 
-	copyText.select();
-	copyText.setSelectionRange(0, 99999); // For mobile devices
+	window.addEventListener("load", function () {
+		setTimeout(function () {
+			if (window.location.hash == "#postviewer") {
+				postviewerExpand(true);
+			}
+		});
+		for (var i = 0; i < document.getElementsByClassName("card").length; i++) {
+			var card = document.getElementsByClassName("card")[i];
+			card.style.animationName = "slideUp";
+		}
+		document.getElementById("loader").style.display = "none";
+		document.getElementById("info").innerHTML = document.getElementById("info").innerHTML.replace("{{AGE}}", new Date().getFullYear() - 2005)
+		setTimeout(function () {
+			Array.from(document.getElementsByClassName("card")).forEach(element => {
+				element.style.animationName = 'unset';
+				element.style.opacity = '1';
+			});
+		}, 3000);
 
-	// Copy the text inside the text field
-	navigator.clipboard.writeText(copyText.value);
-  }
-
-  window.addEventListener("load", setWidth());
-
-  window.addEventListener("load", function() {
-	setTimeout(function(){
-	  if (window.location.hash == "#postviewer") {
-		postviewerExpand(true);
-	  }
+		container = document.querySelector('.container');
+		msnry = new Masonry(container, {
+			itemSelector: ".card", columnWidth: 500, gutter: 24,
+			fitWidth: true, initLayout: true, stagger: 3
+		});
 	});
+
 	for (var i = 0; i < document.getElementsByClassName("card").length; i++) {
-	  var card = document.getElementsByClassName("card")[i];
-	  card.style.animationName = "slideUp";
+		var card = document.getElementsByClassName("card")[i];
+		card.style.setProperty('--animation-order', i);
+	};
+	// setTimeout(function(){
+	//   window.scrollTo(0,0);
+	// });
+	setTimeout(function () {
+		// window.scrollTo(0,0);
+		document.getElementsByClassName("home-background")[0].classList.remove("faded");
+	}, 300);
+
+	function postviewerExpand(yes = true) {
+		if (yes) {
+			window.location.hash = "#postviewer";
+			document.getElementsByClassName("postviewer")[1].setAttribute("src", document.getElementsByClassName("postviewer")[0].getAttribute("src"));
+			document.getElementById("post-expanded").style.display = "block";
+		} else {
+			window.location.hash = "";
+			document.getElementsByClassName("postviewer")[1].setAttribute("src", "");
+			document.getElementById("post-expanded").style.display = "none";
+			document.getElementsByClassName("postviewer")[0].scrollIntoView({ behavior: "instant", block: "center", inline: "center" });
+		}
+	};
+
+	function show_character(string) {
+		link("/oc#" + string);
 	}
-	document.getElementById("loader").style.display = "none";
-	document.getElementById("info").innerHTML = document.getElementById("info").innerHTML.replace("{{AGE}}", new Date().getFullYear() - 2005)
-	setTimeout(function(){
-	  Array.from(document.getElementsByClassName("card")).forEach(element => {
-		element.style.animationName = 'unset';
-		element.style.opacity = '1';
-	  });
-	}, 3000);
 
-	container = document.querySelector('.container');
-	msnry = new Masonry( container, {
-		itemSelector: ".card", columnWidth: 500, gutter:24,
-		fitWidth: true, initLayout: true, stagger: 3
-	});
-  });
-
-  for (var i = 0; i < document.getElementsByClassName("card").length; i++) {
-	var card = document.getElementsByClassName("card")[i];
-	card.style.setProperty('--animation-order', i);
-  };
-  // setTimeout(function(){
-  //   window.scrollTo(0,0);
-  // });
-  setTimeout(function(){
-	// window.scrollTo(0,0);
-	document.getElementsByClassName("home-background")[0].classList.remove("faded");
-  }, 300);
-
-  function postviewerExpand(yes = true) {
-	if (yes){
-		window.location.hash = "#postviewer";
-		document.getElementsByClassName("postviewer")[1].setAttribute("src", document.getElementsByClassName("postviewer")[0].getAttribute("src"));
-		document.getElementById("post-expanded").style.display = "block";
-	} else {
-		window.location.hash = "";
-		document.getElementsByClassName("postviewer")[1].setAttribute("src", "");
-		document.getElementById("post-expanded").style.display = "none";
-		document.getElementsByClassName("postviewer")[0].scrollIntoView({ behavior: "instant", block: "center", inline: "center"});
+	window.onscroll = function () {
+		var bg = document.getElementsByClassName("home-background")[0];
+		bg.style.opacity = Math.max(remap(window.scrollY, 0, 300, 1, 0), 0);
 	}
-  };
 
-  function show_character(string) {
-		link("/oc#"+string);
-  }
-
-  window.onscroll = function() {
-	var bg = document.getElementsByClassName("home-background")[0];
-	bg.style.opacity = Math.max(remap(window.scrollY, 0, 300, 1, 0), 0);
-  }
-
-  function remap(value, low1, high1, low2, high2) {
-	return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
-}
+	function remap(value, low1, high1, low2, high2) {
+		return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+	}
 
 
-	window.addEventListener( "pageshow", function ( event ) {
-		if(performance.navigation.type == 2 && exited == true){
-      location.reload();
-    }
+	window.addEventListener("pageshow", function (event) {
+		if (performance.navigation.type == 2 && exited == true) {
+			location.reload();
+		}
 	});
 
-function add_oneko() {
-	var script = document.createElement("script");
-	script.src = src="https://sleepie.uk/oneko.js";
-	script.setAttribute("async", "");
-	document.head.appendChild(script);
-	document.getElementById("oneko-button").style.display = "none";
-}
+	function add_oneko() {
+		var script = document.createElement("script");
+		script.src = src = "https://sleepie.uk/oneko.js";
+		script.setAttribute("async", "");
+		document.head.appendChild(script);
+		document.getElementById("oneko-button").style.display = "none";
+	}
 </script>
+</html>

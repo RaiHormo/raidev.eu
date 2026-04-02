@@ -104,7 +104,7 @@ button:active {
     /* animation-name: slideUp; */
     animation-duration: 0.5s;
     transition: all 0.3s;
-    animation-timing-function:cubic-bezier(0.175, 0.485, 0.32, 1.2);
+    animation-timing-function: cubic-bezier(0.175, 0.485, 0.32, 1.2);
     animation-delay: calc(var(--animation-order) * 100ms);
     view-transition-name: card;
 }
@@ -132,6 +132,7 @@ button:active {
         transform: translateY(0);
         opacity: 0;
     }
+
     1% {
         transform: translateY(200px);
         opacity: 0;
@@ -378,6 +379,7 @@ button:active {
         height: 32px;
         opacity: 25%;
     }
+
     to {
         height: var(--slink-height);
         opacity: 100%;
@@ -389,6 +391,7 @@ button:active {
         height: var(--slink-height);
         opacity: 100%;
     }
+
     to {
         height: 32px;
         opacity: 0%;
@@ -439,7 +442,7 @@ button:active {
 }
 
 ::-webkit-scrollbar {
-    visibility:collapse !important;
+    visibility: collapse !important;
     scrollbar-width: thin;
 }
 
@@ -490,10 +493,10 @@ button:active {
     border-bottom-right-radius: 24px;
 }
 
-.frontpage-game{
+.frontpage-game {
     object-fit: cover;
     width: 100%;
-    
+
     border-radius: 8px;
 }
 
@@ -606,9 +609,12 @@ button:active {
     animation-duration: 0.5s;
     animation-delay: 1.5s;
     display: grid;
-    grid-gap: 8px; /* [1] Add some gap between rows and columns */
-    grid-template-columns: repeat( auto-fill, minmax( 300px, 1fr ) ); /* [2] Make columns adjust according to the available viewport */
-    grid-auto-rows: 0px; /* [3] Set the height for implicitly-created row track */
+    grid-gap: 8px;
+    /* [1] Add some gap between rows and columns */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* [2] Make columns adjust according to the available viewport */
+    grid-auto-rows: 0px;
+    /* [3] Set the height for implicitly-created row track */
 }
 
 .gallery-tag-title {
@@ -720,6 +726,7 @@ button:active {
     0% {
         transform: scaleY(1);
     }
+
     10% {
         transform: scaleY(50);
     }
@@ -738,6 +745,7 @@ button:active {
         transform: scaleY(1);
         background-color: #403939;
     }
+
     10% {
         transform: scaleY(50);
         background-color: #252327;
@@ -845,24 +853,35 @@ button:active {
 }
 
 .mj-background {
-    width: 100vw; position:fixed;
-    top: 120px ;
+    width: 100vw;
+    position: fixed;
+    top: 120px;
     left: 0;
-    object-fit:cover;
-    object-position:80% 20%;
+    object-fit: cover;
+    object-position: 80% 20%;
     z-index: -1;
     background-color: #150401;
-    height: 90vh;/*calc(100vh - 120px);*/
+    height: 90vh;
+    /*calc(100vh - 120px);*/
     filter: brightness(80%);
     /* max-height: 800px; */
 }
 
 .mj-behind-background {
-    position: fixed; z-index: -2; background-repeat:repeat; top: 0; left: 0; filter: blur(20px) brightness(50%); height: 100vh; width: 100%;
+    position: fixed;
+    z-index: -2;
+    background-repeat: repeat;
+    top: 0;
+    left: 0;
+    filter: blur(20px) brightness(50%);
+    height: 100vh;
+    width: 100%;
 }
 
 .mj-main-logo {
-    height: 300px; position: fixed; top: 200px
+    height: 300px;
+    position: fixed;
+    top: 200px
 }
 
 .mj-screenshot {
@@ -1021,10 +1040,10 @@ button:active {
 }
 
 .comm-container {
-    display:flex;
+    display: flex;
     justify-content: center;
     top: 132px;
-    position:absolute;
+    position: absolute;
     /* flex-wrap: wrap; */
     margin: 24px;
     height: max-content;
@@ -1052,7 +1071,8 @@ button:active {
     margin-right: 24px;
 }
 
-.comm-panel button, .terms button {
+.comm-panel button,
+.terms button {
     color: #3D2D43;
     background-color: #cabcd4;
     margin: auto;
@@ -1101,7 +1121,7 @@ button:active {
     max-width: 1000px;
     top: 150px;
     position: relative;
-    color:white;
+    color: white;
     font-size: 24px;
     border-width: 8px;
     border-style: dotted;
@@ -1164,7 +1184,9 @@ button:active {
 }
 
 .profile-div {
-    display: flex; width: 100%; justify-content: left;
+    display: flex;
+    width: 100%;
+    justify-content: left;
 }
 
 .profile-btn {
@@ -1261,7 +1283,7 @@ button:active {
     /* position: fixed; */
     height: 74px;
     vertical-align: middle;
-    float:left;
+    float: left;
     transition: all 0.3s;
 }
 
@@ -1341,7 +1363,7 @@ button:active {
     background-color: rgba(0, 0, 0, 0.8);
     /* Black w/ opacity */
     text-align: center;
-    pointer-events:visibleFill;
+    pointer-events: visibleFill;
     /* overflow: hidden; */
     backdrop-filter: blur(24px);
     transition: all 0.3s;
@@ -1382,7 +1404,7 @@ button:active {
 }
 
 #caption b {
-    line-height:normal;
+    line-height: normal;
 }
 
 .caption-tags {
@@ -1391,7 +1413,8 @@ button:active {
     padding-bottom: 4px;
     padding-top: 4px;
     margin-right: 8px;
-    background-color: white; color: black;
+    background-color: white;
+    color: black;
     margin-bottom: 8px;
 }
 
@@ -1404,7 +1427,10 @@ button:active {
 }
 
 .caption-tag-container {
-    display: inline; position:absolute; top: 58px; left: 145px;
+    display: inline;
+    position: absolute;
+    top: 58px;
+    left: 145px;
 }
 
 @keyframes zoom {
@@ -1456,6 +1482,7 @@ button:active {
     .home-background {
         background-position-x: left;
     }
+
     .mj-background {
         max-height: 100%;
         /* object-position: left -200px; */
@@ -1487,9 +1514,11 @@ button:active {
     .topnav {
         display: block;
     }
+
     .home-background {
         background-position-x: 20%;
     }
+
     /* .mj-background {
         height: 500px;
         object-position: calc(50% - 100px);;
@@ -1503,9 +1532,11 @@ button:active {
     .hide-mobile {
         visibility: hidden;
     }
+
     .masonry {
-        grid-template-columns: repeat( auto-fill, minmax( 200px, 1fr ) );
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
+
     .caption-tag-container {
         position: relative;
         top: auto;
@@ -1517,27 +1548,34 @@ button:active {
     .only-wide {
         visibility: hidden;
     }
+
     .comm-panel {
         width: 88%;
         max-width: unset;
     }
+
     .comm-container {
         display: block;
         margin: 0px;
     }
+
     .comm-previews {
         display: contents;
         width: 48%;
     }
+
     #comic-nav-text-center {
         display: none;
     }
+
     #comic-nav-text-top {
         display: block;
     }
+
     #comic-nav {
         height: 100px;
     }
+
     #comic-page {
         height: calc(100% - 150px);
     }
@@ -1561,7 +1599,7 @@ button:active {
         /* width: 100%; */
         margin: auto;
         /* position: fixed; */
-        right:8vw;
+        right: 8vw;
         align-self: center;
         top: 18px;
     }
@@ -1581,6 +1619,7 @@ button:active {
         right: 32px;
         text-align: right;
     }
+
     .tag-expand-button {
         font-size: 24px;
         left: 10px;
@@ -1590,25 +1629,31 @@ button:active {
         padding-top: 12px;
         top: 128px;
     }
+
     .tag-button {
         font-size: 24px;
         height: 64px;
     }
+
     .tag-icon {
         height: 42px;
     }
+
     .home-background {
         height: 400px;
         background-size: auto 400px;
         background-position-x: 55%;
     }
+
     .MJ-tab-container {
         width: 98%;
         left: 1%;
     }
+
     .comic-nav-stamp {
         display: none;
     }
+
     #comic-nav {
         text-align: center;
     }
@@ -1622,11 +1667,14 @@ button:active {
     .gallery-img-wide {
         width: 98%;
     }
+
     .mj-background {
         /* height: 320px; */
-        object-position: right -50px;/*calc(50% - 60px);;*/
+        object-position: right -50px;
+        /*calc(50% - 60px);;*/
     }
-    .mj-main-logo{
+
+    .mj-main-logo {
         display: none;
     }
 }
