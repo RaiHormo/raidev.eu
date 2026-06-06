@@ -567,6 +567,12 @@ button:active, .button:active {
     display: inline-block;
     grid-row-end: span 25;
     margin: auto;
+	max-height: 550px;
+}
+
+.gallery-img-wide {
+	grid-column-end: span 2;
+	max-height: unset;
 }
 
 .gallery-button {
@@ -583,6 +589,8 @@ button:active, .button:active {
     height: 86px !important;
     text-align: center;
     vertical-align: middle;
+	grid-column-end: span 1;
+	grid-row-end: span 5;
 }
 
 .gallery-container {
@@ -600,7 +608,7 @@ button:active, .button:active {
     /* [1] Add some gap between rows and columns */
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     /* [2] Make columns adjust according to the available viewport */
-    grid-auto-rows: 0px;
+    grid-auto-rows: 10px;
     /* [3] Set the height for implicitly-created row track */
 }
 
@@ -1513,6 +1521,9 @@ button:active, .button:active {
     .mj-main-logo {
         height: 200px;
     }
+	.gallery-img-wide {
+		grid-column-end: span 2;
+	}
 }
 
 @media (max-width: 650px) {

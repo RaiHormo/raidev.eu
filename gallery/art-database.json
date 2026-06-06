@@ -112,6 +112,12 @@
 			"icon": "/media/Raicons/ref.png",
 			"sketchinclude": "yes",
 			"exclusive": false
+		},
+		{"name": "wide",
+			"title": "Wallpaper worthy",
+			"icon": "",
+			"sketchinclude": "yes",
+			"exclusive": false
 		}
 	],
 	"artwork": [
@@ -178,7 +184,7 @@
 		{"filename":"banner2023",
 			"title": "Banner 2024",
 			"date": "2023/Dec/31",
-			"tags": ["rai"]
+			"tags": ["rai", "wide"]
 		},
 		{"filename":"brown noise",
 			"title": "Brown",
@@ -203,7 +209,7 @@
 		{"filename":"cyan",
 			"title": "Cyan",
 			"date": "2024/May/18",
-			"tags": ["cyris"]
+			"tags": ["cyris", "wide"]
 		},
 		{"filename":"eevee2023",
 			"title": "Annual Eevee 2023",
@@ -313,7 +319,7 @@
 		{"filename":"pyrson",
 			"title": "Pyrson",
 			"date": "2022/Jul/12",
-			"tags": ["mj", "asteria"]
+			"tags": ["mj", "asteria", "wide"]
 		},
 		{"filename":"raidesign",
 			"title": "Raidesign",
@@ -508,12 +514,12 @@
 		{"filename":"neortoria",
 		"title":"Neortoria",
 		"date":"2022/May/9",
-		"tags": ["mj", "mira"]
+		"tags": ["mj", "mira", "wide"]
 		},
 		{"filename":"mira and daze",
 		"title":"mira and daze",
 		"date":"2022/Aug/24",
-		"tags": ["mj", "mira", "daze"]
+		"tags": ["mj", "mira", "daze", "wide"]
 		},
 		{"filename":"mafowo",
 		"title":"Mafowo",
@@ -653,7 +659,7 @@
 		{"filename":"mira librarian",
 		"title":"Librarian",
 		"date":"2025/Jan/8",
-		"tags": ["mj", "mira"]
+		"tags": ["mj", "mira", "wide"]
 		},
 		{"filename":"birth date",
 		"title":"birth date",
@@ -728,7 +734,7 @@
 		{"filename":"banner2025",
 		"title":"Banner 2025",
 		"date":"2025/Jan/31",
-		"tags": ["rai", "cyris"]
+		"tags": ["rai", "cyris", "wide"]
 		},
 		{"filename":"mira asteria expressions",
 		"title":"mira asteria expressions",
@@ -813,7 +819,7 @@
 		{"filename":"void",
 		"title":"Spirals",
 		"date":"2025/Jan/29",
-		"tags": ["mj", "enowme"]
+		"tags": ["mj", "enowme", "wide"]
 		},
 		{"filename":"fucked up 3d model",
 		"title":"fucked up 3d model",
@@ -888,7 +894,7 @@
 		{"filename":"mj capsule",
 		"title":"Mira's Journal Capsule",
 		"date":"2025/May/24",
-		"tags": ["mj", "mira"]
+		"tags": ["mj", "mira", "wide"]
 		},
 		{"filename":"nightmarena",
 		"title":"nightmarena",
@@ -1005,11 +1011,6 @@
 		"date":"2026/Jan/9",
 		"tags": ["rai", "sketch"]
 		},
-		{"filename":"mira upskirt",
-		"title":"Low angle Mira",
-		"date":"2026/Jan/5",
-		"tags": ["sketch", "mira", "mj"]
-		},
 		{"filename":"mira dog cone",
 		"title":"mira dog cone",
 		"date":"2024/Aug/23",
@@ -1033,7 +1034,87 @@
 		{"title":"Underwater",
 		"filename":"erinn-swim",
 		"date":"2026-Mar-20",
-		"tags": ["erinn", "mj"]
+		"tags": ["erinn", "mj", "wide"]
+		},
+		{"filename":"golden_mira",
+		"title":"Golden Week Mira",
+		"date":"2026-May-06",
+		"tags": ["mira", "mj"]
+		},
+		{"filename":"golden_veil",
+		"title":"golden_veil",
+		"date":"2026-May-06",
+		"tags": ["veil", "pokemon", "sketch"]
+		},
+		{"filename":"link rai",
+		"title":"link rai",
+		"date":"2026-Jun-04",
+		"tags": ["rai", "sketch"]
+		},
+		{"filename":"space",
+		"title":"Space",
+		"date":"2026-May-02",
+		"tags": ["giftart"]
+		},
+		{"filename":"cheek rubbing",
+		"title":"cheek rubbing",
+		"date":"2026-Apr-09",
+		"tags": ["rai", "sketch", "giftart"]
+		},
+		{"filename":"cyris null",
+		"title":"cyris null",
+		"date":"2026-Feb-05",
+		"tags": ["sketch", "cyris"]
+		},
+		{"filename":"rai null",
+		"title":"rai null",
+		"date":"2026-Feb-05",
+		"tags": ["sketch", "rai"]
+		},
+		{"filename":"rai bow",
+		"title":"rai bow",
+		"date":"2026-Mar-28",
+		"tags": ["rai", "sketch"]
+		},
+		{"filename":"giant cyris beach",
+		"title":"giant cyris beach",
+		"date":"2026-Apr-15",
+		"tags": ["cyris", "sketch"]
+		},
+		{"filename":"rai mirror finger",
+		"title":"One finger Rai",
+		"date":"2026-Apr-15",
+		"tags": ["rai", "sketch"]
+		},
+		{"filename":"misteria hug",
+		"title":"misteria hug",
+		"date":"2026-Apr-15",
+		"tags": ["mira", "asteria", "mj", "sketch"]
+		},
+		{"filename":"sheep rainbow",
+		"title":"sheep rainbow",
+		"date":"2026-May-02",
+		"tags": []
+		},
+		{"filename":"kolovaktiridio",
+		"title":"kolovaktiridio",
+		"date":"2026-May-02",
+		"tags": ["sketch"]
+		},
+		{"filename":"teddycat",
+		"title":"teddycat",
+		"date":"2026-Feb-15",
+		"tags": ["giftart", "sketch"]
+		},
+		{"filename":"kiki",
+		"title":"kiki",
+		"date":"2024-Dec-17",
+		"tags": ["sketch", "fanart"]
+		},
+		{"filename":"parkay 2",
+		"title":"parkay 2",
+		"date":"2026-Mar-22",
+		"tags": ["giftart", "sketch"]
 		}
 	]
 }
