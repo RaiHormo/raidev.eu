@@ -52,6 +52,10 @@ button, .button {
     }
 }
 
+hr {
+	border-style: dashed;
+}
+
 button:active, .button:active {
     scale: 90%;
     filter: none;

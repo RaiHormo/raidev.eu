@@ -5,3 +5,4 @@
 2025_(6)June_25_1.crp	Guestbook!
 2025_(9)Sep_4_1.crp	Useless button animations
 2026_(2)Feb_2_1.crp	UnMasked + OC Page
+2026_(6)Jun_11_1.crp	Added Veil, Nymphe and Errin
