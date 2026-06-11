@@ -89,9 +89,9 @@
 			"sketchinclude": "yes",
 			"exclusive": false
 		},
-		{"name": "nimphe",
-			"title": "Nimphe (Pokemon OC)",
-			"icon": "/media/Raicons/Nimphe.png",
+		{"name": "nymphe",
+			"title": "Nymphe (Pokemon OC)",
+			"icon": "/media/Raicons/Nymphe.png",
 			"sketchinclude": "yes",
 			"exclusive": false
 		},
@@ -464,7 +464,7 @@
 		{"filename":"sylvee",
 		"title":"Sylvee",
 		"date":"2021/Jul/17",
-		"tags": ["fanart", "nimphe"]
+		"tags": ["fanart", "nymphe"]
 		},
 		{"filename":"Illustration45",
 		"title":"Illustration45",
@@ -479,7 +479,7 @@
 		{"filename":"failed sylv",
 		"title":"Failed sylv",
 		"date":"2022/Feb/22",
-		"tags": ["fanart", "nimphe", "pokemon"]
+		"tags": ["fanart", "nymphe", "pokemon"]
 		},
 		{"filename":"ghost",
 		"title":"Ghost",
@@ -624,7 +624,7 @@
 		{"filename":"nimphe",
 		"title":"nimphe",
 		"date":"2024/Dec/26",
-		"tags": ["nimphe", "pokemon"]
+		"tags": ["nymphe", "pokemon"]
 		},
 		{"filename":"wrapped rai",
 		"title":"wrapped rai",
@@ -654,7 +654,7 @@
 		{"filename":"nimphe eep",
 		"title":"eep",
 		"date":"2025/Jan/5",
-		"tags": ["pokemon", "nimphe"]
+		"tags": ["pokemon", "nymphe"]
 		},
 		{"filename":"mira librarian",
 		"title":"Librarian",
@@ -719,7 +719,7 @@
 		{"filename":"nimphe dress",
 		"title":"Pink",
 		"date":"2025/Jan/27",
-		"tags": ["pokemon", "nimphe"]
+		"tags": ["pokemon", "nymphe"]
 		},
 		{"filename":"lurantis",
 		"title":"Lurantis",
@@ -954,7 +954,7 @@
 		{"filename":"beach",
 		"title":"swimming",
 		"date":"2025/Aug/29",
-		"tags": ["rai", "nimphe", "pokemon"]
+		"tags": ["rai", "nymphe", "pokemon"]
 		},
 		{"filename":"wet clothes",
 		"title":"wet clothes",
