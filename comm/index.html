@@ -140,10 +140,10 @@ background-repeat: no-repeat; background-size: cover;">
 <script src="/lib/handle-slinks.js"></script>
 <script src="/lib/image-popup.js"></script>
 <script>
-    var terms_open = false;
+    let terms_open = false;
 
     function setWidth() {
-        var mvp = document.getElementById('vp');
+        const mvp = document.getElementById('vp');
         if (screen.width < 472) {
             mvp.setAttribute('content', 'width=472px');
             console.log("mobile mode");
@@ -182,7 +182,7 @@ background-repeat: no-repeat; background-size: cover;">
         window.location.hash = string
         document.getElementsByClassName("checked")[0].classList.remove("checked");
         document.getElementById(string+"-btn").classList.add("checked");
-        var arr = Array.from(document.getElementsByClassName("comm-section"));
+        let arr = Array.from(document.getElementsByClassName("comm-section"));
         arr = arr.concat(Array.from(document.getElementsByClassName("comm-previews")));
         console.log(arr);
         arr.forEach(element => {
@@ -192,7 +192,7 @@ background-repeat: no-repeat; background-size: cover;">
         document.getElementById(string+"PV").style = "block";
     }
 
-    var prev_category = "Illustration";
+    let prev_category = "Illustration";
 
     function terms(close = false) {
         if (close) {

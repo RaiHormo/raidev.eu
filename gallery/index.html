@@ -70,9 +70,9 @@
   }
 
 function tag_expand() {
-  var container = document.getElementById("tag-container");
-  var gallery = document.getElementsByClassName("gallery-container")[0];
-  var button = document.getElementsByClassName("tag-expand-button")[0].children[0];
+  const container = document.getElementById("tag-container");
+  const gallery = document.getElementsByClassName("gallery-container")[0];
+  const button = document.getElementsByClassName("tag-expand-button")[0].children[0];
     if (container.style.whiteSpace != "unset") {
       container.style.whiteSpace = "unset";
       gallery.setAttribute('style', 'opacity:10% !important; pointer-events: none;');
@@ -82,9 +82,9 @@ function tag_expand() {
   }
 
   function tag_unexpand() {
-    var container = document.getElementById("tag-container");
-    var gallery = document.getElementsByClassName("gallery-container")[0];
-    var button = document.getElementsByClassName("tag-expand-button")[0].children[0];
+    const container = document.getElementById("tag-container");
+    const gallery = document.getElementsByClassName("gallery-container")[0];
+    const button = document.getElementsByClassName("tag-expand-button")[0].children[0];
     container.style.whiteSpace = "nowrap";
     gallery.setAttribute('style', '');
     button.classList.remove("fa-chevron-up");
@@ -96,7 +96,7 @@ function tag_expand() {
 <script type="text/javascript" src="/lib/image-popup.js"></script>
 <script>
   function setWidth() {
-    var mvp = document.getElementById('vp');
+    const mvp = document.getElementById('vp');
     if (window.innerWidth < 500) {
       mvp.setAttribute('content','width=500px');
       console.log("mobile mode");

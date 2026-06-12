@@ -261,8 +261,8 @@
 </body>
 <script>
   function toggle_menu(state = null) {
-    var x = document.getElementById("myLinks");
-    var btn = document.getElementsByClassName("section-button")[0];
+    let x = document.getElementById("myLinks");
+    let btn = document.getElementsByClassName("section-button")[0];
     if (state == null) state = x.style.display != "block";
     if (state) {
       x.style.display = "block";
@@ -300,7 +300,7 @@
     });
 
     function setWidth() {
-    var mvp = document.getElementById('vp');
+    let mvp = document.getElementById('vp');
     if (screen.width < 440) {
       mvp.setAttribute('content','width=440px');
       console.log("mobile mode");

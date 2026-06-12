@@ -40,13 +40,13 @@ background-color: black; background-attachment: fixed; filter: brightness(-30%);
 <script src="/lib/handle-slinks.js"></script>
 <script src="/lib/image-popup.js"></script>
 <script>
-    var data
-    var series
-    var page
-    var page_index = 0
+    let data
+    let series
+    let page
+    let page_index = 0
 
     function setWidth() {
-        var mvp = document.getElementById('vp');
+        let mvp = document.getElementById('vp');
         if (screen.width < 472) {
             mvp.setAttribute('content', 'width=472px');
             console.log("mobile mode");
@@ -58,23 +58,23 @@ background-color: black; background-attachment: fixed; filter: brightness(-30%);
 
     window.addEventListener("load", async function() {
         setWidth();
-        var response = await fetch('/comic/comic-database.json');
+        let response = await fetch('/comic/comic-database.json');
         data = await response.json();
         show_comic(window.location.hash.substring(1));
     });
 
     function show_comic(str) {
         window.location.hash = str;
-        var dash_pos = str.lastIndexOf('/');
+        let dash_pos = str.lastIndexOf('/');
         series = str.substring(0, dash_pos);
         page = str.substring(dash_pos+1);
-        var url = "/media/Comics/"+series+"/"+page+".png";
+        let url = "/media/Comics/"+series+"/"+page+".png";
         if (checkImage(url)) {
             document.getElementById("comic-page").setAttribute("src", url);
         }
-        var series_data = data[series];
-        var page_data = series_data.pages.find(p => p.filename == page);
-        var title = page_data.title;
+        let series_data = data[series];
+        let page_data = series_data.pages.find(p => p.filename == page);
+        let title = page_data.title;
         page_index = series_data.pages.indexOf(page_data);
         console.log(series_data.title);
         console.log(title);
@@ -84,8 +84,8 @@ background-color: black; background-attachment: fixed; filter: brightness(-30%);
             element.innerHTML = title;
         });
 
-        var left = document.getElementById("comic-left");
-        var right = document.getElementById("comic-right");
+        let left = document.getElementById("comic-left");
+        let right = document.getElementById("comic-right");
         left.classList.remove("disabled-btn");
         right.classList.remove("disabled-btn");
 
@@ -98,8 +98,8 @@ background-color: black; background-attachment: fixed; filter: brightness(-30%);
     }
 
     function comic_next(bool) {
-        var pages = data[series].pages;
-        var new_index = 0
+        let pages = data[series].pages;
+        let new_index = 0
         if (bool) {
             new_index = page_index +1
         } else {

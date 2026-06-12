@@ -206,10 +206,10 @@ background-color: #403b37; background-attachment: fixed; filter: brightness(-30%
 <script src="/lib/handle-slinks.js"></script>
 <script src="/lib/image-popup.js"></script>
 <script>
-	var character = "";
+	let character = "";
 
 	function setWidth() {
-		var mvp = document.getElementById('vp');
+		let mvp = document.getElementById('vp');
 		if (screen.width < 472) {
 			mvp.setAttribute('content', 'width=472px');
 			console.log("mobile mode");
@@ -239,7 +239,7 @@ background-color: #403b37; background-attachment: fixed; filter: brightness(-30%
 		window.location.hash = string;
 		window.scrollTo(0,0)
 		character = string;
-		var elements = Array.from(document.getElementById("profile-container").children);
+		let elements = Array.from(document.getElementById("profile-container").children);
 		elements.forEach(element => {
 			if (element.id != "profile-"+character && !element.classList.contains("profile-btn")) {
 				element.style.display = "none";
