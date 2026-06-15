@@ -13,3 +13,9 @@ And there's honestly not that much lore to write about with the Pokemon OCs, I r
 	Oh I also fixed the font in the guestbook that's been broken for a while. The issue was I had to use 
 	'raw.githubusercontent.com' in the link to avoid cross-site issues. Dunno why it worked before.
 </p>
+<hr>
+<p>
+	A button to download images as AVIF or PNG in the image viewer has also been added.<br>
+	I added it just because artfight doesn't support AVIF images, and i got tired of converting them
+</p>
+<p>The PNG conversion uses the html canvas, so if you have somemthing like "resist fingerprinting" it won't work.</p>
