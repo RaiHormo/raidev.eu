@@ -49,6 +49,7 @@ button, .button {
         scale: 105%;
         filter: brightness(110%);
         border-radius: 18px;
+		cursor: pointer;
     }
 }
 
@@ -1375,11 +1376,10 @@ button:active, .button:active {
     position: sticky;
     object-fit: contain;
     max-width: 100%;
-    height: 100%;
+    /* height: 100%; */
+	margin: auto;
     max-height: calc(90vh - 64px);
     border-radius: 12px;
-    margin-top: 0;
-    pointer-events: visibleFill;
     transition: all 0.3s;
     overflow: scroll;
     scrollbar-width: none;
@@ -1388,18 +1388,22 @@ button:active, .button:active {
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
     position: relative;
-    display: block;
-    max-width: calc(90vw - 100px);
+    display: grid;
+	grid-template-columns: auto max-content;
+    max-width: 100%;
     text-align: left;
     color: #ccc;
     padding: 10px 0;
     min-height: 48px;
-    max-height: 150px;
     margin-top: 20px;
     margin-left: 32px;
     font-size: 24px;
     margin-bottom: 0;
     line-height: 12px;
+	
+	@media (max-width: 500px) {
+		grid-template-columns: auto;
+	}
 }
 
 #caption b {
@@ -1430,6 +1434,7 @@ button:active, .button:active {
     position: absolute;
     top: 58px;
     left: 145px;
+	margin-bottom: 12px;
 }
 
 @keyframes zoom {
@@ -1444,15 +1449,42 @@ button:active, .button:active {
     }
 }
 
-/* The Close Button */
-#close-popup {
-    position: fixed;
-    top: 12px;
-    right: 32px;
-    color: #f1f1f1;
-    font-size: 64px;
-    font-weight: bold;
-    transition: all 0.3s;
+#popup-actions {
+	margin-right: 12px;
+	
+	button {
+		background-color: transparent;
+		right: 64px;
+		color: #f1f1f1;
+		font-size: 32px;
+		font-weight: bold;
+		transition: all 0.3s;
+		cursor: pointer;
+		padding: 12px
+	}
+
+	@media (max-width: 500px) {
+		text-align: right;
+	}
+}
+
+#popup-download-dropdown {
+	position: fixed;
+	right: 12px;
+	top: 86px;
+	background-color: white;
+	border-radius: 24px;
+	color: black;
+	z-index: 10;
+	padding: 10px;
+	box-shadow: 0px 0px 24px black;
+	list-style: none;
+	button {
+		font-size: 24px;
+		margin: 4px;
+		width: 100%;
+		padding: 8px
+	}
 }
 
 #close-popup:hover,
@@ -1463,11 +1495,11 @@ button:active, .button:active {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
+/* @media only screen and (max-width: 700px) {
     .modal-content {
         width: 100%;
     }
-}
+} */
 
 
 /* @media (max-width: 1020px) {
@@ -1491,6 +1523,11 @@ button:active, .button:active {
 @media (max-width: 908px) {
     .section-button {
         display: block;
+		i {
+			display: flex;
+			width: 100%;
+			justify-content: center;
+		}
     }
 
     .hide-smaller {

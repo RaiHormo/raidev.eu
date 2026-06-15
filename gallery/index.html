@@ -1,110 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iris' Art Gallery</title>
-  <meta name="description" content="A very cool gallery.">
-  <link rel="stylesheet" href="/styles.css">
-  <link href="/lib/fontawesome/css/all.min.css" rel="stylesheet">
-  <!-- <script src="/lib/jquery-3.7.1.min.js"></script> -->
-  <!-- <script src="/lib/masonry.pkgd.min.js"></script> -->
-  <script src="/lib/include-html.js"></script>
-  <script src="/lib/imagesloaded.pkgd.min.js"></script>
-  <meta id="vp" name="viewport">
-  <link rel="icon" type="image/x-icon" href="/media/Rai/favicon.png">
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Iris' Art Gallery</title>
+	<meta name="description" content="A very cool gallery.">
+	<link rel="stylesheet" href="/styles.css">
+	<link href="/lib/fontawesome/css/all.min.css" rel="stylesheet">
+	<!-- <script src="/lib/jquery-3.7.1.min.js"></script> -->
+	<!-- <script src="/lib/masonry.pkgd.min.js"></script> -->
+	<script src="/lib/include-html.js"></script>
+	<script src="/lib/imagesloaded.pkgd.min.js"></script>
+	<meta id="vp" name="viewport">
+	<link rel="icon" type="image/x-icon" href="/media/Rai/favicon.png">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
-  <meta content="Iris' fancy Gallery" property="og:title" />
-  <meta content="A very cool gallery." property="og:description" />
-  <meta content="https://raidev.eu" property="og:url" />
-  <meta id="img-meta" content="/media/Stamps/stamp.png" property="og:image" />
-  <meta content="#9948b1" data-react-helmet="true" name="theme-color" />
+	<meta content="Iris' fancy Gallery" property="og:title" />
+	<meta content="A very cool gallery." property="og:description" />
+	<meta content="https://raidev.eu" property="og:url" />
+	<meta id="img-meta" content="/media/Stamps/stamp.png" property="og:image" />
+	<meta content="#9948b1" data-react-helmet="true" name="theme-color" />
 </head>
+
 <body style="background-color: #4b4254;">
-  
-  <!-- <div include-html="/social-links.html" class="hide-mobile"></div> -->
 
-  <div class="header-cont">
-    <button class="home-button" onclick="homeButton();">
-    </button>
-    <h1 style="display: inline; margin-left: 82px ;">Art Gallery</h1>
-  </div>
+	<!-- <div include-html="/social-links.html" class="hide-mobile"></div> -->
 
-  <div class="header" >
-    <div class="header-corner"></div>
-  </div>
+	<div class="header-cont">
+		<button class="home-button" onclick="homeButton();">
+		</button>
+		<h1 style="display: inline; margin-left: 82px ;">Art Gallery</h1>
+	</div>
 
-  <button class="tag-expand-button" onclick="tag_expand();"><i class="fa-solid fa-chevron-down"></i> Tags</a></button><h1 class="gallery-tag-title">All artwork</h1>
-  <div id="tag-container">
-    <!-- &emsp; &emsp; &emsp; -->
-    <button onclick="window.location.href='/gallery/#'" class="tag-button"><img class='tag-icon'>Finished Work</button>
-  </div>
+	<div class="header">
+		<div class="header-corner"></div>
+	</div>
 
-  <h2 class="gallery-loader">Loading images... <br><br>This might take a bit.</h2>
+	<button class="tag-expand-button" onclick="tag_expand();"><i class="fa-solid fa-chevron-down"></i> Tags</a></button>
+	<h1 class="gallery-tag-title">All artwork</h1>
+	<div id="tag-container">
+		<!-- &emsp; &emsp; &emsp; -->
+		<button onclick="window.location.href='/gallery/#'" class="tag-button"><img class='tag-icon'>Finished
+			Work</button>
+	</div>
 
-  <div class="gallery-container masonry">
-  </div>
+	<h2 class="gallery-loader">Loading images... <br><br>This might take a bit.</h2>
 
-  <div id="image-popup" class="modal">
-    <span id="close-popup">&times;</span>
-    <div id="caption">
-      <b style="font-size: 32px;">Caption</b>
-      <p>Date</p>
-      <div class="caption-tag-container">
-        <button class="caption-tags"
-        onclick="window.location.hash = this.textContent;">Tag</button></div>
-    </div>
-    <img class="modal-content" id="img01">
-  </div>
+	<div class="gallery-container masonry">
+	</div>
 </body>
+
 </html>
 <script>
-  function homeButton() {
-      document.getElementsByClassName("header-cont")[0].classList.add("fade-down-class");
-      document.getElementsByClassName("header")[0].style.transform = "unset";
-      document.getElementsByClassName("header")[0].style.animation = "headerUnload ease-in 3s";
-      setTimeout (function() {
-          window.location.href='/';
-      }, 200);
-  }
+	function homeButton() {
+		document.getElementsByClassName("header-cont")[0].classList.add("fade-down-class");
+		document.getElementsByClassName("header")[0].style.transform = "unset";
+		document.getElementsByClassName("header")[0].style.animation = "headerUnload ease-in 3s";
+		setTimeout(function () {
+			window.location.href = '/';
+		}, 200);
+	}
 
-function tag_expand() {
-  const container = document.getElementById("tag-container");
-  const gallery = document.getElementsByClassName("gallery-container")[0];
-  const button = document.getElementsByClassName("tag-expand-button")[0].children[0];
-    if (container.style.whiteSpace != "unset") {
-      container.style.whiteSpace = "unset";
-      gallery.setAttribute('style', 'opacity:10% !important; pointer-events: none;');
-      button.classList.remove("fa-chevron-down");
-      button.classList.add("fa-chevron-up");
-    } else tag_unexpand();
-  }
+	function tag_expand() {
+		const container = document.getElementById("tag-container");
+		const gallery = document.getElementsByClassName("gallery-container")[0];
+		const button = document.getElementsByClassName("tag-expand-button")[0].children[0];
+		if (container.style.whiteSpace != "unset") {
+			container.style.whiteSpace = "unset";
+			gallery.setAttribute('style', 'opacity:10% !important; pointer-events: none;');
+			button.classList.remove("fa-chevron-down");
+			button.classList.add("fa-chevron-up");
+		} else tag_unexpand();
+	}
 
-  function tag_unexpand() {
-    const container = document.getElementById("tag-container");
-    const gallery = document.getElementsByClassName("gallery-container")[0];
-    const button = document.getElementsByClassName("tag-expand-button")[0].children[0];
-    container.style.whiteSpace = "nowrap";
-    gallery.setAttribute('style', '');
-    button.classList.remove("fa-chevron-up");
-    button.classList.add("fa-chevron-down");
-  }
+	function tag_unexpand() {
+		const container = document.getElementById("tag-container");
+		const gallery = document.getElementsByClassName("gallery-container")[0];
+		const button = document.getElementsByClassName("tag-expand-button")[0].children[0];
+		container.style.whiteSpace = "nowrap";
+		gallery.setAttribute('style', '');
+		button.classList.remove("fa-chevron-up");
+		button.classList.add("fa-chevron-down");
+	}
 </script>
 <script type="text/javascript" src="/lib/handle-slinks.js"></script>
 <script type="text/javascript" src="/lib/gallery-fetch.js"></script>
 <script type="text/javascript" src="/lib/image-popup.js"></script>
 <script>
-  function setWidth() {
-    const mvp = document.getElementById('vp');
-    if (window.innerWidth < 500) {
-      mvp.setAttribute('content','width=500px');
-      console.log("mobile mode");
-    } else {
-      mvp.setAttribute('content','width=device-width');
-      console.log("swakrop mode");
-    }
-  };
+	function setWidth() {
+		const mvp = document.getElementById('vp');
+		if (window.innerWidth < 500) {
+			mvp.setAttribute('content', 'width=500px');
+			console.log("mobile mode");
+		} else {
+			mvp.setAttribute('content', 'width=device-width');
+			console.log("swakrop mode");
+		}
+	};
 
-  window.addEventListener("load", setWidth());
+	window.addEventListener("load", setWidth());
 </script>

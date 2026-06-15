@@ -2,17 +2,17 @@
 <html lang="en" style="height: 100%;">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iris' commissions page</title>
-    <link rel="stylesheet" href="/styles.css">
-    <link href="/lib/fontawesome/css/all.min.css" rel="stylesheet">
-    <script onclick="show_image(this);" src="/lib/jquery-3.7.1.min.js"></script>
-    <script onclick="show_image(this);" src="/lib/include-html.js"></script>
-    <script onclick="show_image(this);" src="/lib/imagesloaded.pkgd.min.js"></script>
-    <meta id="vp" name="viewport">
-    <link rel="icon" type="image/x-icon" href="/media/Rai/favicon.png">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Iris' commissions page</title>
+	<link rel="stylesheet" href="/styles.css">
+	<link href="/lib/fontawesome/css/all.min.css" rel="stylesheet">
+	<script onclick="show_image(this);" src="/lib/jquery-3.7.1.min.js"></script>
+	<script onclick="show_image(this);" src="/lib/include-html.js"></script>
+	<script onclick="show_image(this);" src="/lib/imagesloaded.pkgd.min.js"></script>
+	<meta id="vp" name="viewport">
+	<link rel="icon" type="image/x-icon" href="/media/Rai/favicon.png">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 </head>
 
 <body style="
@@ -21,206 +21,214 @@ background-color: #493842; background-attachment: fixed;
 background-image: url(/media/Rai/comm\ bg.png);
 background-repeat: no-repeat; background-size: cover;">
 
-    <div include-html="/social-links.html" class="only-wide"></div>
+	<div include-html="/social-links.html" class="only-wide"></div>
 
-    <div class="header-cont">
-        <button class="home-button" onclick="if (window.location.hash == '#terms') window.location.hash = ''; else homeButton();">
-        </button>
-        <h1 style="display: inline; margin-left: 82px ;">Commissions</h1>
-    </div>
+	<div class="header-cont">
+		<button class="home-button"
+			onclick="if (window.location.hash == '#terms') window.location.hash = ''; else homeButton();">
+		</button>
+		<h1 style="display: inline; margin-left: 82px ;">Commissions</h1>
+	</div>
 
-    <div class="header">
-        <div class="header-corner"></div>
-    </div>
+	<div class="header">
+		<div class="header-corner"></div>
+	</div>
 
-    <div class="comm-container">
-        <div class="comm-panel">
-            <h2 style="line-height: 12px;">Pricing</h2>
-            <button style="border-top-right-radius: 8px; border-bottom-right-radius: 8px;" id="Illustration-btn" class="checked" onclick="category('Illustration'); this.classList.add('checked');">Illustration
-            </button>
-            <button style="border-top-left-radius: 8px; border-bottom-left-radius: 8px;" id="Assets-btn" class="" onclick="category('Assets'); this.classList.add('checked');">Animation / Assets
-            </button>
-            <div id="Illustration" class="comm-section">
-                Price ranges from <b>15-55€</b><br><br>
-                Base price: <b>15€</b> (for a headshot sketch)<br>
-                <b>+5-10€</b> for bust to fullbody<br>
-                <b>+3€</b> for color<br>
-                <b>+8€</b> for shading<br>
-                <b>+10-20€</b> for background<br>
-                Additional characters are also a <b>+5€</b>, with the same rules applying for bust/fullbody.
-            </div>
-            <div id="Assets" class="comm-section" style=" display: none;">
-                This applies to smaller scale art with many frames, such as sprite sheets. For static character art, key art and the like, refer to "Illustration".<br><br>
-                Sprite design: <b>10€</b>. <br>The same character with a diffrent outfit would count as unique design.
-                <br><br>
-                24x24 or lower: <b>+1€ per frame</b>.<br>
-                48x48 or lower: <b>+2€ per frame</b>.<br>
-                64x64 or lower: <b>+3€ per frame</b>.<br>
-                Higher res or hand-drawn: <b>+4€ per frame</b>.
-                <br><span style="font-size: 18px; opacity: 75%;">
-                    The resolution refers the base character, any extensions (like a sword held forward) won't add to the price.
-                    If the sprite is not square, refer to the size of the biggest axis.
-                </span><br><br>
-                Shading: <b>+5€ for each design</b>.
-                <br><br>
-                For example, a sheet of 24x24 walk sprites with a 3 frame walk cycle would be <b>22€</b>. Any single sprite is just <b>3€</b>.
-            </div>
-            <br>
-            <span>
-                To order a comission, please contact me preferably on Discord <b>@raidev</b>, or on Bluesky <b>@raidev.eu</b>.<br>
-                <span style="font-size: 18px; opacity: 75%;">Prices are listed in Euro, you can try converting them to your local currency. Before commissioning, please review the terms
-                    below.</span><br>
-            </span>
-            <button class="checked" style="margin-top: 20px;" onclick="terms();">Terms and details
-            </button>
-        </div>
-        <div class="comm-previews" id="IllustrationPV">
-            <h1 style="color:#b1a8b9">Examples</h1>
-            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/spirit tracks.avif"
-                alt="2 Characters, Headshot, Shaded">
-            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/eevee2024.avif"
-                alt="Fullbody, Shaded">
-            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/nia xenoblade.avif"
-                alt="Almost fullbody, Shaded">
-            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/kai(zo).avif"
-                alt="Bust, Shaded, Simple background">
-            <img class="clickable-image comm-img" onclick="show_image(this);"
-                src="/media/Artwork/asteria oil green.avif" alt="Monochrome, Half body, Simple background">
-            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/nimphe dress.avif"
-                alt="Colored, Full body">
-            <br><button style="background-color: #b1a8b9; color: #3D2D43; margin: 12px; text-align: center;"
-                onclick="window.location.href='/gallery#comm'" ;>View past commissions</button>
-        </div>
-        <div class="comm-previews" id="AssetsPV" style="display: none;">
-            <h1 style="color:#b1a8b9">Examples</h1>
-            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/PixelArt/FirstBattle.gif">
-            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/PixelArt/llewl_swim.gif">
-            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/PixelArt/Petrogon.gif">
-            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/PixelArt/AsteriaBt2.gif">
-            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/PixelArt/amberelm.png">
-            <img class="clickable-image comm-img" onclick="show_image(this);" src="/media/PixelArt/AlcineBT.gif">
-            <br><button style="background-color: #b1a8b9; color: #3D2D43; margin: 12px; text-align: center;"
-                onclick="window.location.href='/gallery#comm'" ;>View past commissions</button>
-        </div>
-    </div>
+	<div class="comm-container">
+		<div class="comm-panel">
+			<h2 style="line-height: 12px;">Pricing</h2>
+			<button style="border-top-right-radius: 8px; border-bottom-right-radius: 8px;" id="Illustration-btn"
+				class="checked" onclick="category('Illustration'); this.classList.add('checked');">Illustration
+			</button>
+			<button style="border-top-left-radius: 8px; border-bottom-left-radius: 8px;" id="Assets-btn" class=""
+				onclick="category('Assets'); this.classList.add('checked');">Animation / Assets
+			</button>
+			<div id="Illustration" class="comm-section">
+				Price ranges from <b>15-55€</b><br><br>
+				Base price: <b>15€</b> (for a headshot sketch)<br>
+				<b>+5-10€</b> for bust to fullbody<br>
+				<b>+3€</b> for color<br>
+				<b>+8€</b> for shading<br>
+				<b>+10-20€</b> for background<br>
+				Additional characters are also a <b>+5€</b>, with the same rules applying for bust/fullbody.
+			</div>
+			<div id="Assets" class="comm-section" style=" display: none;">
+				This applies to smaller scale art with many frames, such as sprite sheets. For static character art, key
+				art and the like, refer to "Illustration".<br><br>
+				Sprite design: <b>10€</b>. <br>The same character with a diffrent outfit would count as unique design.
+				<br><br>
+				24x24 or lower: <b>+1€ per frame</b>.<br>
+				48x48 or lower: <b>+2€ per frame</b>.<br>
+				64x64 or lower: <b>+3€ per frame</b>.<br>
+				Higher res or hand-drawn: <b>+4€ per frame</b>.
+				<br><span style="font-size: 18px; opacity: 75%;">
+					The resolution refers the base character, any extensions (like a sword held forward) won't add to
+					the price.
+					If the sprite is not square, refer to the size of the biggest axis.
+				</span><br><br>
+				Shading: <b>+5€ for each design</b>.
+				<br><br>
+				For example, a sheet of 24x24 walk sprites with a 3 frame walk cycle would be <b>22€</b>. Any single
+				sprite is just <b>3€</b>.
+			</div>
+			<br>
+			<span>
+				To order a comission, please contact me preferably on Discord <b>@raidev</b>, or on Bluesky
+				<b>@raidev.eu</b>.<br>
+				<span style="font-size: 18px; opacity: 75%;">Prices are listed in Euro, you can try converting them to
+					your local currency. Before commissioning, please review the terms
+					below.</span><br>
+			</span>
+			<button class="checked" style="margin-top: 20px;" onclick="terms();">Terms and details
+			</button>
+		</div>
+		<div class="comm-previews" id="IllustrationPV">
+			<h1 style="color:#b1a8b9">Examples</h1>
+			<img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/spirit tracks.avif"
+				alt="2 Characters, Headshot, Shaded">
+			<img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/eevee2024.avif"
+				alt="Fullbody, Shaded">
+			<img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/nia xenoblade.avif"
+				alt="Almost fullbody, Shaded">
+			<img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/kai(zo).avif"
+				alt="Bust, Shaded, Simple background">
+			<img class="clickable-image comm-img" onclick="show_image(this);"
+				src="/media/Artwork/asteria oil green.avif" alt="Monochrome, Half body, Simple background">
+			<img class="clickable-image comm-img" onclick="show_image(this);" src="/media/Artwork/nimphe dress.avif"
+				alt="Colored, Full body">
+			<br><button style="background-color: #b1a8b9; color: #3D2D43; margin: 12px; text-align: center;"
+				onclick="window.location.href='/gallery#comm'" ;>View past commissions</button>
+		</div>
+		<div class="comm-previews" id="AssetsPV" style="display: none;">
+			<h1 style="color:#b1a8b9">Examples</h1>
+			<img class="clickable-image comm-img" onclick="show_image(this);" src="/media/PixelArt/FirstBattle.gif">
+			<img class="clickable-image comm-img" onclick="show_image(this);" src="/media/PixelArt/llewl_swim.gif">
+			<img class="clickable-image comm-img" onclick="show_image(this);" src="/media/PixelArt/Petrogon.gif">
+			<img class="clickable-image comm-img" onclick="show_image(this);" src="/media/PixelArt/AsteriaBt2.gif">
+			<img class="clickable-image comm-img" onclick="show_image(this);" src="/media/PixelArt/amberelm.png">
+			<img class="clickable-image comm-img" onclick="show_image(this);" src="/media/PixelArt/AlcineBT.gif">
+			<br><button style="background-color: #b1a8b9; color: #3D2D43; margin: 12px; text-align: center;"
+				onclick="window.location.href='/gallery#comm'" ;>View past commissions</button>
+		</div>
+	</div>
 
-    <div class="terms">
-        <h2 style="text-align: center;">Terms and details</h2>
-        <ul>
-            <li>Payment can be done through PayPal or Ko-Fi.</li>
-            <li>I will decide the final price after I know what I'm drawing.</li>
-            <li>I can draw stylized humans and furries best. I'm also somewhat decent at drawing ferals. For intricate designs or mechs you've got the wrong person.</li>
-            <li>I will not draw explicit NSFW or extreme fetish art. Suggestive art is allowed.</li>
-            <li>I will not draw extreme gore.</li>
-            <li>I can deny any commission if I'm not comfortable drawing it.</li>
-            <li>Payment will be done during the coloring process at the latest.</li>
-            <li>It may take up to a month to finish a regular Illustration commission, unless something comes up in which case I will contact you.</li>
-            <li>Animation commissions can take a while, so please be patient.</li>
-            <li>I will contact you for feedback or anything im not sure about.</li>
-            <li>If you're going to post or use the art anywhere, please credit me. This is not a requirement but I'd appriciate it.</li>
-            <li>If I find you to be too suspecious (potential scammer), I might cut communication, before any payment that is.</li>
-            <li>You may publish the artwork on social media and such freely. I might ask for permission to publish it on mine.</li>
-            <li>If asked, the passcode is Strawberry.</li>
-            <li>You are not allowed to sell my artwork as NFT (Are those even still a thing?).</li>
-            <li>You are not allowed to use my artwork as training data for an AI model.</li>
-            <li>You are not allowed to edit my artwork using generative AI, or feed it to one in any way.</li>
-            <li>Commercial use can be allowed, please ask me and we can discuss the terms.</li>
-        </ul>
-        <button style="align-self: center; margin: auto; font-size: 32px; display: block;" onclick="terms(true)">Close</button>
-    </div>
-
-    <div id="image-popup" class="modal">
-        <span id="close-popup">&times;</span>
-        <div id="caption"></div>
-        <img class="modal-content" id="img01" style="image-rendering: pixelated;">
-    </div>
+	<div class="terms">
+		<h2 style="text-align: center;">Terms and details</h2>
+		<ul>
+			<li>Payment can be done through PayPal or Ko-Fi.</li>
+			<li>I will decide the final price after I know what I'm drawing.</li>
+			<li>I can draw stylized humans and furries best. I'm also somewhat decent at drawing ferals. For intricate
+				designs or mechs you've got the wrong person.</li>
+			<li>I will not draw explicit NSFW or extreme fetish art. Suggestive art is allowed.</li>
+			<li>I will not draw extreme gore.</li>
+			<li>I can deny any commission if I'm not comfortable drawing it.</li>
+			<li>Payment will be done during the coloring process at the latest.</li>
+			<li>It may take up to a month to finish a regular Illustration commission, unless something comes up in
+				which case I will contact you.</li>
+			<li>Animation commissions can take a while, so please be patient.</li>
+			<li>I will contact you for feedback or anything im not sure about.</li>
+			<li>If you're going to post or use the art anywhere, please credit me. This is not a requirement but I'd
+				appriciate it.</li>
+			<li>If I find you to be too suspecious (potential scammer), I might cut communication, before any payment
+				that is.</li>
+			<li>You may publish the artwork on social media and such freely. I might ask for permission to publish it on
+				mine.</li>
+			<li>If asked, the passcode is Strawberry.</li>
+			<li>You are not allowed to sell my artwork as NFT (Are those even still a thing?).</li>
+			<li>You are not allowed to use my artwork as training data for an AI model.</li>
+			<li>You are not allowed to edit my artwork using generative AI, or feed it to one in any way.</li>
+			<li>Commercial use can be allowed, please ask me and we can discuss the terms.</li>
+		</ul>
+		<button style="align-self: center; margin: auto; font-size: 32px; display: block;"
+			onclick="terms(true)">Close</button>
+	</div>
 </body>
 
 </html>
 <script src="/lib/handle-slinks.js"></script>
 <script src="/lib/image-popup.js"></script>
 <script>
-    let terms_open = false;
+	let terms_open = false;
 
-    function setWidth() {
-        const mvp = document.getElementById('vp');
-        if (screen.width < 472) {
-            mvp.setAttribute('content', 'width=472px');
-            console.log("mobile mode");
-        } else {
-            mvp.setAttribute('content', 'width=device-width');
-            console.log("swakrop mode");
-        }
-    };
+	function setWidth() {
+		const mvp = document.getElementById('vp');
+		if (screen.width < 472) {
+			mvp.setAttribute('content', 'width=472px');
+			console.log("mobile mode");
+		} else {
+			mvp.setAttribute('content', 'width=device-width');
+			console.log("swakrop mode");
+		}
+	};
 
-    window.addEventListener("load", function() {
-        setWidth();
-        hash_check(window.location.hash);
-    });
+	window.addEventListener("load", function () {
+		setWidth();
+		hash_check(window.location.hash);
+	});
 
-    window.addEventListener('hashchange',() => {
-        setTimeout (function() {
-            hash_check(window.location.hash);
-        }, 300);
-    });
+	window.addEventListener('hashchange', () => {
+		setTimeout(function () {
+			hash_check(window.location.hash);
+		}, 300);
+	});
 
-    function hash_check(hash) {
-        if (window.location.hash == "#terms") {
-            terms(false);
-        } else {
-            if (terms_open && window.location.hash != "#terms") terms(true);
-            category(hash);
-        }
-    }
+	function hash_check(hash) {
+		if (window.location.hash == "#terms") {
+			terms(false);
+		} else {
+			if (terms_open && window.location.hash != "#terms") terms(true);
+			category(hash);
+		}
+	}
 
-    function category(string) {
-        if (string == "") {
-            string = prev_category;
-        }
-        string = string.replace("#", "");
-        console.log(string);
-        window.location.hash = string
-        document.getElementsByClassName("checked")[0].classList.remove("checked");
-        document.getElementById(string+"-btn").classList.add("checked");
-        let arr = Array.from(document.getElementsByClassName("comm-section"));
-        arr = arr.concat(Array.from(document.getElementsByClassName("comm-previews")));
-        console.log(arr);
-        arr.forEach(element => {
-            element.style.display = "none";
-        });
-        document.getElementById(string).style = "block";
-        document.getElementById(string+"PV").style = "block";
-    }
+	function category(string) {
+		if (string == "") {
+			string = prev_category;
+		}
+		string = string.replace("#", "");
+		console.log(string);
+		window.location.hash = string
+		document.getElementsByClassName("checked")[0].classList.remove("checked");
+		document.getElementById(string + "-btn").classList.add("checked");
+		let arr = Array.from(document.getElementsByClassName("comm-section"));
+		arr = arr.concat(Array.from(document.getElementsByClassName("comm-previews")));
+		console.log(arr);
+		arr.forEach(element => {
+			element.style.display = "none";
+		});
+		document.getElementById(string).style = "block";
+		document.getElementById(string + "PV").style = "block";
+	}
 
-    let prev_category = "Illustration";
+	let prev_category = "Illustration";
 
-    function terms(close = false) {
-        if (close) {
-            category(prev_category);
-            terms_open = false;
-            $(".comm-container").css({'opacity': '100'});
-            $(".terms").css({'display': 'none'});
-            window.scrollTo(0,0);
-        } else {
-            if (window.location.hash != "#terms") {
-                prev_category = window.location.hash;
-            }
-            terms_open = true;
-            $(".comm-container").css({'opacity': '0'});
-            $(".terms").css({'display': 'block'});
-            window.location.hash = "terms";
-            window.scrollTo(0,0);
-        }
-    };
+	function terms(close = false) {
+		if (close) {
+			category(prev_category);
+			terms_open = false;
+			$(".comm-container").css({ 'opacity': '100' });
+			$(".terms").css({ 'display': 'none' });
+			window.scrollTo(0, 0);
+		} else {
+			if (window.location.hash != "#terms") {
+				prev_category = window.location.hash;
+			}
+			terms_open = true;
+			$(".comm-container").css({ 'opacity': '0' });
+			$(".terms").css({ 'display': 'block' });
+			window.location.hash = "terms";
+			window.scrollTo(0, 0);
+		}
+	};
 </script>
 <script>
-    function homeButton() {
-        document.getElementsByClassName("header-cont")[0].classList.add("fade-down-class");
-        document.getElementsByClassName("header")[0].style.transform = "unset";
-        document.getElementsByClassName("header")[0].style.animation = "headerUnload ease-in 3s";
-        document.getElementsByClassName("social-links")[0].classList.add("faded");
-        setTimeout (function() {
-            window.location.href='/';
-        }, 200);
-    }
+	function homeButton() {
+		document.getElementsByClassName("header-cont")[0].classList.add("fade-down-class");
+		document.getElementsByClassName("header")[0].style.transform = "unset";
+		document.getElementsByClassName("header")[0].style.animation = "headerUnload ease-in 3s";
+		document.getElementsByClassName("social-links")[0].classList.add("faded");
+		setTimeout(function () {
+			window.location.href = '/';
+		}, 200);
+	}
 </script>
