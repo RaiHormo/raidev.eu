@@ -1120,6 +1120,11 @@
 		"title":"Veil's Day",
 		"date":"2026-Jun-07",
 		"tags": ["veil", "pokemon"]
+		},
+		{"filename":"rairef6",
+		"title":"Reference sheet for Rai v6",
+		"date":"2026-Jul-01",
+		"tags": ["rai", "ref"]
 		}
 	]
 }
