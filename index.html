@@ -54,10 +54,11 @@
 	<h2 id="loader">Welcome to Iris' fancy website!<br><br>The site is still loading... If this takes too long, try to
 		refresh, or check if you are blocking Javascript in your browser.</h2>
 
-	<main class="container" data-masonry='{
-	"itemSelector": ".card", "columnWidth": 500, "gutter":24,
-	"fitWidth": true, "initLayout": true, "stagger": 3
-  }'>
+	<main 
+		class="container" data-masonry='{
+		"itemSelector": ".card", "columnWidth": 500, "gutter":24,
+		"fitWidth": true, "initLayout": true, "stagger": 3}'
+	>
 		<header class="card card--c1">
 			<img class="sitting-rai" , src="media/Rai/sitting.avif" alt="Rai sitting">
 			<h2 style="text-align: right; font-size: 28px; margin-bottom: 0px; color: #3d2e43;">about me</h2>
@@ -70,15 +71,19 @@
 			</h4>
 		</header>
 
-		<section class="card card--c2 card-hover" style="height: 616px; background-color: #cec1e9;"
-			onclick="link('/gallery');">
+		<section 
+			class="card card--c2 card-hover" style="height: 616px; background-color: #cec1e9;"
+			onclick="link('/gallery');"
+		>
 			<h1 style="text-align: center; font-size: 34px; margin-bottom: 0px; color: #97459e">
 				Art gallery</h1>
 			<div class="gallery-grid">
 				<img src="media/Artwork/eevee2025.avif" class="gallery-img-frontpage"
-					style="border-top-left-radius: 32px;">
+					style="border-top-left-radius: 32px;"
+				>
 				<img src="media/Artwork/rai back.avif" class="gallery-img-frontpage"
-					style="border-top-right-radius: 32px;">
+					style="border-top-right-radius: 32px;"
+				>
 				<img src="media/Artwork/erinn-swim.avif" class="gallery-img-frontpage"
 					style="border-bottom-left-radius: 32px;">
 				<img src="media/Artwork/vibri aaalt.avif" class="gallery-img-frontpage"
