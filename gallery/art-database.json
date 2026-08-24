@@ -1039,7 +1039,7 @@
 		{"filename":"golden_mira",
 		"title":"Golden Week Mira",
 		"date":"2026-May-06",
-		"tags": ["mira", "mj"]
+		"tags": ["mira", "mj", "sketch"]
 		},
 		{"filename":"golden_veil",
 		"title":"golden_veil",
@@ -1089,7 +1089,7 @@
 		{"filename":"misteria hug",
 		"title":"misteria hug",
 		"date":"2026-Apr-15",
-		"tags": ["mira", "asteria", "mj", "sketch"]
+		"tags": ["mira", "asteria", "mj"]
 		},
 		{"filename":"sheep rainbow",
 		"title":"sheep rainbow",
@@ -1125,6 +1125,26 @@
 		"title":"Reference sheet for Rai v6",
 		"date":"2026-Jul-01",
 		"tags": ["rai", "ref"]
+		},
+		{"filename":"artfight miya",
+		"title":"artfight miya",
+		"date":"2026-Jul-08",
+		"tags": ["fanart"]
+		},
+		{"filename":"artfight abigail",
+		"title":"artfight abigail",
+		"date":"2026-Jul-29",
+		"tags": ["fanart", "pokemon"]
+		},
+		{"filename":"artfight foxglove",
+		"title":"artfight foxglove",
+		"date":"2026-Jul-11",
+		"tags": ["fanart"]
+		},
+		{"filename":"mira strap",
+		"title":"mira strap",
+		"date":"2026-Aug-9",
+		"tags": ["sketch", "mira", "mj"]
 		}
 	]
 }
